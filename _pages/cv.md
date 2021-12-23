@@ -52,7 +52,7 @@ Teaching
 
 Full Curriculum Vitae:
 
-Download PDF (updated 03/08/2020) 
+Download [PDF](/files/cv.pdf) (updated 06/08/2021). 
 
 <!-- Publications
 ======
