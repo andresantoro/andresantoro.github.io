@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
  
-For a summary of my works, you can either scroll down this page or have a look at <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+For a summary of my works, you can either scroll down this page or have a look at [my Google Scholar profile](https://scholar.google.co.uk/citations?user=gGSh6oEAAAAJ&hl=en).
 
 Papers & Preprints
 ======
