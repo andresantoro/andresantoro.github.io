@@ -4,17 +4,11 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-
-{% if author.googlescholar %}
-  For a summary of my works, you can either scroll down this page or have a look at <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-
-{% include base_path %}
-
+ 
+For a summary of my works, you can either scroll down this page or have a look at <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 
 Papers & Preprints
 ======
-* A. Aloric, J. Garcia-Bernardo, P. Krafft, A. Morgan, Z. Neu, A. Santoro "Collective Information Processing in Human Rumor-Spreading Networks" (In Preparation; SFI Complex Systems Summer School Project)
 * A. Santoro, V. Nicosia "Optimal percolation in correlated multilayer networks with overlap", *Phys. Rev. Research* 2, 033122 (2020) (PDF ArXiv)
 * J. C. W. Billings, M. Hu, G. Lerda, A. N. Medvedev, F. Mottes, A. Onicas, A. Santoro, G. Petri "Simplex2Vec embeddings for community detection in simplicial complexes " (PDF ArXiv)
 * A. Santoro, V. Nicosia "Algorithmic complexity of multiplex networks", *Phys. Rev. X*, 10 021069 (2020) (PDF ArXiv)
