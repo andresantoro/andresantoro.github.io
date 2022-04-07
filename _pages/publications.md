@@ -9,6 +9,9 @@ For a summary of my works, you can either scroll down this page or have a look a
 
 Papers & Preprints
 ======
+* A. Santoro, F. Battiston, G. Petri, E. Amico, "Unveiling the higher-order organization of multivariate time series", 	arXiv:2203.10702 (2022) [https://arxiv.org/abs/2203.10702](PDF ArXiv)
+* A. Bassolas\*, A.Santoro\*, S. Sousa, S. Rognone, V. Nicosia, "Optimising the mitigation of epidemic spreading through targeted adoption of contact
+tracing apps",	arXiv:2102.13013 [https://arxiv.org/abs/2102.13013](PDF ArXiv)
 * A. Santoro, V. Nicosia "Optimal percolation in correlated multilayer networks with overlap", *Phys. Rev. Research* 2, 033122 (2020) (PDF ArXiv)
 * J. C. W. Billings, M. Hu, G. Lerda, A. N. Medvedev, F. Mottes, A. Onicas, A. Santoro, G. Petri "Simplex2Vec embeddings for community detection in simplicial complexes " (PDF ArXiv)
 * A. Santoro, V. Nicosia "Algorithmic complexity of multiplex networks", *Phys. Rev. X*, 10 021069 (2020) (PDF ArXiv)
