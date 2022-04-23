@@ -9,19 +9,16 @@ For a summary of my works, you can either scroll down this page or have a look a
 
 Papers & Preprints
 ======
-* A. Santoro, F. Battiston, G. Petri, E. Amico, "Unveiling the higher-order organization of multivariate time series", 	arXiv:2203.10702 (2022) [https://arxiv.org/abs/2203.10702](PDF ArXiv)
+* A. Santoro, F. Battiston, G. Petri, E. Amico, "Unveiling the higher-order organization of multivariate time series", 	arXiv:2203.10702 (2022) [(PDF ArXiv)](https://arxiv.org/abs/2203.10702)
 * A. Bassolas\*, A.Santoro\*, S. Sousa, S. Rognone, V. Nicosia, "Optimising the mitigation of epidemic spreading through targeted adoption of contact
-tracing apps",	arXiv:2102.13013 [https://arxiv.org/abs/2102.13013](PDF ArXiv)
-* A. Santoro, F. Battiston, G. Petri, E. Amico, "Unveiling the higher-order organization of multivariate time series", 	arXiv:2203.10702 (2022) [https://arxiv.org/abs/2203.10702](PDF ArXiv)
-* A. Bassolas\*, A.Santoro\*, S. Sousa, S. Rognone, V. Nicosia, "Optimising the mitigation of epidemic spreading through targeted adoption of contact
-tracing apps",	arXiv:2102.13013 [https://arxiv.org/abs/2102.13013](PDF ArXiv)
-* A. Santoro, V. Nicosia "Optimal percolation in correlated multilayer networks with overlap", *Phys. Rev. Research* 2, 033122 (2020) (PDF ArXiv)
-* J. C. W. Billings, M. Hu, G. Lerda, A. N. Medvedev, F. Mottes, A. Onicas, A. Santoro, G. Petri "Simplex2Vec embeddings for community detection in simplicial complexes " (PDF ArXiv)
-* A. Santoro, V. Nicosia "Algorithmic complexity of multiplex networks", *Phys. Rev. X*, 10 021069 (2020) (PDF ArXiv)
-* A. Santoro, V. Latora, G. Nicosia, V. Nicosia "Pareto optimality in multilayer network growth", *Phys. Rev. Lett.* 121 (12), 128302 (2018) (Abstract PRL)
-* A. Patané\*, A. Santoro\*, V. Romano, A. La Magna, G. Nicosia "Enhancing quantum efficiency of thin-film silicon solar cells by Pareto optimality", *Journal of Global Optimization*, 1 - 25 (2018) (Abstract JoGO)
-* A. Patané, A. Santoro, P. Conca, G. Carapezza, A. La Magna, V. Romano, G. Nicosia "Multi-objective optimization and analysis for the design space exploration of analog circuits and solar cells", *Engineering Applications of Artificial Intelligence*, 62, 373 - 383 (2017) (Abstract EAAI)
-* A. Patané, A. Santoro, J. Costanza, G. Carapezza, G. Nicosia "Pareto Optimal Design for Synthetic Biology", *IEEE Transactions on Biomedical Circuits and Systems* 9 (4), 555 - 571 (2015) (Abstract IEEE)
+tracing apps",	arXiv:2102.13013 [(PDF ArXiv)](https://arxiv.org/abs/2102.13013)
+* A. Santoro, V. Nicosia "Optimal percolation in correlated multilayer networks with overlap", *Phys. Rev. Research* 2, 033122 (2020)[(Abstract PRR)](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033122), [(PDF ArXiv)](https://arxiv.org/abs/1910.04783)
+* J. C. W. Billings, M. Hu, G. Lerda, A. N. Medvedev, F. Mottes, A. Onicas, A. Santoro, G. Petri "Simplex2Vec embeddings for community detection in simplicial complexes", [(PDF ArXiv)](https://arxiv.org/abs/1906.09068)
+* A. Santoro, V. Nicosia "Algorithmic complexity of multiplex networks", *Phys. Rev. X*, 10 021069 (2020) [(Abstract PRX)](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.021069), [(PDF ArXiv)](https://arxiv.org/abs/1903.08049)
+* A. Santoro, V. Latora, G. Nicosia, V. Nicosia "Pareto optimality in multilayer network growth", *Phys. Rev. Lett.* 121 (12), 128302 (2018), [(Abstract PRL)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.128302), [(PDF ArXiv)](https://arxiv.org/abs/1710.01068)
+* A. Patané\*, A. Santoro\*, V. Romano, A. La Magna, G. Nicosia "Enhancing quantum efficiency of thin-film silicon solar cells by Pareto optimality", *Journal of Global Optimization*, 1 - 25 (2018), [(Abstract JoGO)](https://link.springer.com/article/10.1007/s10898-018-0639-9)
+* A. Patané, A. Santoro, P. Conca, G. Carapezza, A. La Magna, V. Romano, G. Nicosia "Multi-objective optimization and analysis for the design space exploration of analog circuits and solar cells", *Engineering Applications of Artificial Intelligence*, 62, 373 - 383 (2017) [(Abstract EAAI)](https://www.sciencedirect.com/science/article/abs/pii/S0952197616301415)
+* A. Patané, A. Santoro, J. Costanza, G. Carapezza, G. Nicosia "Pareto Optimal Design for Synthetic Biology", *IEEE Transactions on Biomedical Circuits and Systems* 9 (4), 555 - 571 (2015) [(Abstract IEEE)](https://ieeexplore.ieee.org/document/7265105)
 
 Conference Proceedings
 ======
