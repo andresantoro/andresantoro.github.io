@@ -11,10 +11,10 @@ Papers & Preprints
 ======
 * A. Santoro, F. Battiston, G. Petri, E. Amico, "Unveiling the higher-order organization of multivariate time series", 	arXiv:2203.10702 (2022) [(PDF ArXiv)](https://arxiv.org/abs/2203.10702)
 * A. Bassolas\*, A.Santoro\*, S. Sousa, S. Rognone, V. Nicosia, "Optimising the mitigation of epidemic spreading through targeted adoption of contact
-tracing apps",	arXiv:2102.13013 [(PDF ArXiv)](https://arxiv.org/abs/2102.13013)
-* A. Santoro, V. Nicosia "Optimal percolation in correlated multilayer networks with overlap", *Phys. Rev. Research* 2, 033122 (2020)[(Abstract PRR)](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033122), [(PDF ArXiv)](https://arxiv.org/abs/1910.04783)
-* J. C. W. Billings, M. Hu, G. Lerda, A. N. Medvedev, F. Mottes, A. Onicas, A. Santoro, G. Petri "Simplex2Vec embeddings for community detection in simplicial complexes", [(PDF ArXiv)](https://arxiv.org/abs/1906.09068)
+tracing apps",	arXiv:2102.13013 (2021) [(PDF ArXiv)](https://arxiv.org/abs/2102.13013)
+* A. Santoro, V. Nicosia "Optimal percolation in correlated multilayer networks with overlap", *Phys. Rev. Research* 2, 033122 (2020) [(Abstract PRR)](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033122), [(PDF ArXiv)](https://arxiv.org/abs/1910.04783)
 * A. Santoro, V. Nicosia "Algorithmic complexity of multiplex networks", *Phys. Rev. X*, 10 021069 (2020) [(Abstract PRX)](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.021069), [(PDF ArXiv)](https://arxiv.org/abs/1903.08049)
+* J. C. W. Billings, M. Hu, G. Lerda, A. N. Medvedev, F. Mottes, A. Onicas, A. Santoro, G. Petri "Simplex2Vec embeddings for community detection in simplicial complexes", arXiv.1906.09068 (2019) [(PDF ArXiv)](https://arxiv.org/abs/1906.09068)
 * A. Santoro, V. Latora, G. Nicosia, V. Nicosia "Pareto optimality in multilayer network growth", *Phys. Rev. Lett.* 121 (12), 128302 (2018), [(Abstract PRL)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.128302), [(PDF ArXiv)](https://arxiv.org/abs/1710.01068)
 * A. Patané\*, A. Santoro\*, V. Romano, A. La Magna, G. Nicosia "Enhancing quantum efficiency of thin-film silicon solar cells by Pareto optimality", *Journal of Global Optimization*, 1 - 25 (2018), [(Abstract JoGO)](https://link.springer.com/article/10.1007/s10898-018-0639-9)
 * A. Patané, A. Santoro, P. Conca, G. Carapezza, A. La Magna, V. Romano, G. Nicosia "Multi-objective optimization and analysis for the design space exploration of analog circuits and solar cells", *Engineering Applications of Artificial Intelligence*, 62, 373 - 383 (2017) [(Abstract EAAI)](https://www.sciencedirect.com/science/article/abs/pii/S0952197616301415)
