@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Postdoctoral Researcher at the Institute of Bioengineering at EPFL, Geneva, working in collaboration with [Enrico Amico](https://miplab.epfl.ch/index.php/people/eamico#anchor_motivation) within the [MIP:Lab group](https://miplab.epfl.ch/).  I am interested in Computational Neuroscience, Complex Networks and Information Theory. 
+I am a Postdoctoral Researcher at the Neuro-X Institute at EPFL, Geneva, working in collaboration with [Enrico Amico](https://miplab.epfl.ch/index.php/people/eamico#anchor_motivation) within the [MIP:Lab group](https://miplab.epfl.ch/).  I am interested in Computational Neuroscience, Complex Networks and Information Theory. 
 
 Previously, I worked as a research assistant at the Queen Mary University of London. Before that, I got my PhD in Applied Mathematics at Queen Mary, University of London in the [Complex Systems and Networks Group](https://www.qmul.ac.uk/maths/research/complex-systems-and-networks-group/), under the supervision of [Vincenzo Nicosia](https://www.qmul.ac.uk/maths/profiles/~vnicosia/) and [Lucas Lacasa](https://sites.google.com/view/lucaslacasa/).  I spent part of my PhD at [The Alan Turing Institute](https://www.turing.ac.uk/) as an enrichment doctoral student. 
 
