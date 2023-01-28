@@ -9,6 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
+Work experience
+======
+* Apr. 2021 - Present: Postdoctoral Researcher, EPFL, Switzerland
+* Jul. 2020 - Mar. 2021: Research Assistant, Queen Mary University of London, UK
+
 Education
 ======
 * Sept. 2016 - Mar. 2021: Ph.D. in Applied Mathematics, Queen Mary University of London, UK
@@ -18,10 +23,6 @@ Education
 * Oct. 2011 - Jul 2014: Bachelor in Mathematics - University of Catania, Italy, 110/110 with honors
 * Jul. 2011: High School Diploma - Liceo Scientifico Statale Archimede, Messina, Italy, 100/100
 
-Work experience
-======
-* Apr. 2021 - Present: Postdoctoral Researcher, EPFL, Switzerland
-* Jul. 2020 - Mar. 2021: Research Assistant, Queen Mary University of London, UK
 
 Achievements
 ======
@@ -52,7 +53,7 @@ Teaching
 
 Full Curriculum Vitae:
 
-Download [PDF](/files/cv.pdf) (updated 06/08/2021). 
+Download PDF (updated 03/08/2020) 
 
 <!-- Publications
 ======
