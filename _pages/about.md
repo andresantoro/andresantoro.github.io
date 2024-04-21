@@ -7,8 +7,10 @@ redirect_from:
   - /about/
   - /about.html
 ---
+I am a mathematician with a strong interest in applied sciences. My research interests include complex networks, time series analysis, neuroscience, and information theory, with a special focus on higher-order models and their application to large-scale systems. These days I am focusing on developing new methods for the inference of higher-order dependencies in multivariate time series, with application to fMRI/MEG brain data and economics.
 
-I am a Postdoctoral Researcher at the Institute of Bioengineering at EPFL, Geneva working in collaboration with [Enrico Amico](https://miplab.epfl.ch/index.php/people/eamico#anchor_motivation).  I am interested in Computational Neuroscience, Complex Networks and Information Theory. 
+Currently I work as a Postdoctoral Researcher at the [Neuro-X Institute](https://neuro-x.epfl.ch/en/) at EPFL in the Geneva campus. I work under the guidance of [Prof. Dimitri Van De Ville](https://miplab.epfl.ch/index.php) in the Image Processing Lab and [Dr. Enrico Amico](https://amicolab.org/).  
+<!--I am interested in Computational Neuroscience, Complex Networks and Information Theory.  -->
 
 Previously, I worked as a research assistant at the Queen Mary University of London. Before that, I got my PhD in Applied Mathematics at Queen Mary, University of London in the [Complex Systems and Networks Group](https://www.qmul.ac.uk/maths/research/complex-systems-and-networks-group/), under the supervision of [Vincenzo Nicosia](https://webspace.maths.qmul.ac.uk/v.nicosia/) and [Lucas Lacasa](https://sites.google.com/view/lucaslacasa/).  I spent part of my PhD at [The Alan Turing Institute](https://www.turing.ac.uk/) as an enrichment doctoral scheme. 
 
