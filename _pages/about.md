@@ -9,7 +9,7 @@ redirect_from:
 ---
 I am a mathematician with a strong interest in applied sciences. My research focuses on complex networks, time series analysis, neuroscience, and information theory, with a particular emphasis on higher-order models and their application to large-scale systems. Currently, my work involves developing topological approaches to infer higher-order dependencies in multivariate time series, with applications in brain data and economics.
 
-I currently hold a position as a Researcher at [CENTAI](https://centai.eu/home) in Turin, Italy, where I closely collaborate with Prof. [Giovanni Petri](https://lordgrilo.github.io/) within the NPlab.
+I currently hold a position as a Researcher at [CENTAI](https://centai.eu/home) in Turin, Italy, where I collaborate with Prof. [Giovanni Petri](https://lordgrilo.github.io/) within the NPLab.
 
 Prior to this, I worked as a Postdoctoral Researcher at the [Neuro-X Institute](https://neuro-x.epfl.ch/en/) at EPFL in the Geneva campus, under the guidance of [Prof. Dimitri Van De Ville](https://miplab.epfl.ch/index.php) and [Dr. Enrico Amico](https://amicolab.org/). Earlier in my career, I worked as a Research Assistant at Queen Mary University of London.
 

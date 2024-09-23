@@ -10,7 +10,7 @@ For a summary of my works, you can either scroll down this page or have a look a
 Papers & Preprints
 ======
 * C. Caprioli\*, S. Kulkarni\*, F. Battiston, I. Iacopini\*, A. Santoro\*, V. Latora\*. The networks of ingredient
-combination in cuisines around the world, *(Under review)*, [(PDF Arxiv)](https://arxiv.org/abs/2408.15162)
+combination in cuisines around the world, *(Under review)*,[(PDF Arxiv)](https://arxiv.org/abs/2408.15162)
 * J. Garcia-Bernardo\*, Z. Neu\*, M. Hardy\*, A. Santoro, A. Morgan, A. Aloric, T. Griffiths, and P. M. Krafft.
 Social transmission along multiple pathways promotes information fidelity and reduces divisiveness *(Under review)*
 * L. Zhao, Y. Yang, L. Chen, A. Santoro, E. Amico, "Higher-order financial networks", *(Under review)*, 2024 [(PDF ResearchGate)](https://www.researchgate.net/publication/378168067_Higher-Order_Financial_Networks).
