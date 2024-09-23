@@ -11,7 +11,8 @@ redirect_from:
 
 Work experience
 ======
-* Apr. 2021 - Present: Postdoctoral Researcher, EPFL, Switzerland
+* Sep. 2024 - Present: Researcher, CENTAI, Turin
+* Apr. 2021 - Sep. 2024: Postdoctoral Researcher, EPFL, Switzerland
 * Jul. 2020 - Mar. 2021: Research Assistant, Queen Mary University of London, UK
 
 Education

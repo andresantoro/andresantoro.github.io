@@ -9,10 +9,12 @@ For a summary of my works, you can either scroll down this page or have a look a
 
 Papers & Preprints
 ======
-* J. Garcia-Bernardo, Z. Neu, M. Hardy, A. Santoro, P. M. Krafft, A. Morgan, A. Aloric, T. Griffiths. Collective information processing of long-form text in multi-generational social networks (in preparation).
+* C. Caprioli\*, S. Kulkarni\*, F. Battiston, I. Iacopini\*, A. Santoro\*, V. Latora\*. The networks of ingredient
+combination in cuisines around the world, [(PDF Arxiv)](https://arxiv.org/abs/2408.15162)
+* J. Garcia-Bernardo\*, Z. Neu\*, M. Hardy\*, A. Santoro, A. Morgan, A. Aloric, T. Griffiths, and P. M. Krafft.
+Social transmission along multiple pathways promotes information fidelity and reduces divisiveness *(Under review)*
 * L. Zhao, Y. Yang, L. Chen, A. Santoro, E. Amico, "Higher-order financial networks", *(Under review)*, 2024 [(PDF ResearchGate)](https://www.researchgate.net/publication/378168067_Higher-Order_Financial_Networks).
-* A. Santoro, F. Battiston, M. Lucas, G. Petri, E. Amico, "Higher-order connectomics of human brain function reveals local topological
-signatures of task decoding, individual identification, and behavior", *(Under review)*, 2023 [(PDF BioArXiv)](https://www.biorxiv.org/content/10.1101/2023.12.04.569913v1.abstract).
+* A. Santoro, F. Battiston, M. Lucas, G. Petri, E. Amico, "Higher-order connectomics of human brain function reveals local topological signatures of task decoding, individual identification, and behavior", *(Under review)*, 2023 [(PDF BioArXiv)](https://www.biorxiv.org/content/10.1101/2023.12.04.569913v1.abstract).
 * A. Santoro, F. Battiston, G. Petri, E. Amico, "Higher-order organization of multivariate time series ", *Nature Phsics* 1-9, (2023) [(Abstract NatPhys)](https://www.nature.com/articles/s41567-022-01852-0), [(PDF ArXiv)](https://arxiv.org/abs/2203.10702)
 * A. Bassolas\*, A.Santoro\*, S. Sousa, S. Rognone, V. Nicosia, "Optimizing the mitigation of epidemic spreading through targeted adoption of contact tracing apps", *Phys. Rev. Research* 4(2), 023092 (2022), [(Abstract PRR)](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.023092), [(PDF ArXiv)](https://arxiv.org/abs/2102.13013)
 * A. Santoro, V. Nicosia "Optimal percolation in correlated multilayer networks with overlap", *Phys. Rev. Research* 2, 033122 (2020) [(Abstract PRR)](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033122), [(PDF ArXiv)](https://arxiv.org/abs/1910.04783)
@@ -30,7 +32,8 @@ Conference Proceedings
 
 Some selected talks at international conferences and workshops:
 ======
-* July 2023: Toponets (NetSci 2023), Vienna, Austria
+* Apr. 2024: NERV team, Paris Brain Institute, Paris, France
+* July 2023: Toponets (NetSci 2023), Vienna, Austria [Invited]
 * Oct. 2022: CCS 2022, Palma de Majorca, Spain
 * Jan. 2022: ABIM 22, Champéry, Switzerland
 * Jun. 2019: Complexity 72h Workshop, Lucca, IT
