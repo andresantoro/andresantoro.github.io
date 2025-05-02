@@ -11,6 +11,7 @@ redirect_from:
 
 Work experience
 ======
+* May. 2025 - Present: MSCA Postdoctoral Fellow, CENTAI, Turin - "Temporal HOI"
 * Sep. 2024 - Present: Researcher, CENTAI, Turin
 * Apr. 2021 - Aug. 2024: Postdoctoral Researcher, EPFL, Switzerland
 * Jul. 2020 - Mar. 2021: Research Assistant, Queen Mary University of London, UK
@@ -27,6 +28,7 @@ Education
 
 Achievements
 ======
+* 2025: Marie Skłodowska-Curie Postdoctoral Fellowship, European Union.
 * 2019: Small Grant Scheme, The Institute of Mathematics and its Applications, UK (£400).
 * 2018: SECS - Scholarship for Events on Complex Systems to attend the CCS 2018 in Thessaloniki, Greece (300 €).
 * 2018: School of Mathematical Sciences Prize for my PhD research at Queen Mary University of London (£150).
