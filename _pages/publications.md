@@ -4,61 +4,236 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
- 
-For a summary of my works, you can either scroll down this page or have a look at [my Google Scholar profile](https://scholar.google.co.uk/citations?user=gGSh6oEAAAAJ&hl=en).
 
-Papers & Preprints
-======
-* C. Caprioli\*, S. Kulkarni\*, F. Battiston, I. Iacopini\*, A. Santoro\*, V. Latora\*. The networks of ingredient
-combination in cuisines around the world, *(Under review)*,[(PDF Arxiv)](https://arxiv.org/abs/2408.15162)
-* J. Garcia-Bernardo\*, Z. Neu\*, M. Hardy\*, A. Santoro, A. Morgan, A. Aloric, T. Griffiths, and P. M. Krafft.
-Social transmission along multiple pathways promotes information fidelity and reduces divisiveness *(Under review)*
-* L. Zhao, Y. Yang, L. Chen, A. Santoro, E. Amico, "Higher-order financial networks", *(Under review)*, 2024 [(PDF ResearchGate)](https://www.researchgate.net/publication/378168067_Higher-Order_Financial_Networks).
-* A. Santoro, F. Battiston, M. Lucas, G. Petri, E. Amico, "Higher-order connectomics of human brain function reveals local topological signatures of task decoding, individual identification, and behavior", *Nature Communications* 15 (1), 10244 (2024) [(Abstract NatComm)](https://www.nature.com/articles/s41467-024-54472-y), [(PDF BioArXiv)](https://www.biorxiv.org/content/10.1101/2023.12.04.569913v1.abstract).
-* A. Santoro, F. Battiston, G. Petri, E. Amico, "Higher-order organization of multivariate time series ", *Nature Phsics* 19 (2), 221-229 (2023) [(Abstract NatPhys)](https://www.nature.com/articles/s41567-022-01852-0), [(PDF ArXiv)](https://arxiv.org/abs/2203.10702)
-* A. Bassolas\*, A.Santoro\*, S. Sousa, S. Rognone, V. Nicosia, "Optimizing the mitigation of epidemic spreading through targeted adoption of contact tracing apps", *Phys. Rev. Research* 4(2), 023092 (2022), [(Abstract PRR)](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.023092), [(PDF ArXiv)](https://arxiv.org/abs/2102.13013)
-* A. Santoro, V. Nicosia "Optimal percolation in correlated multilayer networks with overlap", *Phys. Rev. Research* 2, 033122 (2020) [(Abstract PRR)](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033122), [(PDF ArXiv)](https://arxiv.org/abs/1910.04783)
-* A. Santoro, V. Nicosia "Algorithmic complexity of multiplex networks", *Phys. Rev. X*, 10 021069 (2020) [(Abstract PRX)](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.021069), [(PDF ArXiv)](https://arxiv.org/abs/1903.08049)
-* J. C. W. Billings, M. Hu, G. Lerda, A. N. Medvedev, F. Mottes, A. Onicas, A. Santoro, G. Petri "Simplex2Vec embeddings for community detection in simplicial complexes", arXiv.1906.09068 (2019) [(PDF ArXiv)](https://arxiv.org/abs/1906.09068)
-* A. Santoro, V. Latora, G. Nicosia, V. Nicosia "Pareto optimality in multilayer network growth", *Phys. Rev. Lett.* 121 (12), 128302 (2018), [(Abstract PRL)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.128302), [(PDF ArXiv)](https://arxiv.org/abs/1710.01068)
-* A. Patané\*, A. Santoro\*, V. Romano, A. La Magna, G. Nicosia "Enhancing quantum efficiency of thin-film silicon solar cells by Pareto optimality", *Journal of Global Optimization*, 1 - 25 (2018), [(Abstract JoGO)](https://link.springer.com/article/10.1007/s10898-018-0639-9)
-* A. Patané, A. Santoro, P. Conca, G. Carapezza, A. La Magna, V. Romano, G. Nicosia "Multi-objective optimization and analysis for the design space exploration of analog circuits and solar cells", *Engineering Applications of Artificial Intelligence*, 62, 373 - 383 (2017) [(Abstract EAAI)](https://www.sciencedirect.com/science/article/abs/pii/S0952197616301415)
-* A. Patané, A. Santoro, J. Costanza, G. Carapezza, G. Nicosia "Pareto Optimal Design for Synthetic Biology", *IEEE Transactions on Biomedical Circuits and Systems* 9 (4), 555 - 571 (2015) [(Abstract IEEE)](https://ieeexplore.ieee.org/document/7265105)
+<p>For a summary of my works, you can also have a look at <a href="https://scholar.google.co.uk/citations?user=gGSh6oEAAAAJ&hl=en" target="_blank">my Google Scholar profile</a>.</p>
 
-Conference Proceedings
-======
-* A Patané, P. Conca, G. Carapezza, A. Santoro, J. Costanza, G. Nicosia "Metabolic Circuit Design Automation by Multi-objective BioCAD", International Workshop on Machine Learning, Optimization and Big Data, 30-44, 2016 (Abstract MOD)
-* A. Patané, A. Santoro, G. Carapezza, A. La Magna, V. Romano, G. Nicosia "A multi-objective clonal selection algorithm for analog circuit and solar cell design", 2015 International Workshop on Artificial Immune Systems (AIS), 1-7 (Abstract AIS)
+<div class="publications-container">
+  <div class="publications-filters">
+    <div class="search-box">
+      <input type="text" id="pub-search" placeholder="Search publications...">
+    </div>
+    
+    <div class="filter-section">
+      <h3>Category</h3>
+      <div class="filter-buttons" id="category-filters">
+        <button class="filter-btn active" data-category="papers">Papers</button>
+        <button class="filter-btn" data-category="talks">Talks</button>
+        <button class="filter-btn" data-category="posters">Posters</button>
+      </div>
+    </div>
+    
+    <div class="filter-section papers-filter">
+      <h3>Type</h3>
+      <div class="filter-buttons" id="type-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="preprint">Preprint</button>
+        <button class="filter-btn" data-filter="journal">Journal article</button>
+        <button class="filter-btn" data-filter="conference">Conference paper</button>
+      </div>
+    </div>
+    
+    <div class="filter-section papers-filter">
+      <h3>Date</h3>
+      <div class="filter-buttons" id="year-filters">
+        <button class="filter-btn active" data-year="all">All</button>
+        {% assign years = "2024|2023|2022|2021|2020|2019|2018|2017|2016|2015" | split: "|" %}
+        {% for year in years %}
+          <button class="filter-btn" data-year="{{ year }}">{{ year }}</button>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 
-Some selected talks at international conferences and workshops:
-======
-* Apr. 2024: NERV team, Paris Brain Institute, Paris, France
-* July 2023: Toponets (NetSci 2023), Vienna, Austria [Invited]
-* Oct. 2022: CCS 2022, Palma de Majorca, Spain
-* Jan. 2022: ABIM 22, Champéry, Switzerland
-* Jun. 2019: Complexity 72h Workshop, Lucca, IT
-* Mar. 2019: CompleNet 19 International Conference on Complex Networks, Tarragona, ES
-* Oct. 2018: 2nd Network Science Workshop, London, UK
-* Sept. 2018: CCS 2018 , Thessaloniki, Greece: "Information-theoretic complexity of multiplex networks"
-* Feb. 2018: BIFI International Conference 2018, Zaragoza, Spain: "Pareto optimality in multilayer network growth"
-* Oct. 2017: Engineering Applications of Networks Workshop, Bristol, UK: "Pareto optimality in multilayer network growth"
-* Sept. 2016: PhysPlex 2016 - Satellite of CCS'16, Amsterdam, Netherlands: "Strategic growth of multilayer airline networks"
-* Sept. 2016: CCS warm-up 2016, Amsterdam, Netherlands: "Strategic growth of multilayer airline networks"
-* July 2015: ICSI3 2015, International Congress on Systems Immunology, Immunoinformatics & Immune-computation, Taormina, Italy: "A Multi-Objective Clonal Selection Algorithm for Analog Circuit and Solar Cell Design"
-* June 2014: ECMI 2014, 18th European Conference on Mathematics for Industry, Taormina, Italy: "Robust and Efficient Tandem Thin Film Sillicon Solar Cells"
+  <div class="publications-list">
+    <!-- Papers section -->
+    <div id="papers-section" class="category-section">
+      <div class="publication-items">
+        {% assign papers = site.data.publications.papers %}
+        {% for paper in papers %}
+          <div class="publication-item" 
+               data-type="{{ paper.type | default: 'journal' }}" 
+               data-year="{{ paper.year | default: '2024' }}">
+            <div class="publication-content">
+              <h3 class="publication-title">{{ paper.title }}</h3>
+              <p class="publication-authors">{{ paper.authors }}</p>
+              <p class="publication-venue">{{ paper.venue }} ({{ paper.year }})</p>
+              <div class="publication-links">
+                {% if paper.pdf %}
+                  <a href="{{ paper.pdf }}" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                {% endif %}
+                {% if paper.doi %}
+                  <a href="{{ paper.doi }}" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                {% endif %}
+                {% if paper.code %}
+                  <a href="{{ paper.code }}" class="pub-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                {% endif %}
+                {% if paper.data %}
+                  <a href="{{ paper.data }}" class="pub-link" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    <!-- Talks section -->
+    <div id="talks-section" class="category-section" style="display: none;">
+      <div class="publication-items">
+        {% assign talks = site.data.publications.talks %}
+        {% for talk in talks %}
+          <div class="publication-item talk-item">
+            <div class="publication-content">
+              <h3 class="publication-title">{{ talk.title }}</h3>
+              <p class="publication-venue">{{ talk.venue }}</p>
+              <p class="publication-location">{{ talk.location }}, {{ talk.date }}</p>
+              {% if talk.invited %}
+                <p class="invited-talk"><i>Invited talk</i></p>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    <!-- Posters section -->
+    <div id="posters-section" class="category-section" style="display: none;">
+      <div class="publication-items">
+        {% assign posters = site.data.publications.posters %}
+        {% for poster in posters %}
+          <div class="publication-item poster-item">
+            <div class="publication-content">
+              <h3 class="publication-title">{{ poster.title }}</h3>
+              <p class="publication-authors">{{ poster.authors }}</p>
+              <p class="publication-venue">{{ poster.venue }} ({{ poster.year }})</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 
-Accepted abstract and posters at international conferences:
-======
-* A. Patané, A. Santoro, J. Costanza and G. Nicosia: "Minmcell: Designing Minimal Microbial Cells" - International Synthetic and Systems Biology Summer School (SSBSS), 2015
-* J. Costanza, A. Patané, A. Santoro, L. Zammataro and G. Nicosia: "A class of Pareto optimal Escherichia coli strains for production of 1,4-butanediol" - International Synthetic and Systems Biology Summer School (SSBSS), 2015
-* A. Patané, A. Santoro, J. Costanza and G. Nicosia: "Pareto Optimal Essential Genes in Minimal Bacterial Cells" - 2nd Synthetic Biology Congress, 2015
-* A. Patané, A. Santoro, J. Costanza and G. Nicosia: "Minmcell: Designing Minimal Microbial Cells" - Synthetic Biology, Engineering, Evolution & Design (SEED), 2015
-* J. Costanza, A. Patané, A. Santoro, L. Zammataro and G. Nicosia: "A class of Pareto optimal Escherichia coli strains for production of 1,4-butanediol" - Precision Genome Engineering and Synthetic Biology - Keystone Symposia on Molecular and Cellular Biology, 2015
-* A. Patané, A. Santoro, G. Carapezza, V. Romano, A. La Magna and G. Nicosia: "Sensitivity Techniques for Effective Optimization of Tandem Thin-Film Silicon Solar Cells" - The 10th International Conference on Scientific Computing in Electrical Engineering (SCEE), 2014
-
-
-
-<!-- {% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
- -->
+<!-- JavaScript for publications filtering -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('pub-search');
+  const categoryFilters = document.querySelectorAll('#category-filters .filter-btn');
+  const typeFilters = document.querySelectorAll('#type-filters .filter-btn');
+  const yearFilters = document.querySelectorAll('#year-filters .filter-btn');
+  const publicationItems = document.querySelectorAll('.publication-item');
+  const paperFilters = document.querySelectorAll('.papers-filter');
+  
+  let activeCategory = 'papers';
+  let activeTypeFilter = 'all';
+  let activeYearFilter = 'all';
+  
+  // Section display functions
+  function showSection(sectionId) {
+    // Hide all sections
+    document.querySelectorAll('.category-section').forEach(section => {
+      section.style.display = 'none';
+    });
+    
+    // Show the selected section
+    document.getElementById(sectionId + '-section').style.display = 'block';
+  }
+  
+  // Category filter functionality
+  categoryFilters.forEach(button => {
+    button.addEventListener('click', function() {
+      categoryFilters.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      activeCategory = this.getAttribute('data-category');
+      
+      // Show/hide papers filters
+      if (activeCategory === 'papers') {
+        paperFilters.forEach(filter => filter.style.display = 'block');
+      } else {
+        paperFilters.forEach(filter => filter.style.display = 'none');
+      }
+      
+      showSection(activeCategory);
+      filterPublications();
+    });
+  });
+  
+  // Search functionality
+  searchInput.addEventListener('input', function() {
+    filterPublications();
+  });
+  
+  // Type filter functionality
+  typeFilters.forEach(button => {
+    button.addEventListener('click', function() {
+      typeFilters.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      activeTypeFilter = this.getAttribute('data-filter');
+      filterPublications();
+    });
+  });
+  
+  // Year filter functionality
+  yearFilters.forEach(button => {
+    button.addEventListener('click', function() {
+      yearFilters.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      activeYearFilter = this.getAttribute('data-year');
+      filterPublications();
+    });
+  });
+  
+  function filterPublications() {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    
+    if (activeCategory === 'papers') {
+      const paperItems = document.querySelectorAll('#papers-section .publication-item');
+      
+      paperItems.forEach(item => {
+        const type = item.getAttribute('data-type');
+        const year = item.getAttribute('data-year');
+        const content = item.textContent.toLowerCase();
+        
+        const matchesType = activeTypeFilter === 'all' || type === activeTypeFilter;
+        const matchesYear = activeYearFilter === 'all' || year === activeYearFilter;
+        const matchesSearch = searchTerm === '' || content.includes(searchTerm);
+        
+        if (matchesType && matchesYear && matchesSearch) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    } else if (activeCategory === 'talks') {
+      const talkItems = document.querySelectorAll('#talks-section .publication-item');
+      
+      talkItems.forEach(item => {
+        const content = item.textContent.toLowerCase();
+        const matchesSearch = searchTerm === '' || content.includes(searchTerm);
+        
+        if (matchesSearch) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    } else if (activeCategory === 'posters') {
+      const posterItems = document.querySelectorAll('#posters-section .publication-item');
+      
+      posterItems.forEach(item => {
+        const content = item.textContent.toLowerCase();
+        const matchesSearch = searchTerm === '' || content.includes(searchTerm);
+        
+        if (matchesSearch) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  }
+  
+  // Initialize
+  showSection('papers');
+});
+</script>
