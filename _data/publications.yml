@@ -1,0 +1,229 @@
+papers:
+  # 2024
+  - title: "Higher-order connectomics of human brain function reveals local topological signatures of task decoding, individual identification, and behavior"
+    authors: "A. Santoro, F. Battiston, M. Lucas, G. Petri, E. Amico"
+    venue: "Nature Communications"
+    year: "2024"
+    type: "journal"
+    pdf: "https://www.biorxiv.org/content/10.1101/2023.12.04.569913v1.abstract"
+    doi: "https://www.nature.com/articles/s41467-024-54472-y"
+    code: "https://github.com/andresantoro/Brain_HORS"
+    data: "https://zenodo.org/records/13786223"
+
+  - title: "Higher-Order Financial Networks"
+    authors: "L. Zhao, Y. Yang, L. Chen, A. Santoro, E. Amico"
+    venue: "Under review"
+    year: "2024"
+    type: "preprint"
+    pdf: "https://www.researchgate.net/publication/378168067_Higher-Order_Financial_Networks"
+
+  - title: "The networks of ingredient combination in cuisines around the world"
+    authors: "C. Caprioli, S. Kulkarni, F. Battiston, I. Iacopini, A. Santoro, V. Latora"
+    venue: "Under review"
+    year: "2024"
+    type: "preprint"
+    pdf: "https://arxiv.org/abs/2408.15162"
+
+  - title: "Social transmission along multiple pathways promotes information fidelity and reduces divisiveness"
+    authors: "J. Garcia-Bernardo, Z. Neu, M. Hardy, A. Santoro, A. Morgan, A. Aloric, T. Griffiths, and P. M. Krafft"
+    venue: "Under review"
+    year: "2024"
+    type: "preprint"
+
+  # 2023
+  - title: "Higher-order organization of multivariate time series"
+    authors: "A. Santoro, F. Battiston, G. Petri, E. Amico"
+    venue: "Nature Physics"
+    year: "2023"
+    type: "journal"
+    pdf: "https://arxiv.org/abs/2203.10702"
+    doi: "https://www.nature.com/articles/s41567-022-01852-0"
+    code: "https://github.com/andresantoro/RHOSTS"
+    data: "https://zenodo.org/records/7210076"
+
+  # 2022
+  - title: "Optimizing the mitigation of epidemic spreading through targeted adoption of contact tracing apps"
+    authors: "A. Bassolas, A. Santoro, S. Sousa, S. Rognone, V. Nicosia"
+    venue: "Physical Review Research"
+    year: "2022"
+    type: "journal"
+    pdf: "https://arxiv.org/abs/2102.13013"
+    doi: "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.023092"
+
+  # 2020
+  - title: "Optimal percolation in correlated multilayer networks with overlap"
+    authors: "A. Santoro, V. Nicosia"
+    venue: "Physical Review Research"
+    year: "2020"
+    type: "journal"
+    pdf: "https://arxiv.org/abs/1910.04783"
+    doi: "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033122"
+    code: "https://github.com/andresantoro/Multiplex_optimal_percolation"
+
+  - title: "Algorithmic complexity of multiplex networks"
+    authors: "A. Santoro, V. Nicosia"
+    venue: "Physical Review X"
+    year: "2020"
+    type: "journal"
+    pdf: "https://arxiv.org/abs/1903.08049"
+    doi: "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.021069"
+    code: "https://github.com/andresantoro/ALCOREM"
+
+  # 2019
+  - title: "Simplex2Vec embeddings for community detection in simplicial complexes"
+    authors: "J. C. W. Billings, M. Hu, G. Lerda, A. N. Medvedev, F. Mottes, A. Onicas, A. Santoro, G. Petri"
+    venue: "arXiv preprint"
+    year: "2019"
+    type: "preprint"
+    pdf: "https://arxiv.org/abs/1906.09068"
+
+  # 2018
+  - title: "Pareto optimality in multilayer network growth"
+    authors: "A. Santoro, V. Latora, G. Nicosia, V. Nicosia"
+    venue: "Physical Review Letters"
+    year: "2018"
+    type: "journal"
+    pdf: "https://arxiv.org/abs/1710.01068"
+    doi: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.128302"
+    data: "https://github.com/andresantoro/Tranet_data"
+
+  - title: "Enhancing quantum efficiency of thin-film silicon solar cells by Pareto optimality"
+    authors: "A. Patané, A. Santoro, V. Romano, A. La Magna, G. Nicosia"
+    venue: "Journal of Global Optimization"
+    year: "2018"
+    type: "journal"
+    doi: "https://link.springer.com/article/10.1007/s10898-018-0639-9"
+
+  # 2017
+  - title: "Multi-objective optimization and analysis for the design space exploration of analog circuits and solar cells"
+    authors: "A. Patané, A. Santoro, P. Conca, G. Carapezza, A. La Magna, V. Romano, G. Nicosia"
+    venue: "Engineering Applications of Artificial Intelligence"
+    year: "2017"
+    type: "journal"
+    doi: "https://www.sciencedirect.com/science/article/abs/pii/S0952197616301415"
+
+  # 2016
+  - title: "Metabolic Circuit Design Automation by Multi-objective BioCAD"
+    authors: "A. Patané, P. Conca, G. Carapezza, A. Santoro, J. Costanza, G. Nicosia"
+    venue: "International Workshop on Machine Learning, Optimization and Big Data"
+    year: "2016"
+    type: "conference"
+
+  # 2015
+  - title: "Pareto Optimal Design for Synthetic Biology"
+    authors: "A. Patané, A. Santoro, J. Costanza, G. Carapezza, G. Nicosia"
+    venue: "IEEE Transactions on Biomedical Circuits and Systems"
+    year: "2015"
+    type: "journal"
+    doi: "https://ieeexplore.ieee.org/document/7265105"
+
+  - title: "A multi-objective clonal selection algorithm for analog circuit and solar cell design"
+    authors: "A. Patané, A. Santoro, G. Carapezza, A. La Magna, V. Romano, G. Nicosia"
+    venue: "International Workshop on Artificial Immune Systems (AIS)"
+    year: "2015"
+    type: "conference"
+
+# Selected talks at international conferences and workshops
+talks:
+  - title: "NERV team seminar"
+    venue: "Paris Brain Institute"
+    location: "Paris, France"
+    date: "April 2024"
+    
+  - title: "Toponets"
+    venue: "NetSci 2023"
+    location: "Vienna, Austria"
+    date: "July 2023"
+    invited: true
+
+  - title: "Conference presentation"
+    venue: "CCS 2022"
+    location: "Palma de Majorca, Spain"
+    date: "October 2022"
+
+  - title: "Conference presentation"
+    venue: "ABIM 22"
+    location: "Champéry, Switzerland"
+    date: "January 2022"
+
+  - title: "Workshop presentation"
+    venue: "Complexity 72h Workshop"
+    location: "Lucca, Italy"
+    date: "June 2019"
+
+  - title: "Conference presentation"
+    venue: "CompleNet 19 International Conference on Complex Networks"
+    location: "Tarragona, Spain"
+    date: "March 2019"
+
+  - title: "Information-theoretic complexity of multiplex networks"
+    venue: "CCS 2018"
+    location: "Thessaloniki, Greece"
+    date: "September 2018"
+
+  - title: "Workshop presentation"
+    venue: "2nd Network Science Workshop"
+    location: "London, UK"
+    date: "October 2018"
+
+  - title: "Pareto optimality in multilayer network growth"
+    venue: "BIFI International Conference 2018"
+    location: "Zaragoza, Spain"
+    date: "February 2018"
+
+  - title: "Pareto optimality in multilayer network growth"
+    venue: "Engineering Applications of Networks Workshop"
+    location: "Bristol, UK"
+    date: "October 2017"
+
+  - title: "Strategic growth of multilayer airline networks"
+    venue: "PhysPlex 2016 - Satellite of CCS'16"
+    location: "Amsterdam, Netherlands"
+    date: "September 2016"
+
+  - title: "Strategic growth of multilayer airline networks"
+    venue: "CCS warm-up 2016"
+    location: "Amsterdam, Netherlands"
+    date: "September 2016"
+
+  - title: "A Multi-Objective Clonal Selection Algorithm for Analog Circuit and Solar Cell Design"
+    venue: "ICSI3 2015, International Congress on Systems Immunology, Immunoinformatics & Immune-computation"
+    location: "Taormina, Italy"
+    date: "July 2015"
+
+  - title: "Robust and Efficient Tandem Thin Film Sillicon Solar Cells"
+    venue: "ECMI 2014, 18th European Conference on Mathematics for Industry"
+    location: "Taormina, Italy"
+    date: "June 2014"
+
+# Accepted abstracts and posters at international conferences
+posters:
+  - title: "Minmcell: Designing Minimal Microbial Cells"
+    authors: "A. Patané, A. Santoro, J. Costanza, G. Nicosia"
+    venue: "International Synthetic and Systems Biology Summer School (SSBSS)"
+    year: "2015"
+
+  - title: "A class of Pareto optimal Escherichia coli strains for production of 1,4-butanediol"
+    authors: "J. Costanza, A. Patané, A. Santoro, L. Zammataro, G. Nicosia"
+    venue: "International Synthetic and Systems Biology Summer School (SSBSS)"
+    year: "2015"
+
+  - title: "Pareto Optimal Essential Genes in Minimal Bacterial Cells"
+    authors: "A. Patané, A. Santoro, J. Costanza, G. Nicosia"
+    venue: "2nd Synthetic Biology Congress"
+    year: "2015"
+
+  - title: "Minmcell: Designing Minimal Microbial Cells"
+    authors: "A. Patané, A. Santoro, J. Costanza, G. Nicosia"
+    venue: "Synthetic Biology, Engineering, Evolution & Design (SEED)"
+    year: "2015"
+
+  - title: "A class of Pareto optimal Escherichia coli strains for production of 1,4-butanediol"
+    authors: "J. Costanza, A. Patané, A. Santoro, L. Zammataro, G. Nicosia"
+    venue: "Precision Genome Engineering and Synthetic Biology - Keystone Symposia on Molecular and Cellular Biology"
+    year: "2015"
+
+  - title: "Sensitivity Techniques for Effective Optimization of Tandem Thin-Film Silicon Solar Cells"
+    authors: "A. Patané, A. Santoro, G. Carapezza, V. Romano, A. La Magna, G. Nicosia"
+    venue: "The 10th International Conference on Scientific Computing in Electrical Engineering (SCEE)"
+    year: "2014" 
