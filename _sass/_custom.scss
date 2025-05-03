@@ -2,6 +2,37 @@
    CUSTOM STYLES
    ========================================================================== */
 
+/* Homepage Background Image */
+.home-background {
+  position: relative;
+}
+
+.home-background:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/Turin_image.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.15;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Custom Social Icons */
+.icon-pad-right {
+  margin-right: 0.25em;
+}
+
+.fa-bluesky:before {
+  content: "\f0c2"; /* Font Awesome cloud icon */
+  color: #1DA1F2; /* Bluesky blue color */
+}
+
 /* Color variables */
 :root {
   --primary-color: #3498db;
@@ -57,9 +88,20 @@ a {
   }
 }
 
-/* Enhance page headers */
+/* Global font size adjustment */
+html {
+  font-size: 16px; /* Default was 16px */
+}
+
+@media (min-width: 48em) {
+  html {
+    font-size: 17px; /* Default was 18px */
+  }
+}
+
+/* Adjust page title size */
 .page__title {
-  font-size: 2.8em;
+  font-size: 2.6em; /* Slightly smaller than default */
   font-weight: 700;
   margin-bottom: 1.2em;
   position: relative;
@@ -77,54 +119,10 @@ a {
   }
 }
 
-/* Navigation enhancements */
-.greedy-nav {
-  background: linear-gradient(to right, var(--light-bg), #ffffff);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  
-  .visible-links {
-    a {
-      margin: 0 1.5em;
-      position: relative;
-      font-weight: 500;
-      letter-spacing: 0.5px;
-      
-      &:before {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 3px;
-        bottom: 0;
-        left: 0;
-        background-color: var(--primary-color);
-        transition: all 0.3s ease;
-      }
-      
-      &:hover:before {
-        width: 100%;
-      }
-    }
-    
-    li:first-child a {
-      margin-left: 0;
-    }
-    
-    li:last-child a {
-      margin-right: 0;
-    }
-  }
-  
-  .masthead__menu-item--lg a {
-    font-weight: 700;
-    font-size: 1.2em;
-    margin-right: 2em;
-  }
-}
-
-/* Enhance section headers */
+/* Enhance page headers */
 .page__content {
   h2 {
-    font-size: 1.9em;
+    font-size: 1.75em;
     color: var(--dark-text);
     margin-top: 1.8em;
     margin-bottom: 1em;
@@ -134,7 +132,7 @@ a {
   
   h3 {
     color: var(--primary-color);
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-top: 1.5em;
   }
 }
@@ -424,4 +422,213 @@ a {
   .page {
     padding-right: 0;  
   }
-} 
+}
+
+/* Publications page */
+.publications-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
+}
+
+.publications-filters {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 2em;
+  
+  @media (min-width: 992px) {
+    width: 280px;
+    margin-right: 2em;
+    margin-bottom: 0;
+    position: sticky;
+    top: 2em;
+    align-self: flex-start;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: var(--dark-text);
+  }
+  
+  .search-box {
+    margin-bottom: 1.5em;
+    
+    input {
+      width: 100%;
+      padding: 0.7em 1em;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-size: 1em;
+      
+      &:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+      }
+    }
+  }
+  
+  .filter-section {
+    margin-bottom: 1.5em;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    
+    .filter-btn {
+      background-color: #f5f5f5;
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 0.4em 0.8em;
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        background-color: #e0e0e0;
+      }
+      
+      &.active {
+        background-color: var(--primary-color);
+        color: white;
+        border-color: var(--primary-color);
+      }
+    }
+  }
+  
+  /* Category buttons styling */
+  #category-filters {
+    .filter-btn {
+      background-color: #f8f8f8;
+      border-radius: 4px;
+      padding: 0.6em 1em;
+      font-weight: 500;
+      flex: 1;
+      text-align: center;
+      
+      &.active {
+        background-color: var(--primary-color);
+        color: white;
+        border-color: var(--primary-color);
+        box-shadow: 0 2px 4px rgba(52, 152, 219, 0.2);
+      }
+    }
+  }
+}
+
+.publications-list {
+  flex: 1;
+}
+
+.publication-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.publication-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 1.5em;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .publication-title {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: var(--dark-text);
+  }
+  
+  .publication-authors {
+    font-size: 1em;
+    margin-bottom: 0.3em;
+    color: #333;
+  }
+  
+  .publication-venue {
+    font-size: 0.95em;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1em;
+  }
+  
+  .publication-location {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 0.5em;
+  }
+  
+  .invited-talk {
+    font-size: 0.9em;
+    color: var(--primary-color);
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+  
+  .publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    
+    .pub-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.4em 0.8em;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: var(--dark-text);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      
+      i {
+        margin-right: 0.4em;
+        font-size: 1em;
+      }
+      
+      &:hover {
+        background-color: var(--primary-color);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      &[href*="github"] {
+        background-color: #f0f0f0;
+        border: 1px solid #e0e0e0;
+        
+        &:hover {
+          background-color: #24292e;
+          border-color: #24292e;
+        }
+      }
+      
+      &[href*="zenodo"] {
+        background-color: #f0f7ff;
+        
+        &:hover {
+          background-color: #0a71d5;
+        }
+      }
+    }
+  }
+}
+
+/* Import CV styles */
+@import "cv"; 

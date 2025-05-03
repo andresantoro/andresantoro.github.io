@@ -41,7 +41,12 @@
         <li><a href="{{ author.researchgate }}"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
       {% endif %}
       {% if author.twitter %}
-        <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+
+      {% endif %}
+      <!-- Font Awesome icons / Social media -->
+      {% if author.bluesky %}
+        <li><a href="https://bsky.app/profile/{{ author.bluesky }}"><i class="fas fa-fw fa-cloud" style="color: #1DA1F2;" aria-hidden="true"></i> Bluesky</a></li>
       {% endif %}
       {% if author.facebook %}
         <li><a href="https://www.facebook.com/{{ author.facebook }}"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
@@ -53,7 +58,7 @@
         <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
       {% endif %}
       {% if author.xing %}
-        <li><a href="https://www.xing.com/profile/{{ author.xing }}"><i class="fab fa-fw fa-xing-square" aria-hidden="true"></i> XING</a></li>
+        <li><a href="https://www.xing.com/profile/{{ author.xing }}"><i class="fab fa-fw fa-xing" aria-hidden="true"></i> XING</a></li>
       {% endif %}
       {% if author.instagram %}
         <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>

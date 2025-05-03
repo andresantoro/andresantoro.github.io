@@ -1,15 +1,27 @@
 ---
 permalink: /
-title: "About me"
+#title: "About me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+<div style="position: relative; width: 100%; height: 560px; overflow: hidden; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <img src="/images/turin4.png" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.0); filter: brightness(1.0);">
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(44, 114, 181, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);">
+    <div style="position: absolute; bottom: 30px; left: 30px; max-width: 80%;">
+      <!-- <h1 style="color: white; font-size: 2.2em; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-weight: 700; letter-spacing: -0.5px;">Andrea Santoro</h1> -->
+      <!-- <div style="width: 50px; height: 3px; background: white; margin: 10px 0; box-shadow: 1px 1px 3px rgba(0,0,0,0.3);"></div> -->
+      <p style="color: white; margin: 0; font-size: 1.5em; text-shadow: 5px 5px 5px rgba(0,0,0,0.5); font-weight: 330; letter-spacing: 0.5px;">Complex Systems • Networks • Data Science • Neuroscience </p>
+    </div>
+  </div>
+</div>
+
 I am a mathematician with a strong interest in applied sciences. My research focuses on complex networks, time series analysis, neuroscience, and information theory, with a particular emphasis on higher-order models and their application to large-scale systems. Currently, my work involves developing topological approaches to infer higher-order dependencies in multivariate time series, with applications in brain data and economics.
 
-I currently hold a position as a Researcher at [CENTAI](https://centai.eu/home) in Turin, Italy, where I collaborate with Prof. [Giovanni Petri](https://lordgrilo.github.io/) within the [NPLab](https://nplresearch.github.io/), while being involved in the Marie Curie Postdoctoral project "temporalHOI" (collaboration with [F. De Vico Fallani](https://sites.google.com/site/devicofallanifabrizio/) at INRIA, Paris).
+I currently hold a position as a Researcher at [CENTAI](https://centai.eu/home) in Turin, Italy, where I collaborate with Prof. [Giovanni Petri](https://lordgrilo.github.io/) within the [NPLab](https://nplresearch.github.io/), while being involved in the Marie Curie Postdoctoral project "temporalHOI" (collaboration with Dr. [Fabrizio De Vico Fallani](https://sites.google.com/site/devicofallanifabrizio/) at INRIA, Paris).
 
 Prior to this, I worked as a Postdoctoral Researcher at the [Neuro-X Institute](https://neuro-x.epfl.ch/en/) at EPFL in the Geneva campus, under the guidance of [Prof. Dimitri Van De Ville](https://miplab.epfl.ch/index.php) and [Dr. Enrico Amico](https://amicolab.org/). Earlier in my career, I worked as a Research Assistant at Queen Mary University of London.
 
