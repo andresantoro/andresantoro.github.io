@@ -1,4 +1,8 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+{% if page.url contains 'publications' %}
+<script src="{{ base_path }}/assets/js/custom/publications.js"></script>
+{% endif %}
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
