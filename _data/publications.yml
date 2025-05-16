@@ -1,4 +1,12 @@
 papers:
+  #2025
+  - title: "Small-world scale-free brain graphs from EEG"
+    authors: "M. D. Khalili, V. Abootalebi, H. Saeedi-Sourck, A. Santoro, H. H. Behjat"
+    venue: "Under review"
+    year: "2025"
+    type: "preprint"
+    pdf: "https://www.biorxiv.org/content/10.1101/2025.04.17.649421v1.abstract"
+
   # 2024
   - title: "Higher-order connectomics of human brain function reveals local topological signatures of task decoding, individual identification, and behavior"
     authors: "A. Santoro, F. Battiston, M. Lucas, G. Petri, E. Amico"
