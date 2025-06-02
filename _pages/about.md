@@ -19,11 +19,11 @@ redirect_from:
   </div>
 </div>
 
-I am a mathematician with a strong interest in applied sciences. My research focuses on complex networks, time series analysis, neuroscience, and information theory, with a particular emphasis on higher-order models and their application to large-scale systems. Currently, my work involves developing topological approaches to infer higher-order dependencies in multivariate time series, with applications in brain data and economics.
+I am a mathematician with a strong interest in applied sciences. My research focuses on complex networks, time series analysis, neuroscience, and information theory, with a particular emphasis on higher-order models and their application to large-scale systems. Currently, my work involves developing topological approaches to infer higher-order dependencies in multivariate time series, with applications in brain data and economics. I am also part of [Project CETI](https://www.projectceti.org/) (Cetacean Translation Initiative), which is an ambitious interdisciplinary endeavor aiming to decode the communication of sperm whales.
 
 I currently hold a position as a Researcher at [CENTAI](https://centai.eu/home) in Turin, Italy, where I collaborate with Prof. [Giovanni Petri](https://lordgrilo.github.io/) within the [NPLab](https://nplresearch.github.io/), while being involved in the Marie Curie Postdoctoral project "temporalHOI" (collaboration with Dr. [Fabrizio De Vico Fallani](https://sites.google.com/site/devicofallanifabrizio/) at INRIA, Paris).
 
-Prior to this, I worked as a Postdoctoral Researcher at the [Neuro-X Institute](https://neuro-x.epfl.ch/en/) at EPFL in the Geneva campus, under the guidance of [Prof. Dimitri Van De Ville](https://miplab.epfl.ch/index.php) and [Dr. Enrico Amico](https://amicolab.org/). Earlier in my career, I worked as a Research Assistant at Queen Mary University of London.
+Prior to this, I worked as a Postdoctoral Researcher at the [Neuro-X Institute](https://neuro-x.epfl.ch/en/) at EPFL in the Geneva campus, under the guidance of [Dr. Enrico Amico](https://amicolab.org/) within the MIPlab group of [Prof. Dimitri Van De Ville](https://miplab.epfl.ch/index.php). Earlier in my career, I worked as a Research Assistant at Queen Mary University of London.
 
 I completed my PhD in Applied Mathematics at Queen Mary, University of London, within the [Complex Systems and Networks Group](https://www.qmul.ac.uk/maths/research/complex-systems-and-networks-group/), under the supervision of [Vincenzo Nicosia](https://webspace.maths.qmul.ac.uk/v.nicosia/) and [Lucas Lacasa](https://sites.google.com/view/lucaslacasa/). I also spent part of my PhD at [The Alan Turing Institute](https://www.turing.ac.uk/) through their enrichment doctoral scheme.
 
