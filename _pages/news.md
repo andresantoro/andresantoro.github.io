@@ -9,8 +9,16 @@ author_profile: true
 
 <div class="news-item">
   <p class="date">June 2025</p>
-  <h3>Upcoming Presentation at OHBM 2025</h3>
-  <p>I will present my latest research at the <a href="https://www.humanbrainmapping.org/" target="_blank">Organization for Human Brain Mapping (OHBM)</a> 2025 Conference in Brisbane, Australia.</p>
+  <h3>Three New Publications and OHBM 2025 Presentation</h3>
+  <p>June has been a productive month with three new preprints available:</p>
+  
+  <p><strong>"The Topological Architecture of Brain Identity"</strong> - Our collaborative work with colleagues from Italy and the US introduces a novel brain fingerprinting method based on homological scaffolds derived from persistent homology. This topological approach achieves near-perfect identification accuracy (~100%), significantly outperforming traditional functional connectivity methods. The research reveals that individual brain signatures are encoded in mesoscale network integration and information dynamics. <a href="https://www.biorxiv.org/content/early/2025/06/21/2025.06.20.660792.full.pdf" target="_blank">Read the preprint here</a>.</p>
+  
+  <p><strong>"Social Transmission along Multiple Pathways Promotes Information Fidelity and Reduces Divisiveness"</strong> - Our new work, “Social Transmission along Multiple Pathways Promotes Information Fidelity and Reduces Divisiveness”, is now out on PsyArXiv! This collaborative project, which began at the 2018 Santa Fe Complex Systems Summer School, shows that when information spreads through networks with multiple redundant paths, it retains higher fidelity and promotes consensus—even among people who never interact directly. Using a large-scale behavioral experiment and computational modeling, we reveal how minimal structural redundancy can significantly enhance the accuracy and cohesion of social communication. <a href="https://osf.io/dg8zj_v1" target="_blank">Read the preprint here</a>.</p>
+  
+  <p><strong>"Spine-Prints: Transposing Brain Fingerprints to the Spinal Cord"</strong> - Our collaborative work with colleagues from Switzerland and Canada provides the first evidence of individual-specific connectivity patterns in the human spinal cord, extending the concept of brain fingerprinting beyond the brain. The study demonstrates that the cervical spinal cord exhibits reproducible, individual-specific functional connectivity patterns, opening new possibilities for personalized biomarkers in neurology and neurosurgery. <a href="https://www.biorxiv.org/content/early/2025/06/02/2025.05.30.656545.full.pdf" target="_blank">Read the preprint here</a>.</p>
+  
+  <p>Additionally, I will present my latest research at the <a href="https://www.humanbrainmapping.org/" target="_blank">Organization for Human Brain Mapping (OHBM)</a> 2025 Conference in Brisbane, Australia.</p>
 </div>
 
 <div class="news-item">
@@ -18,6 +26,13 @@ author_profile: true
   <h3>Marie-Curie Fellowship Begins</h3>
   <p>Official start of my Marie-Curie Postdoctoral Fellowship with the project "temporalHOI." I'm looking forward to exploring novel approaches for modeling temporal dynamics in neural data and developing methods to capture higher-order interactions in brain networks.</p>
 </div>
+
+<div class="news-item">
+  <p class="date">April 2025</p>
+  <h3>New Publication: Small-world scale-free brain networks from EEG</h3>
+  <p>Our collaborative work on "Small-world scale-free brain networks from EEG with application to motor imagery decoding and brain fingerprinting" is now out on bioRxiv. This research proposes a novel method for inferring subject-specific brain graphs from EEG data that exhibit small-world and scale-free network properties. The approach shows promising results for motor imagery decoding and brain fingerprinting tasks, potentially enhancing EEG analysis for cognitive neuroscience and brain-computer interface applications. <a href="https://www.biorxiv.org/content/early/2025/05/28/2025.04.17.649421.full.pdf" target="_blank">Read the preprint here</a>.</p>
+</div>
+
 
 <div class="news-item">
   <p class="date">February 2025</p>
