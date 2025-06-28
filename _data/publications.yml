@@ -1,5 +1,15 @@
 papers:
   #2025
+  - title: "Beyond Pairwise Interactions: Charting Higher-Order Models of Brain Function"
+    authors: "A. Santoro, M. Neri, S. Poetto, D. Orsenigo, M. Diano, M. Gatica, G. Petri"
+    venue: "bioRxiv"
+    year: "2025"
+    type: "preprint"
+    pdf: "https://www.biorxiv.org/content/10.1101/2025.06.24.661306v1.full.pdf"
+    doi: "10.1101/2025.06.24.661306"
+    code: "https://github.com/nplresearch/HOI_lenses_analysis"
+    abstract: "Traditional models of brain connectivity focus on pairwise interactions, missing the complex dynamics from group-level interactions. In this work, we present the first large-scale comparison of higher-order interaction (HOI) metrics — spanning information-theoretic and topological methods — using resting-state and task fMRI data from 100 Human Connectome Project subjects. We uncover a clear taxonomy of HOI metrics: redundant, synergistic, and topological, with the latter bridging the synergy–redundancy spectrum. Despite methodological differences, all metrics align with the brain's unimodal-to-transmodal hierarchy, and some correlate with neurotransmitter receptor distributions. HOI metrics outperform traditional functional connectivity in fingerprinting and match it in task decoding. Crucially, topological metrics best predict behavioral variability, highlighting their value for understanding the links between brain function, structure, and cognition. This work offers a roadmap for applying HOI metrics in cognitive and clinical neuroscience."
+
   - title: "The Topological Architecture of Brain Identity"
     authors: "S. Poetto, H. Merritt, A. Santoro, G. Rabuffo, D. A. Battaglia, F. Vaccarino, M. Saggar, A. Brovelli, G. Petri"
     venue: "bioRxiv"

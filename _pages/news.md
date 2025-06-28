@@ -9,6 +9,12 @@ author_profile: true
 
 <div class="news-item">
   <p class="date">June 2025</p>
+  <h3>New preprint: Comparing Higher-Order Brain Connectivity Metrics</h3>
+  <p>We present the first large-scale comparison of higher-order interaction (HOI) metrics — spanning information-theoretic and topological approaches — using fMRI data from the Human Connectome Project. Our analysis reveals a clear taxonomy of HOI metrics into redundant, synergistic, and topological classes, with topological descriptors acting as bridges between the two. All metrics align with the brain's functional hierarchy, and some also reflect neurotransmitter receptor distribution. HOI metrics outperform traditional functional connectivity models in brain fingerprinting and are equally effective in task decoding. Notably, topological measures show the strongest links to behavioral variability, highlighting their value in connecting brain structure and function. <a href="https://www.biorxiv.org/content/10.1101/2025.06.24.661306v1" target="_blank">Read the preprint here</a>.</p>
+</div>
+
+<div class="news-item">
+  <p class="date">June 2025</p>
   <h3>New preprint: The Topological Architecture of Brain Identity</h3>
   <p>Our collaborative work with colleagues from Italy and the US introduces a novel brain fingerprinting method based on homological scaffolds derived from persistent homology. This topological approach achieves near-perfect identification accuracy (~100%), significantly outperforming traditional functional connectivity methods. The research reveals that individual brain signatures are encoded in mesoscale network integration and information dynamics. <a href="https://www.biorxiv.org/content/early/2025/06/21/2025.06.20.660792.full.pdf" target="_blank">Read the preprint here</a>.</p>
 </div>
