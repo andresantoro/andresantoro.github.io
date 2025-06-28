@@ -9,7 +9,7 @@ author_profile: true
 
 <div class="news-item">
   <p class="date">June 2025</p>
-  <h3>New preprint: Comparing Higher-Order Brain Connectivity Metrics</h3>
+  <h3>New preprint: Charting Higher-Order Models of Brain Function</h3>
   <p>We present the first large-scale comparison of higher-order interaction (HOI) metrics — spanning information-theoretic and topological approaches — using fMRI data from the Human Connectome Project. Our analysis reveals a clear taxonomy of HOI metrics into redundant, synergistic, and topological classes, with topological descriptors acting as bridges between the two. All metrics align with the brain's functional hierarchy, and some also reflect neurotransmitter receptor distribution. HOI metrics outperform traditional functional connectivity models in brain fingerprinting and are equally effective in task decoding. Notably, topological measures show the strongest links to behavioral variability, highlighting their value in connecting brain structure and function. <a href="https://www.biorxiv.org/content/10.1101/2025.06.24.661306v1" target="_blank">Read the preprint here</a>.</p>
 </div>
 
