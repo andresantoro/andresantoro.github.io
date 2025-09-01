@@ -7,6 +7,21 @@ author_profile: true
 
 {% include base_path %}
 
+
+<div class="news-item">
+  <p class="date">September 2025</p>
+  <h3>Presentation at EUSIPCO 2025</h3>
+  <p>
+    I am excited to share that I will be presenting our latest work, 
+    <em>“From Nodes to Edges: Edge-Based Laplacians for Brain Signal Processing”</em>, 
+    developed together with 
+    <a href="https://scholar.google.com/citations?user=vAaWpu8AAAAJ&hl=it" target="_blank">Marco Nurisso</a> 
+    and <a href="https://lordgrilo.github.io/" target="_blank">Giovanni Petri</a>, 
+    at the <a href="https://eusipco2025.org/" target="_blank">33rd European Signal Processing Conference (EUSIPCO 2025)</a> 
+    in Palermo, Italy.
+  </p>
+</div>
+
 <div class="news-item">
   <p class="date">June 2025</p>
   <h3>New preprint: Charting Higher-Order Models of Brain Function</h3>
