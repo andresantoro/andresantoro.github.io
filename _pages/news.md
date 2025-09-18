@@ -10,6 +10,15 @@ author_profile: true
 
 <div class="news-item">
   <p class="date">September 2025</p>
+  <h3>Presentation at King's College</h3>
+  <p>
+    I'll be giving a talk on higher-order interactions in multivariate time series at the new King's Institute for Human and Synthetic Minds, King's College London, Center for Neuroimaging Sciences, for the workshop
+    <a href="https://lordgrilo.github.io/topology-natural-synthetic-minds/" target="_blank">The Topology of Human and Synthetic Minds</a> 
+  </p>
+</div>
+
+
+  <p class="date">September 2025</p>
   <h3>Presentation at EUSIPCO 2025</h3>
   <p>
     I am excited to share that I will be presenting our latest work, 
