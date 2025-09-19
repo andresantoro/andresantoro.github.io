@@ -18,7 +18,8 @@ author_profile: true
 </div>
 
 
-  <p class="date">September 2025</p>
+<div class="news-item">
+<p class="date">September 2025</p>
   <h3>Presentation at EUSIPCO 2025</h3>
   <p>
     I am excited to share that I will be presenting our latest work, 
