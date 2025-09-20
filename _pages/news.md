@@ -13,22 +13,22 @@ author_profile: true
   <h3>Presentation at King's College</h3>
   <p>
     I'll be giving a talk on higher-order interactions in multivariate time series at the new King's Institute for Human and Synthetic Minds, King's College London, Center for Neuroimaging Sciences, for the workshop
-    <a href="https://lordgrilo.github.io/topology-natural-synthetic-minds/" target="_blank">The Topology of Human and Synthetic Minds</a> 
+    <a href="https://lordgrilo.github.io/topology-natural-synthetic-minds/" target="_blank">The Topology of Human and Synthetic Minds</a>.
   </p>
 </div>
 
 
 <div class="news-item">
-<p class="date">September 2025</p>
+  <p class="date">September 2025</p>
   <h3>Presentation at EUSIPCO 2025</h3>
   <p>
     I am excited to share that I will be presenting our latest work, 
-    <em>“From Nodes to Edges: Edge-Based Laplacians for Brain Signal Processing”</em>, 
+    <em>"From Nodes to Edges: Edge-Based Laplacians for Brain Signal Processing"</em>, 
     developed together with 
     <a href="https://scholar.google.com/citations?user=vAaWpu8AAAAJ&hl=it" target="_blank">Marco Nurisso</a> 
     and <a href="https://lordgrilo.github.io/" target="_blank">Giovanni Petri</a>, 
     at the <a href="https://eusipco2025.org/" target="_blank">33rd European Signal Processing Conference (EUSIPCO 2025)</a> 
-    in Palermo, Italy.
+    in Palermo, Italy. <a href="https://eusipco2025.org/wp-content/uploads/pdfs/0001084.pdf" target="_blank">Read the paper here</a>.
   </p>
 </div>
 
