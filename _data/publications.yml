@@ -271,6 +271,36 @@ talks:
 
 # Accepted abstracts and posters at international conferences
 posters:
+  - title: "Investigating higher-order signatures in the human brain using film fMRI"
+    authors: "L. Zaffina, F. Petruso, S. Romanato, M. G. Preti, E. Amico, E. Morgenroth, M. Diano, G. Petri, P. Vuilleumier, D. Van De Ville, A. Santoro"
+    venue: "Organization for Human Brain Mapping (OHBM)"
+    year: "2025"
+
+  - title: "Higher-order connectomics of human brain function reveals local topological signatures of task decoding, individual identification, and behavior"
+    authors: "A. Santoro, F. Battiston, M. Lucas, G. Petri, E. Amico"
+    venue: "Organization for Human Brain Mapping (OHBM)"
+    year: "2024"
+
+  - title: "Higher-order connectomics of human brain function reveals local topological signatures of task decoding, individual identification, and behavior"
+    authors: "A. Santoro, F. Battiston, M. Lucas, G. Petri, E. Amico"
+    venue: "Alpine Brain Imaging Meeting (ABIM)"
+    year: "2024"
+
+  - title: "Static and dynamic connectome fingerprinting of the newborn brain"
+    authors: "A. Santoro, S. Loukas, E. Amico"
+    venue: "Organization for Human Brain Mapping (OHBM)"
+    year: "2023"
+
+  - title: "Fingerprinting the newborn brain"
+    authors: "A. Santoro, S. Loukas, E. Amico"
+    venue: "Alpine Brain Imaging Meeting (ABIM)"
+    year: "2023"
+
+  - title: "Unveiling the higher-order structure of multivariate time series"
+    authors: "A. Santoro, F. Battiston, G. Petri, E. Amico"
+    venue: "Organization for Human Brain Mapping (OHBM)"
+    year: "2022"
+
   - title: "Minmcell: Designing Minimal Microbial Cells"
     authors: "A. Patané, A. Santoro, J. Costanza, G. Nicosia"
     venue: "International Synthetic and Systems Biology Summer School (SSBSS)"
@@ -300,3 +330,4 @@ posters:
     authors: "A. Patané, A. Santoro, G. Carapezza, V. Romano, A. La Magna, G. Nicosia"
     venue: "The 10th International Conference on Scientific Computing in Electrical Engineering (SCEE)"
     year: "2014" 
+
