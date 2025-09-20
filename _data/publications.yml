@@ -2,7 +2,7 @@ papers:
   #2025
   - title: "From Nodes to Edges: Edge-Based Laplacians for Brain Signal Processing"
     authors: "A. Santoro, M. Nurisso, G. Petri"
-    venue: "European Signal Processing Conference (EUSIPCO) 2025"
+    venue: "European Signal Processing Conference (EUSIPCO)"
     year: "2025"
     type: "conference"
     pdf: "https://eusipco2025.org/wp-content/uploads/pdfs/0001084.pdf"
