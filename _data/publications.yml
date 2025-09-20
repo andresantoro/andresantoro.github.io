@@ -180,10 +180,28 @@ papers:
 
 # Selected talks at international conferences and workshops
 talks:
+  - title: "Workshop presentation"
+    venue: "King's College"
+    location: "London, UK"
+    date: "September 2025"
+    invited: true
+
+  - title: "Conference presentation"
+    venue: "European Signal Processing Conference (EUSIPCO)"
+    location: "Palermo, Italy"
+    date: "September 2025"
+
+  - title: "Symposium presentation"
+    venue: "Organization for Human Brain Mapping (OHBM)"
+    location: "Brisbane, Australia"
+    date: "June 2025"
+    invited: true
+
   - title: "NERV team seminar"
     venue: "Paris Brain Institute"
     location: "Paris, France"
     date: "April 2024"
+    invited: true
     
   - title: "Toponets"
     venue: "NetSci 2023"
