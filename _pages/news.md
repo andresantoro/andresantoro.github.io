@@ -9,6 +9,17 @@ author_profile: true
 
 
 <div class="news-item">
+  <p class="date">October 2025</p>
+  <h3>Presentation in Marseille</h3>
+  <p>
+    I'll be presenting at the workshop 
+    <a href="https://www.cpt.univ-mrs.fr/~barrat/workshop_beyond.html" target="_blank">"Higher-Order Interactions and complex systems"</a> 
+    in Marseille, followed by a first retreat of the 
+    <a href="https://nplresearch.github.io/" target="_blank">NPLab</a>. Hurray!
+  </p>
+</div>
+
+<div class="news-item">
   <p class="date">September 2025</p>
   <h3>Presentation at King's College</h3>
   <p>
