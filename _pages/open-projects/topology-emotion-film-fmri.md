@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Topology of Emotion in Film fMRI"
+title: "Topology of emotion using Film fMRI"
 permalink: /open-projects/topology-emotion-film-fmri/
 author_profile: true
 ---
