@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <div class="project-detail-header">
-  <p class="subtitle">Uncovering the Temporal Topology of Emotion using Film fMRI</p>
+  <p class="subtitle">Uncovering the temporal dynamics of emotion using film fMRI</p>
 </div>
 
 <div class="project-detail-image">
