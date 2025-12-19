@@ -8,6 +8,28 @@ author_profile: true
 {% include base_path %}
 
 
+
+
+<div class="news-item">
+  <p class="date">March 2026</p>
+  <h3>Workshop at COSYNE 2026</h3>
+  <p>
+    Together with <a href="https://jesseba.github.io/" target="_blank">Jesseba Fernando</a> 
+    and <a href="https://lordgrilo.github.io/" target="_blank">Giovanni Petri</a>, 
+    we will organize a workshop on renormalization principles in neural systems at 
+    COSYNE 2026.
+  </p>
+</div>
+
+
+<div class="news-item">
+  <p class="date">January 2026</p>
+  <h3>Presentation at ABIM</h3>
+  <p>
+    Happy to share that I will present the work on higher-order interactions at ABIM 2026 in Champery.
+  </p>
+</div>
+
 <div class="news-item">
   <p class="date">October 2025</p>
   <h3>Presentation in Marseille</h3>
