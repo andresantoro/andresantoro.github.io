@@ -9,6 +9,21 @@ author_profile: true
 
 <div class="project-card">
   <div class="project-image-half">
+    <img src="/images/projects/Time_series.png" alt="Time Series Analysis">
+  </div>
+  <h2>Time Series Analysis</h2>
+  <p>Methods to analyze multivariate signals</p>
+  <ul>
+    <li>Forecasting methods for complex time series</li>
+    <li>Higher-order inference in temporal data</li>
+    <li>Arrow of time in time-varying signals</li>
+  </ul>
+  <div style="clear: both;"></div>
+</div>
+
+
+<div class="project-card">
+  <div class="project-image-half">
     <img src="/images/projects/computational_neuro.png" alt="Brain connectivity network representation">
   </div>
   <h2>Computational Neuroscience</h2>
@@ -21,19 +36,7 @@ author_profile: true
   <div style="clear: both;"></div>
 </div> 
 
-<div class="project-card">
-  <div class="project-image-half">
-    <img src="/images/projects/Time_series.png" alt="Time Series Analysis">
-  </div>
-  <h2>Time Series Analysis</h2>
-  <p>Methods to analyze multivariate signals</p>
-  <ul>
-    <li>Forecasting methods for complex time series</li>
-    <li>Higher-order inference in temporal data</li>
-    <li>Arrow of time in time-varying signals</li>
-  </ul>
-  <div style="clear: both;"></div>
-</div>
+
 
 <div class="project-card">
   <div class="project-image-half">
