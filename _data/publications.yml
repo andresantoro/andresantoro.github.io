@@ -1,5 +1,15 @@
 papers:
-  #2025
+  # 2026
+  - title: "Spine-Prints: Transposing Brain Fingerprints to the Spinal Cord"
+    authors: "I. Ricchi, A. Santoro, N. Kinany, C. Landelle, A. Khatibi, S. Vahdat, J. Doyon, R. L. Barry, D. Van De Ville"
+    venue: "Imaging Neuroscience"
+    year: "2026"
+    type: "journal"
+    pdf: "https://mitp.silverchair-cdn.com/mitp/content_public/journal/imag/jam/10.1162_imag.a.1128/1/imag.a.1128.pdf?Expires=1772824340&Signature=h7U1wHrHwvIVZDG11JrJzb6-efOSCOrGaNvrm63Db95JZv97mBh0H86PCa5TxyG4dFU4YKHIi6fcXUXQrSUE9KS1r~uxnOEJxz2Lhg3X4Ximzy6AJQeEuH479hbBcgCow8Uy3PD97ZHEIumTfFVLoojnqgQxYHLhpiC92f4UN5lIRKy9i7l0hFK-Xp-LsHi79pR2QAKoHSLPI0BeYjWSafwPMwCFeOnpGUBbYfrcYzEKzHfMqF7HVWYswPtAU0v4Gsnai6LazON~75auGkiFc9dVWRUUtoKTGVWLl1ZErN7-WSdvTGrg~G~Bkx6HXpq6dR4CTCoxw0qzoe~cNoFSwQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
+    doi: "https://doi.org/10.1162/IMAG.a.1128"
+    abstract: "Functional connectivity (FC) patterns in the human brain form a reproducible, individual-specific 'fingerprint' that allows reliable identification of the same participant across scans acquired over different sessions. While brain fingerprinting is robust across healthy individuals and neuroimaging modalities, little is known about whether the fingerprinting principle extends beyond the brain. Here, we used multiple spinal functional magnetic resonance imaging (fMRI) datasets acquired at different sites to examine whether a fingerprint can be revealed from FCs of the cervical region of the human spinal cord. Our results demonstrate that the functional organisation of the cervical spinal cord also exhibits individual-specific properties, suggesting the potential existence of a spine-print within the same acquisition session. This study provides the first evidence of a spinal cord connectivity fingerprint, underscoring the importance of considering a more comprehensive view of the entire central nervous system. Eventually, these spine-specific signatures could contribute to identifying individualized biomarkers of neuronal connectivity, with potential clinical applications in neurology and neurosurgery."
+
+  # 2025
   - title: "From Nodes to Edges: Edge-Based Laplacians for Brain Signal Processing"
     authors: "A. Santoro, M. Nurisso, G. Petri"
     venue: "European Signal Processing Conference (EUSIPCO)"
@@ -35,15 +45,6 @@ papers:
     pdf: "https://osf.io/dg8zj_v1"
     doi: "10.31234/osf.io/dg8zj_v1"
     abstract: "Social transmission along multiple pathways promotes information fidelity and reduces divisiveness."
-
-  - title: "Spine-Prints: Transposing Brain Fingerprints to the Spinal Cord"
-    authors: "I. Ricchi, A. Santoro, N. Kinany, C. Landelle, A. Khatibi, S. Vahdat, J. Doyon, R. L. Barry, D. Van De Ville"
-    venue: "bioRxiv"
-    year: "2025"
-    type: "preprint"
-    pdf: "https://www.biorxiv.org/content/early/2025/06/02/2025.05.30.656545.full.pdf"
-    doi: "10.1101/2025.05.30.656545"
-    abstract: "Functional connectivity (FC) patterns in the human brain form a reproducible, individual-specific 'fingerprint' that allows reliable identification of the same participant across scans acquired over different sessions. While brain fingerprinting is robust across healthy individuals and neuroimaging modalities, little is known about whether the fingerprinting principle extends beyond the brain. Here, we used multiple spinal functional magnetic resonance imaging (fMRI) datasets acquired at different sites to examine whether a fingerprint can be revealed from FCs of the cervical region of the human spinal cord. Our results demonstrate that the functional organisation of the cervical spinal cord also exhibits individual-specific properties, suggesting the potential existence of a spine-print within the same acquisition session. This study provides the first evidence of a spinal cord connectivity fingerprint, underscoring the importance of considering a more comprehensive view of the entire central nervous system. Eventually, these spine-specific signatures could contribute to identifying individualized biomarkers of neuronal connectivity, with potential clinical applications in neurology and neurosurgery."
 
   - title: "Small-world scale-free brain networks from EEG with application to motor imagery decoding and brain fingerprinting"
     authors: "M. D. Khalili, V. Abootalebi, H. Saeedi-Sourck, A. Santoro, H. H. Behjat"
