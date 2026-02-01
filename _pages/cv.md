@@ -13,7 +13,12 @@ redirect_from:
   <div class="cv-section">
     <h1>Work Experience</h1>
     <div class="cv-entry">
-      <div class="cv-entry-date">May 2025 - Present</div>
+      <div class="cv-entry-date">Feb 2026 - Present</div>
+      <div class="cv-entry-title">MSCA Postdoctoral Fellow</div>
+      <div class="cv-entry-content">ISI, Turin - "Temporal HOI"</div>
+    </div>
+    <div class="cv-entry">
+      <div class="cv-entry-date">May 2025 - Jan 2026</div>
       <div class="cv-entry-title">MSCA Postdoctoral Fellow</div>
       <div class="cv-entry-content">CENTAI, Turin - "Temporal HOI"</div>
     </div>
