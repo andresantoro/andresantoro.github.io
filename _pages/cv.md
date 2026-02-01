@@ -15,7 +15,7 @@ redirect_from:
     <div class="cv-entry">
       <div class="cv-entry-date">Feb 2026 - Present</div>
       <div class="cv-entry-title">MSCA Postdoctoral Fellow</div>
-      <div class="cv-entry-content">ISI, Turin - "Temporal HOI"</div>
+      <div class="cv-entry-content">ISI Foundation, Turin - "Temporal HOI"</div>
     </div>
     <div class="cv-entry">
       <div class="cv-entry-date">May 2025 - Jan 2026</div>
