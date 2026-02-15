@@ -23,7 +23,7 @@ redirect_from:
       <div class="cv-entry-content">CENTAI, Turin - "Temporal HOI"</div>
     </div>
     <div class="cv-entry">
-      <div class="cv-entry-date">Sep 2024 - Present</div>
+      <div class="cv-entry-date">Sep 2024 - Jan 2026</div>
       <div class="cv-entry-title">Researcher</div>
       <div class="cv-entry-content">CENTAI, Turin</div>
     </div>
