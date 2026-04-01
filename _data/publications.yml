@@ -1,5 +1,32 @@
 papers:
   # 2026
+  - title: "Individual connectome fingerprints reveal early stabilization and long-term circuit remodeling after stroke"
+    authors: "A. Santoro, A. Lucatelli, F. Windel, B. Lugli, M. G. Preti, L. Fleury, F. Petruso, E. Beanato, D. Van De Ville, F. C. Hummel, E. Amico"
+    venue: "bioRxiv"
+    year: "2026"
+    type: "preprint"
+    pdf: "https://www.biorxiv.org/content/10.64898/2026.03.27.714711v1.full.pdf"
+    doi: "https://doi.org/10.64898/2026.03.27.714711"
+    abstract: "Stroke is one of the leading causes of global disability, yet the principles governing how focal brain injury disrupts large-scale neural connectivity over time remain poorly understood. Here, we leverage a longitudinal multimodal dataset to track the evolution of individual-specific connectivity patterns, or 'brain fingerprints', over the first year after stroke. Despite a persistent shift from healthy architecture, we demonstrate that each patient's unique functional connectome fingerprint is remarkably resilient and stabilizes within three weeks. This early global stabilization masks a protracted system-specific reorganization of brain circuits, which is characterized by an initial increase in connectivity within sensory and attention systems, followed by a decline across higher-level association networks. A joint structure-function embedding further shows that recovery involves a gradual shift toward the normative healthy range, driven primarily by functional reconfiguration atop a stable structural lesion."
+  
+  - title: "Description of a collaborative sperm whale birth and shifts in coda vocal styles during key events"
+    authors: "Y. Aluma, Z. Baron, R. Barrett, C. Baumgartner, G. Beguš, S. Bhattacharya, M. M. Bronstein, S. Dahan, O. Davis, S. de Haas, J. Defoe, J. DelPreto, R. Dessi, R. Diamant, J. Gatesy, K. George, S. Gero, D. Gibbons, D. Gibbons, S. Gil, S. Goldwasser, D. F. Gruber, O. Harve, A. Hernandez, M. Ishay, N. Jadhav, L. KC, A. Kenny, A. Leitao, M. Lucas, A. Maalouf, P. Malkin, Y. Mevorach, S. Pagani, O. Paradise, G. Petri, S. Poetto, E. Rossi, D. Rus, M. Salino-Hugg, A. Santoro, P. Sharma, D. Tchernov, A. Torralba, P. Tønnesen, D. M. Vogt, R. J. Wood"
+    venue: "Scientific Reports"
+    year: "2026"
+    type: "journal"
+    pdf: "https://www.nature.com/articles/s41598-025-27438-3"
+    doi: "https://doi.org/10.1038/s41598-025-27438-3"
+    abstract: "Wild cetacean birth observations are extremely rare, with observations having been recorded in less than 10% of cetacean species. Here, we describe a detailed accounting of a sperm whale (Physeter macrocephalus) birth off the coast of Dominica within a well-documented social unit and consisted of sperm whales collaboratively lifting the newborn out of the water. We recorded data via multiple concurrent methods: underwater audio, aerial drone video, shipboard photography in addition to behavioral observations spanning before, during and after the whale birth. All 11 members from sperm whale 'Unit A' were present and participated in the birth, which lasted 34 min from the time the flukes emerged until the completion of delivery. The sperm whale unit made extensive vocalizations, with statistically significant shifts in coda vocal style corresponding to key events, such as the beginning of the birth and interactions with short-finned pilot whales shortly after the birth event."
+  
+  - title: "Small-world scale-free brain networks from EEG with application to motor imagery decoding and brain fingerprinting"
+    authors: "M. D. Khalili, V. Abootalebi, H. Saeedi-Sourck, A. Santoro, H. H. Behjat"
+    venue: "Computers in Biology and Medicine"
+    year: "2026"
+    type: "journal"
+    pdf: "https://www.sciencedirect.com/science/article/pii/S0010482526001691"
+    doi: "https://doi.org/10.1016/j.compbiomed.2026.109691"
+    abstract: "Developing individualized spatial models that capture the complex dynamics of multi-electrode EEG data is essential for accurately decoding global neural activity. A widely used approach is network modeling, where electrodes are represented as nodes. A key challenge lies in defining the network edges and weights, as precise connectivity estimation is critical for enhancing neural characterization and extracting discriminative features, such as those needed for task decoding. In this work, we propose a method for inferring subject-specific brain graphs from EEG data, explicitly designed to exhibit small-world and scale-free network properties."
+
   - title: "Spine-Prints: Transposing Brain Fingerprints to the Spinal Cord"
     authors: "I. Ricchi, A. Santoro, N. Kinany, C. Landelle, A. Khatibi, S. Vahdat, J. Doyon, R. L. Barry, D. Van De Ville"
     venue: "Imaging Neuroscience"

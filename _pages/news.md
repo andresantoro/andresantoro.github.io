@@ -12,12 +12,48 @@ author_profile: true
 
 <div class="news-item">
   <p class="date">March 2026</p>
+  <h3>Attending OHBM 2026 in Bordeaux</h3>
+  <p>
+    Looking forward to presenting our work on higher-order interactions in brain networks and stroke recovery at the <a href="https://www.humanbrainmapping.org/" target="_blank">Organization for Human Brain Mapping (OHBM)</a> 2026 conference in Bordeaux this June. See you there!
+  </p>
+</div>
+
+
+<div class="news-item">
+  <p class="date">March 2026</p>
+  <h3>New preprint: Brain Fingerprints After Stroke</h3>
+  <p>
+    Our new preprint is finally out on bioRxiv! This collaboration, which started at EPFL a few years ago, tracked the evolution of individual-specific brain connectivity patterns over the first year after stroke. We found that each patient's unique functional connectome fingerprint stabilizes remarkably early—within just three weeks—despite ongoing system-specific reorganization and a persistent shift from healthy architecture. 
+    <a href="https://www.biorxiv.org/content/10.64898/2026.03.27.714711v1" target="_blank">Read the preprint here</a>.
+  </p>
+</div>
+
+<div class="news-item">
+  <p class="date">March 2026</p>
+  <h3>New paper in Scientific Reports: Sperm Whale Birth</h3>
+  <p>
+    Our <a href="https://www.projectceti.org/" target="_blank">Project CETI</a> paper is now published in Scientific Reports! We documented a collaborative sperm whale birth with synchronized underwater audio, aerial drone video, and behavioral observations. The study reveals statistically significant shifts in coda vocal styles during key events, including the birth itself and interactions with pilot whales, providing unprecedented insights into cetacean social behavior and communication. 
+    <a href="https://www.nature.com/articles/s41598-025-27438-3" target="_blank">Read the paper here</a>.
+  </p>
+</div>
+
+<div class="news-item">
+  <p class="date">March 2026</p>
+  <h3>New paper in Computers in Biology and Medicine</h3>
+  <p>
+    Our collaboration is now published in Computers in Biology and Medicine. We developed a method for inferring subject-specific brain graphs from EEG data with small-world and scale-free network properties, achieving improved performance in motor imagery decoding and brain fingerprinting. 
+    <a href="https://www.sciencedirect.com/science/article/pii/S0010482526001691" target="_blank">Read the paper here</a>.
+  </p>
+</div>
+
+<div class="news-item">
+  <p class="date">March 2026</p>
   <h3>Workshop at COSYNE 2026</h3>
   <p>
     Together with <a href="https://jesseba.github.io/" target="_blank">Jesseba Fernando</a> 
     and <a href="https://lordgrilo.github.io/" target="_blank">Giovanni Petri</a>, 
-    we will organize a workshop on renormalization principles in neural systems at 
-    COSYNE 2026.
+    we organized a workshop on renormalization principles in neural systems at 
+    COSYNE 2026. Room packed and amazing discussions!
   </p>
 </div>
 
