@@ -1,11 +1,20 @@
 papers:
   # 2026
+  - title: "Dynamical processes and emergent behaviors in multiplex networks"
+    authors: "F. Battiston, M. Frasca, J. Gomez-Gardenes, B. Min, F. Radicchi, A. Santoro, V. Latora"
+    venue: "arXiv"
+    year: "2026"
+    type: "preprint"
+    pdf: "https://arxiv.org/pdf/2605.04199"
+    doi: "https://doi.org/10.48550/arXiv.2605.04199"
+    abstract: "Over the last two decades, network science has greatly advanced our understanding of how the collective behaviors of a complex system emerge from the interactions among its basic units. Multiplex networks, i.e. networks with many layers whose nodes are in one-to-one correspondence, provide a more realistic description for social, biological and ecological systems where multiple types of interactions coexist. After introducing multiplex network architecture, we present a unified framework for dynamical processes including percolation, reaction-diffusion, synchronization, epidemic spreading, social dynamics and games, as well as coupled and coevolving dynamics. We identify structural correlations across layers, dynamical correlations across processes, and interplay of inter- and intra-layer interactions as key mechanisms behind truly multiplex emergent behaviors."
+
   - title: "Individual connectome fingerprints reveal early stabilization and long-term circuit remodeling after stroke"
     authors: "A. Santoro, A. Lucatelli, F. Windel, B. Lugli, M. G. Preti, L. Fleury, F. Petruso, E. Beanato, D. Van De Ville, F. C. Hummel, E. Amico"
     venue: "bioRxiv"
     year: "2026"
     type: "preprint"
-    pdf: "https://www.biorxiv.org/content/10.64898/2026.03.27.714711v1.full.pdf"
+    pdf: "https://www.biorxiv.org/content/10.64898/2026.03.27.714711v1.full.pdf "
     doi: "https://doi.org/10.64898/2026.03.27.714711"
     abstract: "Stroke is one of the leading causes of global disability, yet the principles governing how focal brain injury disrupts large-scale neural connectivity over time remain poorly understood. Here, we leverage a longitudinal multimodal dataset to track the evolution of individual-specific connectivity patterns, or 'brain fingerprints', over the first year after stroke. Despite a persistent shift from healthy architecture, we demonstrate that each patient's unique functional connectome fingerprint is remarkably resilient and stabilizes within three weeks. This early global stabilization masks a protracted system-specific reorganization of brain circuits, which is characterized by an initial increase in connectivity within sensory and attention systems, followed by a decline across higher-level association networks. A joint structure-function embedding further shows that recovery involves a gradual shift toward the normative healthy range, driven primarily by functional reconfiguration atop a stable structural lesion."
   

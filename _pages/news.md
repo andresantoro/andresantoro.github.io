@@ -11,6 +11,15 @@ author_profile: true
 
 
 <div class="news-item">
+  <p class="date">May 2026</p>
+  <h3>New preprint: Dynamical processes and emergent behaviors in multiplex networks</h3>
+  <p>
+    Our new review article on multiplex networks is now available on arXiv. We provide a unified perspective on dynamical processes across multiplex systems, including percolation, reaction-diffusion, synchronization, epidemic spreading, social dynamics, and games, highlighting mechanisms that generate truly multiplex emergent behaviors.
+    <a href="https://arxiv.org/abs/2605.04199" target="_blank">Read the preprint here</a>.
+  </p>
+</div>
+
+<div class="news-item">
   <p class="date">March 2026</p>
   <h3>Attending OHBM 2026 in Bordeaux</h3>
   <p>
