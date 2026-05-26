@@ -5,7 +5,7 @@ permalink: /open-projects/
 author_profile: true
 ---
 
-I'm always keen to supervise **Bachelor/Master theses** and **semester projects** at the intersection of applied mathematics, topological data analysis (TDA), computational neuroscience, finance, and food analytics. The projects listed here are just illustrative; if these areas interest you, please <a href="mailto:andrea.santoro@centai.eu">contact me</a> to discuss additional or tailored topics that fit your background — including opportunities in finance, clinical neuroscience, and food network.
+I'm always keen to supervise **Bachelor/Master theses** and **semester projects** at the intersection of applied mathematics, topological data analysis (TDA), computational neuroscience, finance, and food analytics. The projects listed here are just illustrative; if these areas interest you, please <a href="mailto:andrea.santoro@isi.it">contact me</a> to discuss additional or tailored topics that fit your background — including opportunities in finance, clinical neuroscience, and food network.
 
 {% include base_path %}
 
