@@ -10,7 +10,7 @@ papers:
     abstract: "Predators searching patchy environments must coordinate movements across scales, yet this behavioural hierarchy is not yet technically possible to observe in the deep ocean. Here we show that sperm-whale foraging is organized across two nested levels: directionally persistent search paths and flexible prey-capture tactics. We combine acoustic recordings with reconstructed three-dimensional trajectories from 34 sensor-tag deployments on 20 individual whales in both the eastern Caribbean and the mid-Atlantic. Complete foraging paths exhibit heavy-tailed step lengths and superdiffusive displacement, consistent with Lévy-like search. Within these paths, echolocation buzzes resolve into two recurrent acoustic–kinematic tactics. Every sampled whale used both tactics and switched between them within dives, revealing a foraging hierarchy in which flexible capture actions unfold within persistent, deliberate large-scale search."
 
   - title: "Charting higher-order models of brain function beyond pairwise interactions"
-    authors: "A. Santoro, M. Neri, S. Poetto, D. Orsenigo, M. Diano, M. Gatica, G. Petri"
+    authors: "A. Santoro*, M. Neri*, S. Poetto, D. Orsenigo, M. Diano, M. Gatica, G. Petri"
     venue: "Nature Communications"
     year: "2026"
     type: "journal"
