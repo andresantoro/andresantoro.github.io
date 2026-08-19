@@ -1,5 +1,24 @@
 papers:
   # 2026
+  - title: "Sperm whale foraging combines persistent search with flexible prey-capture tactics"
+    authors: "L. Zaffina, C. Monti, S. Poetto, M. Lucas, H. J. Machado Borges, R. Deshpande, P. Tønnesen, D. F. Gruber, S. Gero, A. Santoro*, G. Petri*"
+    venue: "bioRxiv"
+    year: "2026"
+    type: "preprint"
+    pdf: "https://www.biorxiv.org/content/10.64898/2026.07.29.741536v1.full.pdf"
+    doi: "https://doi.org/10.64898/2026.07.29.741536"
+    abstract: "Predators searching patchy environments must coordinate movements across scales, yet this behavioural hierarchy is not yet technically possible to observe in the deep ocean. Here we show that sperm-whale foraging is organized across two nested levels: directionally persistent search paths and flexible prey-capture tactics. We combine acoustic recordings with reconstructed three-dimensional trajectories from 34 sensor-tag deployments on 20 individual whales in both the eastern Caribbean and the mid-Atlantic. Complete foraging paths exhibit heavy-tailed step lengths and superdiffusive displacement, consistent with Lévy-like search. Within these paths, echolocation buzzes resolve into two recurrent acoustic–kinematic tactics. Every sampled whale used both tactics and switched between them within dives, revealing a foraging hierarchy in which flexible capture actions unfold within persistent, deliberate large-scale search."
+
+  - title: "Charting higher-order models of brain function beyond pairwise interactions"
+    authors: "A. Santoro, M. Neri, S. Poetto, D. Orsenigo, M. Diano, M. Gatica, G. Petri"
+    venue: "Nature Communications"
+    year: "2026"
+    type: "journal"
+    pdf: "https://www.nature.com/articles/s41467-026-75959-w"
+    doi: "https://doi.org/10.1038/s41467-026-75959-w"
+    code: "https://github.com/nplresearch/HOI_lenses_analysis"
+    abstract: "Traditional models of brain connectivity primarily focus on pairwise interactions, overlooking collective dynamics among multiple regions. Here, we systematically compare information-theoretic and topological higher-order interaction metrics using resting-state and task fMRI data from 100 unrelated Human Connectome Project subjects. We identify a taxonomy of redundant, synergistic, and topological metrics, with the latter bridging the redundancy-synergy continuum. HOI metrics outperform pairwise connectivity in brain fingerprinting, whereas pairwise models remain competitive for task decoding. Multivariate analyses further identify topological descriptors as key links between brain function and behavioral variability."
+
   - title: "Dynamical processes and emergent behaviors in multiplex networks"
     authors: "F. Battiston, M. Frasca, J. Gomez-Gardenes, B. Min, F. Radicchi, A. Santoro, V. Latora"
     venue: "arXiv"
@@ -53,16 +72,6 @@ papers:
     type: "conference"
     pdf: "https://eusipco2025.org/wp-content/uploads/pdfs/0001084.pdf"
     abstract: "Traditional graph signal processing (GSP) methods applied to brain networks focus on signals defined on the nodes. Thus, they are unable to capture potentially important dynamics occurring on the edges. In this work, we adopt an edge-centric GSP approach to analyze edge signals constructed from 100 unrelated subjects of the Human Connectome Project. Specifically, we describe structural connectivity through the lens of the 1-dimensional Hodge Laplacian, processing signals defined on edges to capture co-fluctuation information between brain regions. We demonstrate that edge-based approaches achieve superior task decoding accuracy in static and dynamic scenarios compared to conventional node-based techniques, thereby unveiling unique aspects of brain functional organization. These findings underscore the promise of edge-focused GSP strategies for deepening our understanding of brain connectivity and functional dynamics."
-
-  - title: "Beyond Pairwise Interactions: Charting Higher-Order Models of Brain Function"
-    authors: "A. Santoro, M. Neri, S. Poetto, D. Orsenigo, M. Diano, M. Gatica, G. Petri"
-    venue: "bioRxiv"
-    year: "2025"
-    type: "preprint"
-    pdf: "https://www.biorxiv.org/content/10.1101/2025.06.24.661306v1.full.pdf"
-    doi: "10.1101/2025.06.24.661306"
-    code: "https://github.com/nplresearch/HOI_lenses_analysis"
-    abstract: "Traditional models of brain connectivity focus on pairwise interactions, missing the complex dynamics from group-level interactions. In this work, we present the first large-scale comparison of higher-order interaction (HOI) metrics — spanning information-theoretic and topological methods — using resting-state and task fMRI data from 100 Human Connectome Project subjects. We uncover a clear taxonomy of HOI metrics: redundant, synergistic, and topological, with the latter bridging the synergy–redundancy spectrum. Despite methodological differences, all metrics align with the brain's unimodal-to-transmodal hierarchy, and some correlate with neurotransmitter receptor distributions. HOI metrics outperform traditional functional connectivity in fingerprinting and match it in task decoding. Crucially, topological metrics best predict behavioral variability, highlighting their value for understanding the links between brain function, structure, and cognition. This work offers a roadmap for applying HOI metrics in cognitive and clinical neuroscience."
 
   - title: "The Topological Architecture of Brain Identity"
     authors: "S. Poetto, H. Merritt, A. Santoro, G. Rabuffo, D. A. Battaglia, F. Vaccarino, M. Saggar, A. Brovelli, G. Petri"

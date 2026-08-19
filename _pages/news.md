@@ -9,6 +9,31 @@ author_profile: true
 
 
 
+<div class="news-item">
+  <p class="date">August 2026</p>
+  <h3>New preprint: Sperm whale foraging combines persistent search with flexible prey-capture tactics</h3>
+  <p>
+    Super happy that our new <a href="https://www.projectceti.org/" target="_blank">Project CETI</a> preprint is out on bioRxiv! Using acoustic recordings and reconstructed three-dimensional trajectories from 34 sensor-tag deployments, we show that sperm-whale foraging unfolds across two nested levels: directionally persistent search paths and flexible prey-capture tactics.
+    <a href="https://www.biorxiv.org/content/10.64898/2026.07.29.741536v1" target="_blank">Read the preprint here</a>.
+  </p>
+</div>
+
+<div class="news-item">
+  <p class="date">August 2026</p>
+  <h3>All-CETI Meeting in Dominica</h3>
+  <p>
+    I took part in the All-CETI Meeting in Dominica (29 July–2 August). Happy to be part of the <a href="https://www.projectceti.org/" target="_blank">Project CETI</a> team and to connect with colleagues working to decode sperm whale communication.
+  </p>
+</div>
+
+<div class="news-item">
+  <p class="date">July 2026</p>
+  <h3>New paper in Nature Communications: Charting higher-order models of brain function</h3>
+  <p>
+    Our large-scale comparison of higher-order interaction metrics in brain function is now published in Nature Communications. We chart a taxonomy of redundant, synergistic, and topological metrics, show their links to brain hierarchy and molecular signatures, and demonstrate their value for fingerprinting and behavior.
+    <a href="https://www.nature.com/articles/s41467-026-75959-w" target="_blank">Read the paper here</a>.
+  </p>
+</div>
 
 <div class="news-item">
   <p class="date">May 2026</p>

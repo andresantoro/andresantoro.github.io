@@ -6,6 +6,7 @@ author_profile: true
 ---
 
 <p>For a summary of my works, you can also have a look at <a href="https://scholar.google.co.uk/citations?user=gGSh6oEAAAAJ&hl=en" target="_blank">my Google Scholar profile</a>.</p>
+<p><sup>*</sup> Co-last authorship</p>
 
 <div class="publications-container">
   <div class="publications-filters">
