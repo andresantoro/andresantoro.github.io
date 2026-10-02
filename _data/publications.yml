@@ -6,6 +6,7 @@ papers:
     venue: "bioRxiv"
     year: "2026"
     type: "preprint"
+    topic: "neuro"
     pdf: "https://www.biorxiv.org/content/10.64898/2026.09.26.754452v1.full.pdf"
     doi: "https://doi.org/10.64898/2026.09.26.754452"
     abstract: "Emotions are thought to emerge from co-activation among distributed brain systems, yet traditional fMRI analyses typically examine localized responses and pairwise connections, potentially overlooking interactions among groups of regions. Here, we use time-resolved higher-order topology to characterize these group interactions during naturalistic viewing of 14 films totaling over 2.5 h, continuously annotated across 50 affective features. The homological scaffold, representing evolving group-level topology, most closely tracks recurrent emotional states and best predicts fine-grained affective profiles. This sensitivity diminishes when emotion is compressed into dimensions of valence, arousal, and power, where pairwise connectivity captures the dominant arousal signal. Across three independent datasets, arousal predictions transfer most robustly through pairwise connectivity, while the relative geometry of broad affective states remains conserved across film narratives despite poor valence generalization. These findings reveal complementary neural representations of emotion: higher-order topology captures fine-grained affective structure, whereas pairwise connectivity provides a portable readout of broad arousal."
@@ -16,6 +17,7 @@ papers:
     venue: "bioRxiv"
     year: "2026"
     type: "preprint"
+    topic: "ceti"
     pdf: "https://www.biorxiv.org/content/10.64898/2026.07.29.741536v1.full.pdf"
     doi: "https://doi.org/10.64898/2026.07.29.741536"
     abstract: "Predators searching patchy environments must coordinate movements across scales, yet this behavioural hierarchy is not yet technically possible to observe in the deep ocean. Here we show that sperm-whale foraging is organized across two nested levels: directionally persistent search paths and flexible prey-capture tactics. We combine acoustic recordings with reconstructed three-dimensional trajectories from 34 sensor-tag deployments on 20 individual whales in both the eastern Caribbean and the mid-Atlantic. Complete foraging paths exhibit heavy-tailed step lengths and superdiffusive displacement, consistent with Lévy-like search. Within these paths, echolocation buzzes resolve into two recurrent acoustic–kinematic tactics. Every sampled whale used both tactics and switched between them within dives, revealing a foraging hierarchy in which flexible capture actions unfold within persistent, deliberate large-scale search."
@@ -26,6 +28,7 @@ papers:
     venue: "Nature Communications"
     year: "2026"
     type: "journal"
+    topic: "neuro"
     pdf: "https://www.nature.com/articles/s41467-026-75959-w"
     doi: "https://doi.org/10.1038/s41467-026-75959-w"
     code: "https://github.com/nplresearch/HOI_lenses_analysis"
@@ -36,6 +39,7 @@ papers:
     venue: "arXiv"
     year: "2026"
     type: "preprint"
+    topic: "multilayer"
     pdf: "https://arxiv.org/pdf/2605.04199"
     doi: "https://doi.org/10.48550/arXiv.2605.04199"
     abstract: "Over the last two decades, network science has greatly advanced our understanding of how the collective behaviors of a complex system emerge from the interactions among its basic units. Multiplex networks, i.e. networks with many layers whose nodes are in one-to-one correspondence, provide a more realistic description for social, biological and ecological systems where multiple types of interactions coexist. After introducing multiplex network architecture, we present a unified framework for dynamical processes including percolation, reaction-diffusion, synchronization, epidemic spreading, social dynamics and games, as well as coupled and coevolving dynamics. We identify structural correlations across layers, dynamical correlations across processes, and interplay of inter- and intra-layer interactions as key mechanisms behind truly multiplex emergent behaviors."
@@ -45,6 +49,7 @@ papers:
     venue: "bioRxiv"
     year: "2026"
     type: "preprint"
+    topic: "clinical"
     pdf: "https://www.biorxiv.org/content/10.64898/2026.03.27.714711v1.full.pdf "
     doi: "https://doi.org/10.64898/2026.03.27.714711"
     abstract: "Stroke is one of the leading causes of global disability, yet the principles governing how focal brain injury disrupts large-scale neural connectivity over time remain poorly understood. Here, we leverage a longitudinal multimodal dataset to track the evolution of individual-specific connectivity patterns, or 'brain fingerprints', over the first year after stroke. Despite a persistent shift from healthy architecture, we demonstrate that each patient's unique functional connectome fingerprint is remarkably resilient and stabilizes within three weeks. This early global stabilization masks a protracted system-specific reorganization of brain circuits, which is characterized by an initial increase in connectivity within sensory and attention systems, followed by a decline across higher-level association networks. A joint structure-function embedding further shows that recovery involves a gradual shift toward the normative healthy range, driven primarily by functional reconfiguration atop a stable structural lesion."
@@ -54,6 +59,7 @@ papers:
     venue: "Scientific Reports"
     year: "2026"
     type: "journal"
+    topic: "ceti"
     pdf: "https://www.nature.com/articles/s41598-025-27438-3"
     doi: "https://doi.org/10.1038/s41598-025-27438-3"
     abstract: "Wild cetacean birth observations are extremely rare, with observations having been recorded in less than 10% of cetacean species. Here, we describe a detailed accounting of a sperm whale (Physeter macrocephalus) birth off the coast of Dominica within a well-documented social unit and consisted of sperm whales collaboratively lifting the newborn out of the water. We recorded data via multiple concurrent methods: underwater audio, aerial drone video, shipboard photography in addition to behavioral observations spanning before, during and after the whale birth. All 11 members from sperm whale 'Unit A' were present and participated in the birth, which lasted 34 min from the time the flukes emerged until the completion of delivery. The sperm whale unit made extensive vocalizations, with statistically significant shifts in coda vocal style corresponding to key events, such as the beginning of the birth and interactions with short-finned pilot whales shortly after the birth event."
@@ -63,6 +69,7 @@ papers:
     venue: "Computers in Biology and Medicine"
     year: "2026"
     type: "journal"
+    topic: "neuro"
     pdf: "https://www.sciencedirect.com/science/article/pii/S0010482526001691"
     doi: "https://doi.org/10.1016/j.compbiomed.2026.109691"
     abstract: "Developing individualized spatial models that capture the complex dynamics of multi-electrode EEG data is essential for accurately decoding global neural activity. A widely used approach is network modeling, where electrodes are represented as nodes. A key challenge lies in defining the network edges and weights, as precise connectivity estimation is critical for enhancing neural characterization and extracting discriminative features, such as those needed for task decoding. In this work, we propose a method for inferring subject-specific brain graphs from EEG data, explicitly designed to exhibit small-world and scale-free network properties."
@@ -72,6 +79,7 @@ papers:
     venue: "Imaging Neuroscience"
     year: "2026"
     type: "journal"
+    topic: "neuro"
     pdf: "https://mitp.silverchair-cdn.com/mitp/content_public/journal/imag/jam/10.1162_imag.a.1128/1/imag.a.1128.pdf?Expires=1772824340&Signature=h7U1wHrHwvIVZDG11JrJzb6-efOSCOrGaNvrm63Db95JZv97mBh0H86PCa5TxyG4dFU4YKHIi6fcXUXQrSUE9KS1r~uxnOEJxz2Lhg3X4Ximzy6AJQeEuH479hbBcgCow8Uy3PD97ZHEIumTfFVLoojnqgQxYHLhpiC92f4UN5lIRKy9i7l0hFK-Xp-LsHi79pR2QAKoHSLPI0BeYjWSafwPMwCFeOnpGUBbYfrcYzEKzHfMqF7HVWYswPtAU0v4Gsnai6LazON~75auGkiFc9dVWRUUtoKTGVWLl1ZErN7-WSdvTGrg~G~Bkx6HXpq6dR4CTCoxw0qzoe~cNoFSwQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
     doi: "https://doi.org/10.1162/IMAG.a.1128"
     abstract: "Functional connectivity (FC) patterns in the human brain form a reproducible, individual-specific 'fingerprint' that allows reliable identification of the same participant across scans acquired over different sessions. While brain fingerprinting is robust across healthy individuals and neuroimaging modalities, little is known about whether the fingerprinting principle extends beyond the brain. Here, we used multiple spinal functional magnetic resonance imaging (fMRI) datasets acquired at different sites to examine whether a fingerprint can be revealed from FCs of the cervical region of the human spinal cord. Our results demonstrate that the functional organisation of the cervical spinal cord also exhibits individual-specific properties, suggesting the potential existence of a spine-print within the same acquisition session. This study provides the first evidence of a spinal cord connectivity fingerprint, underscoring the importance of considering a more comprehensive view of the entire central nervous system. Eventually, these spine-specific signatures could contribute to identifying individualized biomarkers of neuronal connectivity, with potential clinical applications in neurology and neurosurgery."
@@ -82,6 +90,7 @@ papers:
     venue: "European Signal Processing Conference (EUSIPCO)"
     year: "2025"
     type: "conference"
+    topic: "neuro"
     pdf: "https://eusipco2025.org/wp-content/uploads/pdfs/0001084.pdf"
     abstract: "Traditional graph signal processing (GSP) methods applied to brain networks focus on signals defined on the nodes. Thus, they are unable to capture potentially important dynamics occurring on the edges. In this work, we adopt an edge-centric GSP approach to analyze edge signals constructed from 100 unrelated subjects of the Human Connectome Project. Specifically, we describe structural connectivity through the lens of the 1-dimensional Hodge Laplacian, processing signals defined on edges to capture co-fluctuation information between brain regions. We demonstrate that edge-based approaches achieve superior task decoding accuracy in static and dynamic scenarios compared to conventional node-based techniques, thereby unveiling unique aspects of brain functional organization. These findings underscore the promise of edge-focused GSP strategies for deepening our understanding of brain connectivity and functional dynamics."
 
@@ -90,6 +99,7 @@ papers:
     venue: "bioRxiv"
     year: "2025"
     type: "preprint"
+    topic: "neuro"
     pdf: "https://www.biorxiv.org/content/early/2025/06/21/2025.06.20.660792.full.pdf"
     doi: "10.1101/2025.06.20.660792"
     abstract: "Accurately identifying individuals from brain activity --functional fingerprinting-- is a powerful tool for understanding individual variability and detecting brain disorders. Most current approaches rely on functional connectivity (FC), which measures pairwise correlations between brain regions. However, FC is limited in capturing the higher-order, multiscale structure of brain organization. Here, we propose a novel fingerprinting method based on homological scaffolds, a topological representation derived from persistent homology of resting-state fMRI data. Using data from the Human Connectome Project (n= 100), we show that scaffold-based fingerprints achieve near-perfect identification accuracy (~ 100%), outperforming FC-based methods (90%), and remain robust across preprocessing pipelines, atlas choices, and even with drastically shortened scan durations. Unlike FC, in which fingerprinting features localize within networks, scaffolds derive their discriminative power from inter-network connections, revealing the existence of individual mesoscale organizational signatures. Finally, we show that scaffolds act as bridges between redundancy and synergy, by balancing redundancy along high-FC border edges with high synergy across the topological voids that the cycles define. These findings establish topological scaffolds as a powerful tool for capturing individual variability, revealing that unique signatures of brain organization are encoded in the interplay between mesoscale network integration and information dynamics."
@@ -99,6 +109,7 @@ papers:
     venue: "OSF Preprints"
     year: "2025"
     type: "preprint"
+    topic: "social"
     pdf: "https://osf.io/dg8zj_v1"
     doi: "10.31234/osf.io/dg8zj_v1"
     abstract: "Social transmission along multiple pathways promotes information fidelity and reduces divisiveness."
@@ -108,6 +119,7 @@ papers:
     venue: "npj Science of Food"
     year: "2025"
     type: "journal"
+    topic: "food"
     pdf: "https://www.nature.com/articles/s41538-025-00588-4"
     doi: "https://doi.org/10.1038/s41538-025-00588-4"
 
@@ -117,6 +129,7 @@ papers:
     venue: "Nature Communications"
     year: "2024"
     type: "journal"
+    topic: "neuro"
     pdf: "https://www.biorxiv.org/content/10.1101/2023.12.04.569913v1.abstract"
     doi: "https://www.nature.com/articles/s41467-024-54472-y"
     code: "https://github.com/andresantoro/Brain_HORS"
@@ -127,6 +140,7 @@ papers:
     venue: "Under review"
     year: "2024"
     type: "preprint"
+    topic: "hoi"
     pdf: "https://www.researchgate.net/publication/378168067_Higher-Order_Financial_Networks"
 
   # 2023
@@ -136,6 +150,7 @@ papers:
     venue: "Nature Physics"
     year: "2023"
     type: "journal"
+    topic: "hoi"
     pdf: "https://arxiv.org/abs/2203.10702"
     doi: "https://www.nature.com/articles/s41567-022-01852-0"
     code: "https://github.com/andresantoro/RHOSTS"
@@ -147,6 +162,7 @@ papers:
     venue: "Physical Review Research"
     year: "2022"
     type: "journal"
+    topic: "social"
     pdf: "https://arxiv.org/abs/2102.13013"
     doi: "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.023092"
 
@@ -156,6 +172,7 @@ papers:
     venue: "Physical Review Research"
     year: "2020"
     type: "journal"
+    topic: "multilayer"
     pdf: "https://arxiv.org/abs/1910.04783"
     doi: "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033122"
     code: "https://github.com/andresantoro/Multiplex_optimal_percolation"
@@ -165,6 +182,7 @@ papers:
     venue: "Physical Review X"
     year: "2020"
     type: "journal"
+    topic: "multilayer"
     pdf: "https://arxiv.org/abs/1903.08049"
     doi: "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.021069"
     code: "https://github.com/andresantoro/ALCOREM"
@@ -175,6 +193,7 @@ papers:
     venue: "arXiv preprint"
     year: "2019"
     type: "preprint"
+    topic: "hoi"
     pdf: "https://arxiv.org/abs/1906.09068"
 
   # 2018
@@ -183,6 +202,7 @@ papers:
     venue: "Physical Review Letters"
     year: "2018"
     type: "journal"
+    topic: "multilayer"
     pdf: "https://arxiv.org/abs/1710.01068"
     doi: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.128302"
     data: "https://github.com/andresantoro/Tranet_data"
@@ -192,6 +212,7 @@ papers:
     venue: "Journal of Global Optimization"
     year: "2018"
     type: "journal"
+    topic: "optim"
     doi: "https://link.springer.com/article/10.1007/s10898-018-0639-9"
 
   # 2017
@@ -200,6 +221,7 @@ papers:
     venue: "Engineering Applications of Artificial Intelligence"
     year: "2017"
     type: "journal"
+    topic: "optim"
     doi: "https://www.sciencedirect.com/science/article/abs/pii/S0952197616301415"
 
   # 2016
@@ -208,6 +230,7 @@ papers:
     venue: "International Workshop on Machine Learning, Optimization and Big Data"
     year: "2016"
     type: "conference"
+    topic: "optim"
 
   # 2015
   - title: "Pareto Optimal Design for Synthetic Biology"
@@ -215,6 +238,7 @@ papers:
     venue: "IEEE Transactions on Biomedical Circuits and Systems"
     year: "2015"
     type: "journal"
+    topic: "optim"
     doi: "https://ieeexplore.ieee.org/document/7265105"
 
   - title: "A multi-objective clonal selection algorithm for analog circuit and solar cell design"
@@ -222,6 +246,7 @@ papers:
     venue: "International Workshop on Artificial Immune Systems (AIS)"
     year: "2015"
     type: "conference"
+    topic: "optim"
 
 # Selected talks at international conferences and workshops
 talks:

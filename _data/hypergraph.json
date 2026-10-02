@@ -387,11 +387,57 @@
    "works": 1
   }
  ],
+ "topics": [
+  {
+   "key": "neuro",
+   "label": "Computational neuroscience",
+   "color": "#9D8CFF"
+  },
+  {
+   "key": "clinical",
+   "label": "Clinical neuroscience",
+   "color": "#F08DC8"
+  },
+  {
+   "key": "hoi",
+   "label": "Higher-order methods & time series",
+   "color": "#C3E05A"
+  },
+  {
+   "key": "multilayer",
+   "label": "Multilayer networks",
+   "color": "#4FD1B5"
+  },
+  {
+   "key": "food",
+   "label": "Food networks",
+   "color": "#F5B84A"
+  },
+  {
+   "key": "ceti",
+   "label": "CETI & animal behaviour",
+   "color": "#55BFF0"
+  },
+  {
+   "key": "social",
+   "label": "Social & epidemic dynamics",
+   "color": "#D9A47A"
+  },
+  {
+   "key": "optim",
+   "label": "Optimisation",
+   "color": "#A9A69E"
+  }
+ ],
  "works": [
   {
    "titles": [
     "Sperm whale foraging combines persistent search with flexible prey-capture tactics"
    ],
+   "topics": [
+    "ceti"
+   ],
+   "topic": "ceti",
    "year": 2026,
    "size": 10
   },
@@ -399,6 +445,10 @@
    "titles": [
     "Individual connectome fingerprints reveal early stabilization and long-term circuit remodeling after stroke"
    ],
+   "topics": [
+    "clinical"
+   ],
+   "topic": "clinical",
    "year": 2026,
    "size": 10
   },
@@ -406,6 +456,10 @@
    "titles": [
     "Higher-order topology uncovers the multidimensional dynamics of naturalistic emotion"
    ],
+   "topics": [
+    "neuro"
+   ],
+   "topic": "neuro",
    "year": 2026,
    "size": 9
   },
@@ -413,6 +467,10 @@
    "titles": [
     "Spine-Prints: Transposing Brain Fingerprints to the Spinal Cord"
    ],
+   "topics": [
+    "neuro"
+   ],
+   "topic": "neuro",
    "year": 2026,
    "size": 8
   },
@@ -420,6 +478,10 @@
    "titles": [
     "The Topological Architecture of Brain Identity"
    ],
+   "topics": [
+    "neuro"
+   ],
+   "topic": "neuro",
    "year": 2025,
    "size": 8
   },
@@ -427,6 +489,10 @@
    "titles": [
     "Social Transmission along Multiple Pathways Promotes Information Fidelity and Reduces Divisiveness"
    ],
+   "topics": [
+    "social"
+   ],
+   "topic": "social",
    "year": 2025,
    "size": 7
   },
@@ -434,6 +500,10 @@
    "titles": [
     "Simplex2Vec embeddings for community detection in simplicial complexes"
    ],
+   "topics": [
+    "hoi"
+   ],
+   "topic": "hoi",
    "year": 2019,
    "size": 7
   },
@@ -441,6 +511,10 @@
    "titles": [
     "Charting higher-order models of brain function beyond pairwise interactions"
    ],
+   "topics": [
+    "neuro"
+   ],
+   "topic": "neuro",
    "year": 2026,
    "size": 6
   },
@@ -448,6 +522,10 @@
    "titles": [
     "Dynamical processes and emergent behaviors in multiplex networks"
    ],
+   "topics": [
+    "multilayer"
+   ],
+   "topic": "multilayer",
    "year": 2026,
    "size": 6
   },
@@ -455,6 +533,10 @@
    "titles": [
     "The networks of ingredient combination in cuisines around the world"
    ],
+   "topics": [
+    "food"
+   ],
+   "topic": "food",
    "year": 2025,
    "size": 5
   },
@@ -462,6 +544,10 @@
    "titles": [
     "Small-world scale-free brain networks from EEG with application to motor imagery decoding and brain fingerprinting"
    ],
+   "topics": [
+    "neuro"
+   ],
+   "topic": "neuro",
    "year": 2026,
    "size": 4
   },
@@ -469,6 +555,10 @@
    "titles": [
     "Higher-order connectomics of human brain function reveals local topological signatures of task decoding, individual identification, and behavior"
    ],
+   "topics": [
+    "neuro"
+   ],
+   "topic": "neuro",
    "year": 2024,
    "size": 4
   },
@@ -476,6 +566,10 @@
    "titles": [
     "Higher-Order Financial Networks"
    ],
+   "topics": [
+    "hoi"
+   ],
+   "topic": "hoi",
    "year": 2024,
    "size": 4
   },
@@ -483,6 +577,10 @@
    "titles": [
     "Optimizing the mitigation of epidemic spreading through targeted adoption of contact tracing apps"
    ],
+   "topics": [
+    "social"
+   ],
+   "topic": "social",
    "year": 2022,
    "size": 4
   },
@@ -490,6 +588,10 @@
    "titles": [
     "Enhancing quantum efficiency of thin-film silicon solar cells by Pareto optimality"
    ],
+   "topics": [
+    "optim"
+   ],
+   "topic": "optim",
    "year": 2018,
    "size": 4
   },
@@ -497,6 +599,10 @@
    "titles": [
     "Higher-order organization of multivariate time series"
    ],
+   "topics": [
+    "hoi"
+   ],
+   "topic": "hoi",
    "year": 2023,
    "size": 3
   },
@@ -504,6 +610,10 @@
    "titles": [
     "Pareto optimality in multilayer network growth"
    ],
+   "topics": [
+    "multilayer"
+   ],
+   "topic": "multilayer",
    "year": 2018,
    "size": 3
   },
@@ -511,6 +621,10 @@
    "titles": [
     "From Nodes to Edges: Edge-Based Laplacians for Brain Signal Processing"
    ],
+   "topics": [
+    "neuro"
+   ],
+   "topic": "neuro",
    "year": 2025,
    "size": 2
   },
@@ -519,6 +633,11 @@
     "Optimal percolation in correlated multilayer networks with overlap",
     "Algorithmic complexity of multiplex networks"
    ],
+   "topics": [
+    "multilayer",
+    "multilayer"
+   ],
+   "topic": "multilayer",
    "year": 2020,
    "size": 1
   }

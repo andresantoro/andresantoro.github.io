@@ -2,8 +2,8 @@
 
 Each paper or preprint since SINCE is a hyperedge joining its co-authors (A. Santoro,
 who is in every one of them, is left out). Layout comes from XGI; shapes are drawn
-XGI-style (convex hulls) and written as inline SVG includes plus a JSON file
-used by assets/js/notebook.js.
+XGI-style (convex hulls), coloured by the paper's `topic` (see _data/topics.yml),
+and written as inline SVG includes plus a JSON file used by assets/js/notebook.js.
 
     python3 scripts/collab_hypergraph.py
 
@@ -24,8 +24,6 @@ SINCE = 2018
 MAX_AUTHORS = 15  # consortium papers would swallow everything else
 ME = "A. Santoro"
 W, H = 1200, 640
-ORDER_COLORS = {3: "#7FD1AE", 4: "#58BFC2", 5: "#6FA6E8", 6: "#8C93F0", 7: "#B08CF0"}
-BIG_COLOR = "#D58BD8"
 ACCENT, MENTOR = "#FF5A36", "#7FB2FF"
 
 
@@ -48,6 +46,8 @@ def esc(s):
 
 pubs = yaml.safe_load(open(ROOT / "_data/publications.yml", encoding="utf-8"))
 people = yaml.safe_load(open(ROOT / "_data/people.yml", encoding="utf-8"))
+topics = yaml.safe_load(open(ROOT / "_data/topics.yml", encoding="utf-8"))
+TOPIC_COLOR = {t["key"]: t["color"] for t in topics}
 students = {short(p["name"]) for p in people.get("current", []) + people.get("alumni", [])}
 mentors = {short(p["name"]) for p in people.get("mentors", [])}
 
@@ -61,9 +61,10 @@ for w in pubs["papers"]:  # posters are not manuscripts, so they are left out
     key = frozenset(n for n in names if n != ME)
     if not key:
         continue
-    e = edges.setdefault(key, {"titles": [], "year": 0})
+    e = edges.setdefault(key, {"titles": [], "topics": [], "year": 0})
     if w["title"].lower() not in (t.lower() for t in e["titles"]):
         e["titles"].append(w["title"])
+        e["topics"].append(w["topic"])  # every paper needs a topic from _data/topics.yml
     e["year"] = max(e["year"], int(str(w["year"])))
 
 edge_list = sorted(edges.items(), key=lambda kv: -len(kv[0]))
@@ -105,7 +106,9 @@ xy = {n: (round(float(x), 1), round(float(y), 1)) for n, (x, y) in xy.items()}
 
 works = []
 for k, e in edge_list:
-    works.append({"members": sorted(k), "titles": e["titles"], "year": e["year"]})
+    # several papers with the same co-authors share one hyperedge: colour it by their most common topic
+    main = max(e["topics"], key=lambda t: (e["topics"].count(t), -e["topics"].index(t)))
+    works.append({"members": sorted(k), "titles": e["titles"], "topics": e["topics"], "topic": main, "year": e["year"]})
 deg = {n: sum(len(w["titles"]) for w in works if n in w["members"]) for n in nodes}
 role = {n: "student" if n in students else "mentor" if n in mentors else "collaborator" for n in nodes}
 
@@ -117,8 +120,8 @@ def hull_path(members, pad):
     return "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in c) + " Z"
 
 
-def color(order):
-    return ORDER_COLORS.get(order, BIG_COLOR)
+def color(w):
+    return TOPIC_COLOR[w["topic"]]
 
 
 def place_labels(keys, char_w=9.2):
@@ -156,7 +159,7 @@ def svg(mini):
     for i, w in enumerate(works):
         m = w["members"]
         if len(m) >= 3:
-            c = color(len(m))
+            c = color(w)
             out.append(f'<path class="hg-edge" data-w="{i}" d="{hull_path(m, pad)}" fill="{c}" fill-opacity="0.2" '
                        f'stroke="{c}" stroke-opacity="0.75" stroke-width="{3 if mini else 1.3}" stroke-linejoin="round"/>')
     for i, w in enumerate(works):
@@ -164,7 +167,7 @@ def svg(mini):
         if len(m) == 2:
             (x1, y1), (x2, y2) = xy[m[0]], xy[m[1]]
             out.append(f'<line class="hg-edge hg-dyad" data-w="{i}" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" '
-                       f'stroke="#ECE9E1" stroke-opacity="0.95" stroke-width="{5 if mini else 2.8}" stroke-linecap="round"/>')
+                       f'stroke="{color(w)}" stroke-opacity="0.95" stroke-width="{5 if mini else 2.8}" stroke-linecap="round"/>')
     keys = {n for n in nodes if deg[n] >= 3 or role[n] != "collaborator"}
     sides = place_labels(keys) if not mini else {}
     for n in sorted(nodes, key=lambda n: deg[n]):
@@ -190,6 +193,8 @@ def svg(mini):
 (ROOT / "_includes/nb/hypergraph-people.svg").write_text(svg(False), encoding="utf-8")
 (ROOT / "_includes/nb/hypergraph-mini.svg").write_text(svg(True), encoding="utf-8")
 data = {"since": SINCE, "people": [{"name": n, "role": role[n], "works": deg[n]} for n in nodes],
-        "works": [{"titles": w["titles"], "year": w["year"], "size": len(w["members"])} for w in works]}
+        "topics": [t for t in topics if any(t["key"] in w["topics"] for w in works)],
+        "works": [{"titles": w["titles"], "topics": w["topics"], "topic": w["topic"], "year": w["year"],
+                   "size": len(w["members"])} for w in works]}
 (ROOT / "_data/hypergraph.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"{len(nodes)} co-authors, {len(works)} hyperedges since {SINCE}")

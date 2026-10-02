@@ -1,0 +1,28 @@
+# Research topics used to colour papers in the collaboration hypergraph.
+# Each paper in publications.yml has `topic: <key>`. Colours avoid the node colours
+# (students #FF5A36, mentors #7FB2FF). Rerun scripts/collab_hypergraph.py after edits.
+
+- key: neuro
+  label: "Computational neuroscience"
+  color: "#9D8CFF"
+- key: clinical
+  label: "Clinical neuroscience"
+  color: "#F08DC8"
+- key: hoi
+  label: "Higher-order methods & time series"
+  color: "#C3E05A"
+- key: multilayer
+  label: "Multilayer networks"
+  color: "#4FD1B5"
+- key: food
+  label: "Food networks"
+  color: "#F5B84A"
+- key: ceti
+  label: "CETI & animal behaviour"
+  color: "#55BFF0"
+- key: social
+  label: "Social & epidemic dynamics"
+  color: "#D9A47A"
+- key: optim
+  label: "Optimisation"
+  color: "#A9A69E"

@@ -132,14 +132,32 @@
       });
       var person = data.people.filter(function (p) { return p.name === node.dataset.name; })[0] || {};
       var titles = [];
-      ws.forEach(function (w) { (data.works[+w] || { titles: [] }).titles.forEach(function (t) { titles.push(t); }); });
+      var topicOf = {};
+      (data.topics || []).forEach(function (t) { topicOf[t.key] = t; });
+      ws.forEach(function (w) {
+        var work = data.works[+w] || { titles: [], topics: [] };
+        work.titles.forEach(function (t, i) { titles.push({ title: t, topic: topicOf[(work.topics || [])[i]] }); });
+      });
       panelSel.querySelector('[data-hg-role]').textContent = roleNames[person.role] || '';
       panelSel.querySelector('[data-hg-name]').textContent = node.dataset.name;
       panelSel.querySelector('[data-hg-stats]').textContent =
         titles.length + (titles.length === 1 ? ' joint work' : ' joint works');
       var ol = panelSel.querySelector('[data-hg-works]');
       ol.innerHTML = '';
-      titles.forEach(function (t) { var li = document.createElement('li'); li.textContent = t; ol.appendChild(li); });
+      titles.forEach(function (t) {
+        var li = document.createElement('li');
+        li.textContent = t.title;
+        if (t.topic) {
+          var tag = document.createElement('span');
+          var dot = document.createElement('i');
+          tag.className = 'nb-topic';
+          dot.style.setProperty('--c', t.topic.color);
+          tag.appendChild(dot);
+          tag.appendChild(document.createTextNode(t.topic.label));
+          li.appendChild(tag);
+        }
+        ol.appendChild(li);
+      });
       panelIdle.hidden = true; panelSel.hidden = false;
     };
 

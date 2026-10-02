@@ -86,14 +86,16 @@ hero: false
         <span><i style="border: 1.5px solid var(--chalk)"></i>Collaborator</span>
         <span><i class="is-line"></i>Paper with 2 co-authors</span>
         <span><i class="is-shape"></i>Paper with 3+ co-authors</span>
-        <span>Each shape is a paper or preprint since {{ site.data.hypergraph.since }}, joining its co-authors (I am in all of them, so I am left out). Consortium papers with more than 15 authors are omitted.</span>
+        <span class="nb-hgkey__break" aria-hidden="true"></span>
+        {% for t in site.data.hypergraph.topics %}<span><i class="is-topic" style="--c: {{ t.color }}"></i>{{ t.label }}</span>
+        {% endfor %}        <span>Each shape is a paper or preprint since {{ site.data.hypergraph.since }}, joining its co-authors (I am in all of them, so I am left out). Consortium papers with more than 15 authors are omitted.</span>
       </figcaption>
     </figure>
     <aside class="nb-hgpanel" aria-live="polite">
       <div class="nb-cellbar"><span>Details</span></div>
       <div class="nb-hgpanel__body" data-hg-idle>
         <div class="nb-hgpanel__name">{{ site.data.hypergraph.people.size }} co-authors</div>
-        <p class="nb-row__text">Everyone I have written a paper or preprint with since {{ site.data.hypergraph.since }}. Shapes are coloured by size: small teams in green, larger ones towards violet.</p>
+        <p class="nb-row__text">Everyone I have written a paper or preprint with since {{ site.data.hypergraph.since }}. Each shape is coloured by the paper's research topic.</p>
         <p class="nb-hand" style="margin-top: 14px; color: var(--chalk)">← pick anyone to see what we did together</p>
       </div>
       <div class="nb-hgpanel__body" data-hg-sel hidden>
