@@ -1,4 +1,5 @@
-<svg class="wb" viewBox="0 0 800 440" role="img" aria-label="Chalk sketch: a simplicial complex with a hole, time series turned into a group interaction, a persistence barcode, the O-information, and a sperm whale coda">
+<svg class="wb" viewBox="0 0 800 440" role="img" aria-label="Chalk sketch in four steps: multivariate signals; a synergistic triplet found with the O-information (negative O-information means synergy); a simplicial complex K whose unfilled cycle is a hole with beta-one equal to one; and a persistence barcode over the filtration parameter epsilon where the same cycle is a long H-one bar. In a separate corner, field notes of a sperm whale coda.">
+  <!-- 3: higher-order structure, a simplicial complex K with one hole -->
   <g class="wb-fill">
     <polygon points="140,140 235,100 198,212"/>
     <polygon points="235,100 305,190 198,212" class="wb-fill--light"/>
@@ -6,37 +7,43 @@
     <polygon points="255,300 150,320 198,212" class="wb-fill--light"/>
   </g>
   <g class="wb-chalk wb-draw wb-draw--a">
-    <path d="M70 250 Q103 193 140 140"/>
     <path d="M140 140 Q186 116 235 100"/>
     <path d="M235 100 Q272 143 305 190"/>
     <path d="M305 190 Q282 247 255 300"/>
     <path d="M255 300 Q203 313 150 320"/>
-    <path d="M150 320 Q108 288 70 250"/>
   </g>
   <g class="wb-chalk wb-chalk--thin wb-draw wb-draw--b">
-    <path d="M140 140 Q171 174 198 212"/>
     <path d="M235 100 Q213 157 198 212"/>
     <path d="M305 190 Q250 199 198 212"/>
     <path d="M255 300 Q224 257 198 212"/>
+  </g>
+  <!-- the unfilled cycle (the hole), in the same accent as its H1 bar -->
+  <g class="wb-accent wb-accent--cycle wb-draw wb-draw--c">
+    <path d="M70 250 Q103 193 140 140"/>
+    <path d="M140 140 Q171 174 198 212"/>
     <path d="M150 320 Q176 265 198 212"/>
+    <path d="M150 320 Q108 288 70 250"/>
   </g>
   <g class="wb-dots">
     <circle cx="70" cy="250" r="5"/><circle cx="140" cy="140" r="5"/><circle cx="235" cy="100" r="5"/>
     <circle cx="305" cy="190" r="5"/><circle cx="255" cy="300" r="5"/><circle cx="150" cy="320" r="5"/>
     <circle cx="198" cy="212" r="5"/>
   </g>
+  <g class="wb-step"><circle cx="26" cy="102" r="11"/><text x="26" y="107">3</text></g>
   <text class="wb-text wb-text--xl" x="48" y="114">K</text>
-  <text class="wb-text" x="262" y="52">2-simplex = a group</text>
+  <text class="wb-text" x="150" y="40">2-simplex = 3-way interaction</text>
   <g class="wb-chalk wb-chalk--arrow">
-    <path d="M258 60 Q222 72 208 140"/>
-    <path d="M201 132 L208 143 L215 133"/>
+    <path d="M232 50 Q214 76 206 140"/>
+    <path d="M199 132 L206 143 L213 133"/>
   </g>
-  <text class="wb-text wb-text--accent" x="30" y="392">a hole! β₁ = 1</text>
+  <text class="wb-text wb-text--accent" x="30" y="392">a hole: β₁ = 1</text>
   <g class="wb-accent wb-draw wb-draw--c">
     <path d="M92 368 Q66 300 120 248"/>
   </g>
   <path class="wb-accent" d="M110 251 L121 247 L120 259"/>
 
+  <!-- 1: multivariate signals -->
+  <g class="wb-step"><circle cx="412" cy="40" r="11"/><text x="412" y="45">1</text></g>
   <text class="wb-text" x="436" y="58">x₁</text>
   <text class="wb-text" x="436" y="98">x₂</text>
   <text class="wb-text" x="436" y="138">x₃</text>
@@ -45,18 +52,23 @@
     <path d="M470 92 q 13 12 26 0 t 26 0 t 26 0 t 26 0 t 26 0 t 26 0"/>
     <path d="M470 132 q 8 -10 16 0 t 16 0 t 16 0 t 16 0 t 16 0 t 16 0 t 16 0 t 16 0 t 16 0 t 16 0"/>
   </g>
-  <text class="wb-text wb-text--sm" x="648" y="82">infer</text>
-  <g class="wb-chalk wb-chalk--arrow">
-    <path d="M646 92 L690 92"/>
-    <path d="M682 86 L692 92 L682 98"/>
-  </g>
-  <polygon class="wb-tri" points="712,62 772,74 740,124"/>
-  <g class="wb-dots">
-    <circle cx="712" cy="62" r="4.5"/><circle cx="772" cy="74" r="4.5"/><circle cx="740" cy="124" r="4.5"/>
-  </g>
-  <text class="wb-text wb-text--sm" x="790" y="152" text-anchor="end">Ω &lt; 0 ⇒ synergy</text>
 
-  <text class="wb-text wb-text--muted" x="436" y="196">persistence barcode</text>
+  <!-- 2: a group interaction, found statistically (not a simplex) -->
+  <text class="wb-text wb-text--sm" x="646" y="82">Ω &lt; 0</text>
+  <g class="wb-chalk wb-chalk--arrow">
+    <path d="M646 92 L692 92"/>
+    <path d="M684 86 L694 92 L684 98"/>
+  </g>
+  <g class="wb-step"><circle cx="700" cy="44" r="11"/><text x="700" y="49">2</text></g>
+  <path class="wb-hyper" d="M708 66 C712 52 738 54 760 64 C778 70 794 76 788 92 C782 108 762 132 748 138 C734 142 720 128 712 108 C704 92 704 78 708 66 Z"/>
+  <g class="wb-dots">
+    <circle cx="722" cy="72" r="4.5"/><circle cx="772" cy="86" r="4.5"/><circle cx="744" cy="122" r="4.5"/>
+  </g>
+  <text class="wb-text wb-text--sm" x="790" y="160" text-anchor="end">synergistic triplet</text>
+
+  <!-- 4: filtration and persistent homology -->
+  <g class="wb-step"><circle cx="414" cy="191" r="11"/><text x="414" y="196">4</text></g>
+  <text class="wb-text wb-text--muted" x="436" y="198">persistence barcode</text>
   <text class="wb-text" x="400" y="242">H₀</text>
   <g class="wb-bars">
     <path class="wb-draw wb-draw--c" d="M440 212 L780 212"/>
@@ -67,7 +79,7 @@
   </g>
   <path class="wb-chalk wb-chalk--arrow" d="M772 207 L782 212 L772 217"/>
   <text class="wb-text" x="400" y="304">H₁</text>
-  <text class="wb-text wb-text--sm wb-text--accent" x="640" y="278">persistent!</text>
+  <text class="wb-text wb-text--sm wb-text--accent" x="560" y="279">persistent H₁ cycle</text>
   <path class="wb-bar-accent wb-draw wb-draw--c" d="M492 288 L712 288"/>
   <g class="wb-bars">
     <path d="M540 300 L582 300"/>
@@ -77,26 +89,28 @@
     <path d="M440 334 L782 334"/>
     <path d="M774 329 L784 334 L774 339"/>
   </g>
-  <text class="wb-text wb-text--muted" x="768" y="356">ε</text>
+  <text class="wb-text wb-text--sm wb-text--muted" x="784" y="354" text-anchor="end">filtration ε</text>
 
+  <!-- the quantity behind step 2 -->
   <text class="wb-text wb-text--lg" x="420" y="398">Ω = TC − DTC</text>
-  <text class="wb-text wb-text--muted" x="420" y="430">∂₁ ∘ ∂₂ = 0</text>
+  <text class="wb-text wb-text--xs wb-text--muted" x="422" y="424">O-information</text>
 
-  <text class="wb-text wb-text--xs wb-text--muted" x="600" y="370">coda</text>
+  <!-- field notes, kept apart from the maths -->
+  <rect class="wb-box" x="592" y="364" width="204" height="72" rx="4"/>
+  <text class="wb-text wb-text--xs wb-text--muted" x="594" y="358">field notes</text>
   <g class="wb-clicks">
-    <path d="M603 380 L603 394"/><path d="M618 380 L618 394"/>
-    <path d="M636 380 L636 394"/><path d="M642 380 L642 394"/><path d="M648 380 L648 394"/>
+    <path d="M603 388 L603 400"/><path d="M618 388 L618 400"/>
+    <path d="M636 388 L636 400"/><path d="M642 388 L642 400"/><path d="M648 388 L648 400"/>
   </g>
-  <text class="wb-text wb-text--sm" x="600" y="416">1+1+3</text>
-  <path class="wb-fluke" d="M722 406 C706 398 680 392 662 381 C682 374 708 374 724 378 L727 386 L730 378 C746 374 772 374 792 381 C774 392 748 398 732 406 Z"/>
+  <text class="wb-text wb-text--sm" x="600" y="420">1+1+3</text>
+  <path class="wb-fluke" d="M722 406 C706 398 680 392 662 381 C682 374 708 374 724 378 L727 386 L730 378 C746 374 772 374 792 381 C774 392 748 398 732 406 Z" transform="translate(-6 0) scale(1 0.92) translate(0 34)"/>
   <g class="wb-chalk wb-chalk--thin">
-    <path d="M721 406 C718 416 713 424 708 431"/>
-    <path d="M733 406 C736 416 741 424 746 431"/>
+    <path d="M715 407 C712 415 708 421 704 427"/>
+    <path d="M727 407 C730 415 734 421 738 427"/>
   </g>
   <g class="wb-drips">
-    <circle cx="663" cy="391" r="1.7"/><circle cx="664" cy="400" r="1.3"/><circle cx="663" cy="409" r="1"/>
-    <circle cx="791" cy="391" r="1.7"/><circle cx="790" cy="400" r="1.3"/><circle cx="791" cy="409" r="1"/>
+    <circle cx="657" cy="394" r="1.6"/><circle cx="658" cy="402" r="1.2"/>
+    <circle cx="785" cy="394" r="1.6"/><circle cx="784" cy="402" r="1.2"/>
   </g>
-  <path class="wb-water" d="M600 433 q 12 -5 25 0 t 25 0 t 25 0 t 25 0 t 25 0 t 25 0 t 25 0 t 25 0"/>
-  <path class="wb-water" d="M692 426 q 6 -4 12 0 M750 426 q 6 -4 12 0"/>
+  <path class="wb-water" d="M664 430 q 11 -4 22 0 t 22 0 t 22 0 t 22 0 t 22 0 t 18 0"/>
 </svg>
