@@ -1,4 +1,4 @@
-{% comment %}Expedition journal, the Home §2 Research section (a nod to painterly Belle Époque RPGs): a battle scene whose six skill panels (and the NPLab portrait) are links (outlines from _data/expedition.yml), a readout line that names the picked skill on a brushstroke (notebook.js also spotlights its panel), and the journal as an open notebook across the panel. Phones get the skills as buttons, since the panels are too small to tap. Ink fades in when the notebook scrolls into view (.is-open; --d staggers it); petals drift up behind (.nb-petals, reused by the title card on /collaborations/).{% endcomment %}
+{% comment %}Expedition journal, the Home §2 Research section (a nod to painterly Belle Époque RPGs): a battle scene whose six skill panels (and the NPLab portrait) are links (outlines from _data/expedition.yml), a readout line that names the picked skill on a brushstroke (notebook.js also dims the scene and shows the picked panel magnified in a clipped "lens"), and the journal as an open notebook across the panel. Phones get the skills as buttons, since the panels are too small to tap. Ink fades in when the notebook scrolls into view (.is-open; --d staggers it); petals drift up behind (.nb-petals, reused by the title card on /collaborations/).{% endcomment %}
 {% assign ex = site.data.expedition %}
 <div class="nb-exp">
   <div class="nb-petals" aria-hidden="true">
@@ -14,10 +14,15 @@
     <div class="nb-exp__frame" data-exp-scene>
       <img src="{{ base_path }}/images/expedition/battle-1672.jpg" srcset="{{ base_path }}/images/expedition/battle-960.jpg 960w, {{ base_path }}/images/expedition/battle-1672.jpg 1672w" sizes="(max-width: 1320px) 100vw, 1272px" width="{{ ex.size[0] }}" height="{{ ex.size[1] }}" alt="Battle scene in the style of a painterly role-playing game: the author, seen from behind, faces a boss called The Wrath of Reviewer 2 and picks from six research skills." loading="lazy">
       <svg class="nb-exp__hot" viewBox="0 0 {{ ex.size[0] }} {{ ex.size[1] }}" preserveAspectRatio="none" role="group" aria-label="Skills">
-        <path class="nb-exp__dim" data-exp-dim d="M0 0H{{ ex.size[0] }}V{{ ex.size[1] }}H0Z" />
+        <defs><clipPath id="nb-exp-clip"><polygon data-exp-clip points="0,0" /></clipPath></defs>
+        <rect class="nb-exp__dim" width="{{ ex.size[0] }}" height="{{ ex.size[1] }}" />
         {% for s in ex.skills %}<a href="{{ base_path }}{{ s.url }}" aria-label="{{ s.name }}: {{ s.dest }}" data-hot data-name="{{ s.name }}" data-desc="{{ s.desc }}" data-dest="{{ s.dest }}"><polygon points="{{ s.poly }}" /></a>
         {% endfor %}{% for s in ex.allies %}<a href="{{ s.url }}" aria-label="{{ s.name }}: {{ s.dest }}" data-hot data-name="{{ s.name }}" data-desc="{{ s.desc }}" data-dest="{{ s.dest }}"><polygon points="{{ s.poly }}" /></a>
         {% endfor %}
+        <g class="nb-exp__lens" data-exp-lens>
+          <g clip-path="url(#nb-exp-clip)"><image data-href="{{ base_path }}/images/expedition/battle-1672.jpg" width="{{ ex.size[0] }}" height="{{ ex.size[1] }}" preserveAspectRatio="none" /></g>
+          <a tabindex="-1" aria-hidden="true" data-exp-lens-link><polygon class="nb-exp__ring" data-exp-ring points="0,0" /></a>
+        </g>
       </svg>
     </div>
     <figcaption class="nb-exp__readout" data-exp-readout>

@@ -218,7 +218,7 @@
   });
 
   // ---- expedition journal (Home §2): ink the notebook in once it scrolls into view; a skill panel (or portrait) picked in the
-  //      battle scene gets a spotlight, and the readout below names it on a brushstroke ----
+  //      battle scene is shown enlarged over the dimmed scene, and the readout below names it on a brushstroke ----
   document.querySelectorAll('.nb-exp').forEach(function (t) {
     var book = t.querySelector('.nb-exp__book') || t;
     if (!('IntersectionObserver' in window)) { t.classList.add('is-open'); return; }
@@ -228,15 +228,37 @@
     io.observe(book);
   });
   document.querySelectorAll('[data-exp-scene]').forEach(function (frame) {
+    var svg = frame.querySelector('svg');
     var hots = frame.querySelectorAll('[data-hot]');
-    var dim = frame.querySelector('[data-exp-dim]');
-    var vb = dim.ownerSVGElement.viewBox.baseVal;
+    var lens = frame.querySelector('[data-exp-lens]');
+    var lensImg = lens.querySelector('image');
+    var lensLink = lens.querySelector('[data-exp-lens-link]');
+    var clip = frame.querySelector('[data-exp-clip]');
+    var ring = frame.querySelector('[data-exp-ring]');
+    var vb = svg.viewBox.baseVal;
+    var K = parseFloat(getComputedStyle(lens).getPropertyValue('--k')) || 1.4, M = 8;
     var out = frame.parentNode.querySelector('[data-exp-readout]');
     var name = out && out.querySelector('[data-exp-name]');
+    var current = null;
+    // magnify about the panel's centre, nudged so the enlarged panel stays inside the scene
+    var origin = function (lo, hi, size) {
+      var o = (lo + hi) / 2;
+      o = Math.max(o, (K * hi - size + M) / (K - 1));
+      return Math.min(o, (K * lo - M) / (K - 1));
+    };
     var pick = function (a) {
+      if (a === current) return;
+      current = a;
       hots.forEach(function (o) { o.classList.toggle('is-active', o === a); });
-      // dim the whole scene except this panel: the frame rectangle with the panel cut out (even-odd)
-      dim.setAttribute('d', 'M0 0H' + vb.width + 'V' + vb.height + 'H0Z M' + a.querySelector('polygon').getAttribute('points').trim().split(/\s+/).join('L') + 'Z');
+      var pts = a.querySelector('polygon').getAttribute('points');
+      var xy = pts.trim().split(/[\s,]+/).map(Number);
+      var xs = xy.filter(function (v, i) { return i % 2 === 0; }), ys = xy.filter(function (v, i) { return i % 2 === 1; });
+      clip.setAttribute('points', pts);
+      ring.setAttribute('points', pts);
+      lensLink.setAttribute('href', a.getAttribute('href'));
+      if (!lensImg.getAttribute('href')) lensImg.setAttribute('href', lensImg.getAttribute('data-href'));
+      lens.style.transformOrigin = origin(Math.min.apply(null, xs), Math.max.apply(null, xs), vb.width) + 'px ' +
+        origin(Math.min.apply(null, ys), Math.max.apply(null, ys), vb.height) + 'px';
       frame.classList.add('is-aiming');
       if (!out) return;
       name.textContent = a.getAttribute('data-name');
@@ -248,13 +270,19 @@
       out.classList.add('is-picked');
     };
     var rest = function () {
+      current = null;
       frame.classList.remove('is-aiming');
       if (out) out.classList.remove('is-picked');
     };
+    // the enlarged panel sits on top of its neighbours, so keep it picked while the pointer is over it
+    svg.addEventListener('mouseover', function (e) {
+      var a = e.target.closest('[data-hot]');
+      if (a) pick(a);
+      else if (!e.target.closest('[data-exp-lens]')) rest();
+    });
+    svg.addEventListener('mouseleave', rest);
     hots.forEach(function (a) {
-      a.addEventListener('mouseenter', function () { pick(a); });
       a.addEventListener('focus', function () { pick(a); });
-      a.addEventListener('mouseleave', rest);
       a.addEventListener('blur', rest);
     });
   });

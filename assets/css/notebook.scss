@@ -572,15 +572,19 @@ a.nb-caption--end:hover { background: var(--pop); }
 .nb-exp__camp { display: inline-flex; align-items: center; gap: 9px; }
 .nb-exp__camp svg { width: 15px; height: 19px; fill: none; stroke: var(--e33-gold); stroke-width: 1.4; }
 .nb-exp__camp .nb-exp__flag { fill: var(--e33-red); stroke: none; }
-.nb-exp__scene { position: relative; z-index: 1; margin: 0; padding: 26px var(--pad) 0; }
-.nb-exp__frame { position: relative; line-height: 0; box-shadow: 0 0 0 1px var(--e33-gold-dim), 0 18px 40px rgba(0, 0, 0, 0.45); }
+.nb-exp__scene { position: relative; z-index: 1; margin: 0; }
+.nb-exp__frame { position: relative; line-height: 0; border-bottom: 1px solid var(--e33-gold-dim); }
 .nb-exp__frame img { display: block; width: 100%; height: auto; }
-.nb-exp__hot { position: absolute; inset: 0; width: 100%; height: 100%; }
+.nb-exp__hot { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
 .nb-exp__dim { fill: rgba(12, 9, 7, 0.58); fill-rule: evenodd; opacity: 0; pointer-events: none; transition: opacity 0.25s; }
 .nb-exp__frame.is-aiming .nb-exp__dim { opacity: 1; }
+.nb-exp__lens { --k: 1.4; opacity: 0; pointer-events: none; transform-box: view-box; transition: opacity 0.2s, transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.6)); }
+.nb-exp__frame.is-aiming .nb-exp__lens { opacity: 1; pointer-events: auto; transform: scale(var(--k)); }
+.nb-exp__lens image { pointer-events: none; }
+.nb-exp__ring { fill: transparent; stroke: var(--e33-gold); stroke-width: 2.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke; cursor: pointer; filter: drop-shadow(0 0 6px rgba(214, 178, 106, 0.85)); }
 .nb-exp__hot polygon { fill: transparent; stroke: transparent; stroke-width: 2.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke; cursor: pointer; transition: stroke 0.2s, fill 0.2s; }
-.nb-exp__hot a:hover polygon, .nb-exp__frame.is-aiming a.is-active polygon { stroke: var(--e33-gold); fill: rgba(255, 236, 190, 0.07); filter: drop-shadow(0 0 7px rgba(214, 178, 106, 0.85)); }
-.nb-exp__readout { display: flex; align-items: center; gap: 6px 20px; min-height: 60px; padding: 12px 2px 0; font-size: 19px; line-height: 1.35; }
+.nb-exp__hot a:hover polygon { stroke: var(--e33-gold); fill: rgba(255, 236, 190, 0.07); filter: drop-shadow(0 0 7px rgba(214, 178, 106, 0.85)); }
+.nb-exp__readout { display: flex; align-items: center; gap: 6px 20px; min-height: 60px; padding: 12px var(--pad) 0; font-size: 19px; line-height: 1.35; }
 .nb-exp__hint, .nb-exp__turn, .nb-exp__pick em { color: var(--e33-gold); font-size: 14px; font-weight: 600; font-style: normal; letter-spacing: 0.2em; text-transform: uppercase; }
 .nb-exp__hint { flex: 1 1 auto; }
 .nb-exp__turn { flex: none; color: #e0505a; }
@@ -756,7 +760,6 @@ button.cl-author:hover { border-color: var(--accent); color: var(--accent); }
   .nb-halftone { inset: 30px -34px 10px 30px; }
   .nb-exp__bar { font-size: 13px; letter-spacing: 0.2em; }
   .nb-exp__wide { display: none; }
-  .nb-exp__scene { padding-top: 18px; }
   .nb-exp__book { margin: 20px 16px 28px; padding: 16px 18px 10px; columns: 1; font-size: 18px; }
   .nb-exp__book::before { display: none; }
   .cl-title__sub { font-size: 17px; }
