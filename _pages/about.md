@@ -140,20 +140,23 @@ redirect_from:
   <div class="nb-cellbar nb-barcode-head"><span>Trajectory</span><span class="nb-hand">drawn as a persistence barcode</span></div>
   <div class="nb-barcode">
     <div class="nb-barcode__grid">
-      <div class="nb-barcode__label"><b>MSCA Postdoctoral Fellow</b><span> · CENTAI → ISI Foundation</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar nb-barcode__bar--now" style="left: 84.84%; width: 15.16%"></span></div>
-      <div class="nb-barcode__label"><b>Researcher, Project CETI</b><span> · CENTAI, Turin</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar" style="left: 78.79%; width: 12.12%"></span></div>
-      <div class="nb-barcode__label"><b>Postdoctoral Researcher</b><span> · Neuro-X, EPFL</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar" style="left: 47.72%; width: 30.3%"></span></div>
-      <div class="nb-barcode__label"><b>Research Assistant</b><span> · QMUL</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar" style="left: 40.92%; width: 6.07%"></span></div>
-      <div class="nb-barcode__label"><b>Enrichment Student</b><span> · Alan Turing Institute</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar nb-barcode__bar--train" style="left: 25%; width: 9.09%"></span></div>
-      <div class="nb-barcode__label"><b>PhD, Applied Mathematics</b><span> · QMUL</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar nb-barcode__bar--train" style="left: 6.07%; width: 40.92%"></span></div>
+{%- assign tj = site.data.trajectory -%}
+{%- assign now_y = site.time | date: "%Y" | plus: 0 -%}
+{%- assign now_m = site.time | date: "%m" | plus: 0 -%}
+{%- assign axis_end = now_y | plus: 1 -%}
+{%- assign a0 = tj.axis_start | times: 12 -%}
+{%- assign span = axis_end | minus: tj.axis_start | times: 12 -%}
+{%- for r in tj.rows -%}
+{%- assign sy = r.start | slice: 0, 4 | plus: 0 -%}{%- assign sm = r.start | slice: 5, 2 | plus: 0 -%}
+{%- assign s = sy | times: 12 | plus: sm | minus: 1 -%}
+{%- if r.end == "present" -%}{%- assign e = now_y | times: 12 | plus: now_m -%}{%- else -%}{%- assign ey = r.end | slice: 0, 4 | plus: 0 -%}{%- assign em = r.end | slice: 5, 2 | plus: 0 -%}{%- assign e = ey | times: 12 | plus: em -%}{%- endif -%}
+{%- assign left = s | minus: a0 | times: 100.0 | divided_by: span | round: 2 -%}
+{%- assign width = e | minus: s | times: 100.0 | divided_by: span | round: 2 %}
+      <div class="nb-barcode__label"><b>{{ r.label }}</b><span> · {{ r.where }}</span></div>
+      <div class="nb-barcode__track"><span class="nb-barcode__bar{% if r.kind == 'train' %} nb-barcode__bar--train{% elsif r.kind == 'now' %} nb-barcode__bar--now{% endif %}" style="left: {{ left }}%; width: {{ width }}%" title="{{ r.start }} – {{ r.end }}"></span></div>
+{%- endfor %}
       <div></div>
-      <div class="nb-barcode__axis"><span>’16</span><span>’17</span><span>’18</span><span>’19</span><span>’20</span><span>’21</span><span>’22</span><span>’23</span><span>’24</span><span>’25</span><span>’26 →</span></div>
+      <div class="nb-barcode__axis" style="--years: {{ span | divided_by: 12 }}">{% assign last = axis_end | minus: 1 %}{% for y in (tj.axis_start..last) %}<span>’{{ y | modulo: 100 | prepend: "0" | slice: -2, 2 }}{% if forloop.last %} →{% endif %}</span>{% endfor %}</div>
     </div>
     <div class="nb-legend"><span><i class="is-train"></i>Training</span><span><i></i>Positions</span><span><i class="is-now"></i>Now</span><a href="{{ base_path }}/cv/">Full CV →</a></div>
   </div>

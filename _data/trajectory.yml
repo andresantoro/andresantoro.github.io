@@ -1,0 +1,35 @@
+# Home "Trajectory" barcode. Dates are YYYY-MM (from the CV); end "present" runs to the build month.
+# kind: train (blue), position (chalk), now (accent). Bars are drawn top to bottom in this order.
+axis_start: 2016
+
+rows:
+  - label: "MSCA Postdoctoral Fellow"
+    where: "CENTAI → ISI Foundation"
+    start: "2025-05"
+    end: "present"
+    kind: now
+  - label: "Researcher, Project CETI"
+    where: "CENTAI, Turin"
+    start: "2024-09"
+    end: "2025-04"
+    kind: position
+  - label: "Postdoctoral Researcher"
+    where: "Neuro-X, EPFL"
+    start: "2021-04"
+    end: "2024-08"
+    kind: position
+  - label: "Research Assistant"
+    where: "QMUL"
+    start: "2020-07"
+    end: "2021-03"
+    kind: position
+  - label: "Enrichment PhD Student"
+    where: "Alan Turing Institute"
+    start: "2018-10"
+    end: "2019-09"
+    kind: train
+  - label: "PhD, Applied Mathematics"
+    where: "QMUL"
+    start: "2016-09"
+    end: "2021-03"
+    kind: train
