@@ -163,8 +163,8 @@ def svg(mini):
         m = w["members"]
         if len(m) == 2:
             (x1, y1), (x2, y2) = xy[m[0]], xy[m[1]]
-            out.append(f'<line class="hg-edge" data-w="{i}" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" '
-                       f'stroke="#ECE9E1" stroke-opacity="0.8" stroke-width="{4 if mini else 1.6}"/>')
+            out.append(f'<line class="hg-edge hg-dyad" data-w="{i}" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" '
+                       f'stroke="#ECE9E1" stroke-opacity="0.95" stroke-width="{5 if mini else 2.8}" stroke-linecap="round"/>')
     keys = {n for n in nodes if deg[n] >= 3 or role[n] != "collaborator"}
     sides = place_labels(keys) if not mini else {}
     for n in sorted(nodes, key=lambda n: deg[n]):

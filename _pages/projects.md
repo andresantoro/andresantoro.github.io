@@ -41,10 +41,26 @@ lede: "Research lines I am working on, from methods for multivariate signals to 
   </div>
 </article>
 
+<article class="nb-project" id="affective-neuroscience">
+  <div class="nb-project__fig"><figure class="nb-plate"><img src="{{ base_path }}/images/projects/movies.png" alt="Film stills and brain activity used to study emotion"></figure></div>
+  <div class="nb-project__body">
+    <div class="nb-label">§2.3</div>
+    <h2>Affective Neuroscience</h2>
+    <p>Emotions are thought to emerge from co-activation among distributed brain systems, yet traditional fMRI analyses mostly look at localized responses and pairwise connections. Using time-resolved higher-order topology and naturalistic paradigms such as film viewing, I study how groups of brain regions interact as emotions unfold.</p>
+    <div class="nb-prose">
+      <ul>
+        <li>Higher-order topology of fMRI during naturalistic viewing of 14 films, continuously annotated across 50 affective features (<a href="https://www.biorxiv.org/content/10.64898/2026.09.26.754452v1" target="_blank">bioRxiv 2026</a>)</li>
+        <li>Complementary neural representations of emotion: higher-order topology captures fine-grained affective structure, while pairwise connectivity provides a portable readout of broad arousal</li>
+        <li>Open student project: <a href="{{ base_path }}/open-projects/topology-emotion-film-fmri/">temporal dynamics of emotion using film fMRI</a></li>
+      </ul>
+    </div>
+  </div>
+</article>
+
 <article class="nb-project" id="multilayer-networks">
   <div class="nb-project__fig"><figure class="nb-plate"><img src="{{ base_path }}/images/projects/multilayer_net_2.png" alt="Multilayer Network Visualization"></figure></div>
   <div class="nb-project__body">
-    <div class="nb-label">§2.3</div>
+    <div class="nb-label">§2.4</div>
     <h2>Multilayer Networks</h2>
     <p>Investigation of multilayer network structures and their applications in understanding complex interconnected systems.</p>
     <div class="nb-prose">
@@ -60,7 +76,7 @@ lede: "Research lines I am working on, from methods for multivariate signals to 
 <article class="nb-project" id="project-ceti">
   <div class="nb-project__fig"><figure class="nb-plate"><img src="{{ base_path }}/images/projects/sperm_whales.png" alt="Sperm whale communication and behaviour"></figure></div>
   <div class="nb-project__body">
-    <div class="nb-label">§2.4</div>
+    <div class="nb-label">§2.5</div>
     <h2>Project CETI</h2>
     <p><a href="https://www.projectceti.org/" target="_blank">Project CETI</a> (Cetacean Translation Initiative) is an ambitious interdisciplinary endeavor aiming to decode the communication of sperm whales. By leveraging advanced machine learning, data analysis, and linguistic theory, we seek to interpret the complex vocalizations of these intelligent marine mammals. Understanding their communication patterns offers insights into their social structures and into language and cognition across species.</p>
     <div class="nb-prose">
@@ -76,7 +92,7 @@ lede: "Research lines I am working on, from methods for multivariate signals to 
 <article class="nb-project" id="computational-gastronomy">
   <div class="nb-project__fig"><figure class="nb-plate"><img src="{{ base_path }}/images/projects/computational_gastonomy.png" alt="Computational Gastronomy using network science and topology"></figure></div>
   <div class="nb-project__body">
-    <div class="nb-label">§2.5</div>
+    <div class="nb-label">§2.6</div>
     <h2>Computational Gastronomy</h2>
     <p>Network approaches to uncover the principles behind how ingredients are combined in cuisines around the world.</p>
     <div class="nb-prose">
@@ -93,7 +109,7 @@ lede: "Research lines I am working on, from methods for multivariate signals to 
 <!-- Optimality project commented out
 <article class="nb-project" id="optimality">
   <div class="nb-project__body">
-    <div class="nb-label">§2.6</div>
+    <div class="nb-label">§2.7</div>
     <h2>Optimality</h2>
     <p>Research focused on optimal processes and algorithms in complex systems.</p>
     <div class="nb-prose">

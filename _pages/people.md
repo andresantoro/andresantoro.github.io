@@ -10,15 +10,15 @@ hero: false
 
 {% capture aside %}
 <dl class="nb-stats">
-  <div><dt>Group</dt><dd>{{ ppl.current.size }}</dd></div>
-  <div><dt>Alumni</dt><dd>{{ ppl.alumni.size }}</dd></div>
+  <div><dt>Students</dt><dd>{{ ppl.current.size }}</dd></div>
+  <div><dt>Former</dt><dd>{{ ppl.alumni.size }}</dd></div>
   <div><dt>Co-authors</dt><dd>{{ site.data.hypergraph.people.size }}</dd></div>
 </dl>
 {% endcapture %}
-{% include nb/titleband.html title=page.title lede="The students I supervise and co-supervise, alumni, mentors — and the wider group of people I write papers with." sheet=page.sheet aside=aside %}
+{% include nb/titleband.html title=page.title lede="Students I supervise or co-supervise, former students, my mentors — and the wider circle of people I write papers with." sheet=page.sheet aside=aside %}
 
 <section class="nb-section">
-  {% include nb/section-head.html num="1" title="Group" note="currently supervised" %}
+  {% include nb/section-head.html num="1" title="Current students" note="supervised & co-supervised" %}
   <div class="nb-grid">
     {% for p in ppl.current %}
     {% assign words = p.name | split: " " %}
@@ -41,7 +41,7 @@ hero: false
 <section class="nb-section">
   <div class="nb-section__head">
     <div class="nb-section__num">§2</div>
-    <h2 class="nb-section__title">Alumni</h2>
+    <h2 class="nb-section__title">Former students</h2>
     <button class="nb-section__aside nb-section__toggle" type="button" data-toggle-col="alumni-table" aria-pressed="false" aria-controls="alumni-table">Projects &amp; outcomes +</button>
   </div>
   <div class="nb-table-wrap">
@@ -84,6 +84,8 @@ hero: false
         <span><i style="background: var(--accent)"></i>Student / mentee</span>
         <span><i style="background: var(--blue)"></i>Mentor</span>
         <span><i style="border: 1.5px solid var(--chalk)"></i>Collaborator</span>
+        <span><i class="is-line"></i>Paper with 2 co-authors</span>
+        <span><i class="is-shape"></i>Paper with 3+ co-authors</span>
         <span>Each shape is a paper or preprint since {{ site.data.hypergraph.since }}, joining its co-authors (I am in all of them, so I am left out). Consortium papers with more than 15 authors are omitted.</span>
       </figcaption>
     </figure>

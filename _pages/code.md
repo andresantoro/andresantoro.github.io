@@ -17,6 +17,7 @@ lede: "Open-source implementations of the methods in my papers, so they can be u
         <p class="nb-repo__what">{{ r.what }}</p>
       </div>
       <dl class="nb-kv">
+        <div><dt>GitHub</dt><dd>★ {{ r.stars }} stars · {{ r.forks }} forks</dd></div>
         {% if r.paper %}<div><dt>Paper</dt><dd><a href="{{ r.paper_url }}">{{ r.paper }}</a></dd></div>{% endif %}
         {% if r.doi %}<div><dt>Archive</dt><dd><a href="{{ r.doi }}">{{ r.doi | remove: "https://" }}</a></dd></div>{% endif %}
         {% if r.tags %}<div><dt>Tags</dt><dd>{{ r.tags | join: " · " }}</dd></div>{% endif %}

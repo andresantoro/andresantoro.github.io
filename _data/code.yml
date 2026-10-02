@@ -1,7 +1,10 @@
 # Software shown on /code/. repo is "owner/name" on GitHub.
+# stars/forks: GitHub counts as of 2026-10-02 (update by hand).
 
 - name: "RHOSTS"
   repo: "andresantoro/RHOSTS"
+  stars: 45
+  forks: 17
   lang: "Python"
   what: "Higher-order interactions from multivariate time series: reconstructs instantaneous k-order co-fluctuations and the simplicial structure they form."
   paper: "Nature Physics, 2023"
@@ -11,6 +14,8 @@
 
 - name: "HOI Lenses"
   repo: "nplresearch/HOI_lenses_analysis"
+  stars: 4
+  forks: 2
   lang: "Python"
   what: "Compare information-theoretic and topological higher-order interaction metrics on fMRI: topological scaffolds, task contrasts, stability and information content."
   paper: "Nature Communications, 2026"
@@ -19,6 +24,8 @@
 
 - name: "Brain_HORS"
   repo: "andresantoro/Brain_HORS"
+  stars: 8
+  forks: 2
   lang: "Python"
   what: "Scripts to replicate the higher-order connectomics analyses: local topological signatures for task decoding, individual identification and behaviour."
   paper: "Nature Communications, 2024"
@@ -28,12 +35,16 @@
 
 - name: "EasyBrainSurfacePlots"
   repo: "andresantoro/EasyBrainSurfacePlots"
+  stars: 12
+  forks: 2
   lang: "Python"
   what: "A few lines of code are all it takes to create a brain surface plot from a parcellated template."
   tags: ["visualisation", "neuroimaging"]
 
 - name: "ALCOREM"
   repo: "andresantoro/ALCOREM"
+  stars: 3
+  forks: 0
   lang: "C"
   what: "Algorithmic complexity and reducibility of multiplex networks."
   paper: "Physical Review X, 2020"
@@ -42,6 +53,8 @@
 
 - name: "Multiplex_optimal_percolation"
   repo: "andresantoro/Multiplex_optimal_percolation"
+  stars: 5
+  forks: 0
   lang: "C"
   what: "Optimal percolation strategies for correlated multilayer networks with edge overlap."
   paper: "Physical Review Research, 2020"
@@ -50,6 +63,8 @@
 
 - name: "Tranet_data"
   repo: "andresantoro/Tranet_data"
+  stars: 3
+  forks: 2
   lang: "Data"
   what: "Datasets of multilayer transportation networks."
   paper: "Physical Review Letters, 2018"

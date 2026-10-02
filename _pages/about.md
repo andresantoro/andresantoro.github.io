@@ -17,7 +17,7 @@ redirect_from:
   <div class="nb-hero__row">
     <div class="nb-hero__main">
       <h1 class="nb-display">Andrea<br>Santoro<span class="nb-square" aria-hidden="true"></span></h1>
-      <p class="nb-hero__lede">Applied mathematician. I build methods to infer <mark>higher-order, time-varying interactions</mark> from multivariate data — in brains, whales, cuisines and <span class="nb-nowrap">markets.<span class="nb-cursor" aria-hidden="true"></span></span></p>
+      <p class="nb-hero__lede">Applied mathematician. I build methods to infer <mark>higher-order, time-varying interactions</mark> from multivariate signals — from the brain to financial markets — and use network science to study systems as diverse as sperm whales and world <span class="nb-nowrap">cuisines.<span class="nb-cursor" aria-hidden="true"></span></span></p>
     </div>
     <figure class="nb-portrait">
       <div class="nb-portrait__frame">
@@ -37,7 +37,7 @@ redirect_from:
   </figure>
   <div class="nb-board__side">
     <div class="nb-cellbar"><span>Abstract</span></div>
-    <p>I develop computational methods to infer structured, time-varying interactions from high-dimensional multivariate data, combining statistical inference, network theory and computational topology. Neuroscience is my main application area; the same tools travel to sperm whales, cuisines and financial markets.</p>
+    <p>I develop computational methods to infer structured, time-varying interactions from high-dimensional multivariate data, combining statistical inference, network theory and computational topology. Neuroscience is my main application area, and the same methods extend to financial and other complex systems; with network science I also study sperm whale behaviour and world cuisines.</p>
     <dl class="nb-kv">
       <div><dt>Role</dt><dd>MSCA Postdoctoral Fellow</dd></div>
       <div><dt>Host</dt><dd><a href="https://www.isi.it/">ISI Foundation</a>, Turin · <a href="https://nplresearch.github.io/">NPLab</a></dd></div>
@@ -77,25 +77,25 @@ redirect_from:
       <figure class="nb-plate"><img src="{{ base_path }}/images/projects/computational_neuro.png" alt="" loading="lazy"></figure>
       <div class="nb-cell__body"><h3 class="nb-cell__title">Computational neuroscience</h3><p class="nb-cell__text">Higher-order and topological approaches to neural systems, from micro- to macro-scale.</p></div>
     </a>
-    <a class="nb-cell" href="{{ base_path }}/projects/#multilayer-networks">
+    <a class="nb-cell" href="{{ base_path }}/projects/#affective-neuroscience">
       <div class="nb-cellbar"><span>2.3</span><span>Fig. 2.3</span></div>
+      <figure class="nb-plate"><img src="{{ base_path }}/images/projects/movies.png" alt="" loading="lazy"></figure>
+      <div class="nb-cell__body"><h3 class="nb-cell__title">Affective neuroscience</h3><p class="nb-cell__text">How emotions emerge from groups of interacting brain regions, using higher-order topology and naturalistic film fMRI.</p></div>
+    </a>
+    <a class="nb-cell" href="{{ base_path }}/projects/#multilayer-networks">
+      <div class="nb-cellbar"><span>2.4</span><span>Fig. 2.4</span></div>
       <figure class="nb-plate"><img src="{{ base_path }}/images/projects/multilayer_net_2.png" alt="" loading="lazy"></figure>
       <div class="nb-cell__body"><h3 class="nb-cell__title">Multilayer networks</h3><p class="nb-cell__text">Structure and dynamics of interconnected systems, through information theory and optimality.</p></div>
     </a>
     <a class="nb-cell" href="{{ base_path }}/projects/#project-ceti">
-      <div class="nb-cellbar"><span>2.4</span><span>Fig. 2.4</span></div>
+      <div class="nb-cellbar"><span>2.5</span><span>Fig. 2.5</span></div>
       <figure class="nb-plate nb-plate--whale"><img src="{{ base_path }}/images/projects/sperm_whales.png" alt="" loading="lazy"></figure>
-      <div class="nb-cell__body"><h3 class="nb-cell__title">Project CETI</h3><p class="nb-cell__text">Decoding the communication and behaviour of sperm whales.</p></div>
+      <div class="nb-cell__body"><h3 class="nb-cell__title">Project CETI</h3><p class="nb-cell__text">Network science for the communication and behaviour of sperm whales.</p></div>
     </a>
     <a class="nb-cell" href="{{ base_path }}/projects/#computational-gastronomy">
-      <div class="nb-cellbar"><span>2.5</span><span>Fig. 2.5</span></div>
+      <div class="nb-cellbar"><span>2.6</span><span>Fig. 2.6</span></div>
       <figure class="nb-plate"><img src="{{ base_path }}/images/projects/computational_gastonomy.png" alt="" loading="lazy"></figure>
       <div class="nb-cell__body"><h3 class="nb-cell__title">Computational gastronomy</h3><p class="nb-cell__text">How cuisines combine ingredients, through networks and topology.</p></div>
-    </a>
-    <a class="nb-cell" href="{{ base_path }}/open-projects/">
-      <div class="nb-cellbar"><span>2.6</span><span>Students</span></div>
-      <figure class="nb-plate"><img src="{{ base_path }}/images/projects/TDA_spectral.png" alt="" loading="lazy"></figure>
-      <div class="nb-cell__body"><h3 class="nb-cell__title">Open projects →</h3><p class="nb-cell__text">Bachelor, master and semester projects in topology, networks, neuroscience, finance and food.</p></div>
     </a>
   </div>
 </section>
