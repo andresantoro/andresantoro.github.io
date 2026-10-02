@@ -1,5 +1,5 @@
 {
- "since": 2018,
+ "since": 2015,
  "size": [
   1200,
   640
@@ -16,36 +16,36 @@
    "name": "A. Bassolas",
    "role": "collaborator",
    "works": 1,
-   "x": 568.1,
-   "y": 562.6
+   "x": 92.3,
+   "y": 208.0
   },
   {
    "name": "A. Brovelli",
    "role": "collaborator",
    "works": 1,
-   "x": 372.7,
-   "y": 600.0
+   "x": 168.8,
+   "y": 334.5
   },
   {
    "name": "A. Khatibi",
    "role": "collaborator",
    "works": 1,
-   "x": 286.4,
-   "y": 54.6
+   "x": 782.4,
+   "y": 111.1
   },
   {
    "name": "A. La Magna",
    "role": "collaborator",
-   "works": 1,
-   "x": 788.6,
-   "y": 215.8
+   "works": 3,
+   "x": 458.6,
+   "y": 600.0
   },
   {
    "name": "A. Lucatelli",
    "role": "student",
    "works": 1,
-   "x": 83.3,
-   "y": 323.6
+   "x": 688.6,
+   "y": 394.7
   },
   {
    "name": "A. Morgan",
@@ -58,183 +58,190 @@
    "name": "A. N. Medvedev",
    "role": "collaborator",
    "works": 1,
-   "x": 183.9,
-   "y": 214.4
+   "x": 320.3,
+   "y": 73.4
   },
   {
    "name": "A. Onicas",
    "role": "collaborator",
    "works": 1,
-   "x": 139.4,
-   "y": 212.6
+   "x": 291.1,
+   "y": 40.0
   },
   {
    "name": "A. Patané",
    "role": "collaborator",
-   "works": 1,
-   "x": 649.7,
-   "y": 273.0
+   "works": 5,
+   "x": 408.6,
+   "y": 557.5
   },
   {
    "name": "B. Lugli",
    "role": "collaborator",
    "works": 1,
-   "x": 104.6,
-   "y": 286.9
+   "x": 709.3,
+   "y": 336.9
   },
   {
    "name": "B. Min",
    "role": "collaborator",
    "works": 1,
    "x": 806.0,
-   "y": 345.2
+   "y": 224.8
   },
   {
    "name": "C. Caprioli",
    "role": "student",
    "works": 1,
-   "x": 759.5,
-   "y": 438.9
+   "x": 508.6,
+   "y": 116.7
   },
   {
    "name": "C. Landelle",
    "role": "collaborator",
    "works": 1,
-   "x": 199.8,
-   "y": 67.6
+   "x": 607.9,
+   "y": 144.0
   },
   {
    "name": "C. Monti",
    "role": "collaborator",
    "works": 1,
-   "x": 155.2,
-   "y": 579.0
+   "x": 181.7,
+   "y": 194.8
   },
   {
    "name": "D. A. Battaglia",
    "role": "collaborator",
    "works": 1,
-   "x": 348.2,
-   "y": 590.1
+   "x": 153.9,
+   "y": 319.4
   },
   {
    "name": "D. F. Gruber",
    "role": "collaborator",
    "works": 1,
-   "x": 124.4,
-   "y": 556.9
+   "x": 194.5,
+   "y": 178.6
   },
   {
    "name": "D. Orsenigo",
    "role": "collaborator",
    "works": 1,
-   "x": 441.5,
-   "y": 520.8
+   "x": 569.9,
+   "y": 206.1
   },
   {
    "name": "D. Van De Ville",
    "role": "collaborator",
    "works": 3,
-   "x": 227.3,
-   "y": 242.4
+   "x": 633.7,
+   "y": 246.9
   },
   {
    "name": "E. Amico",
    "role": "mentor",
    "works": 5,
-   "x": 319.4,
-   "y": 314.4
+   "x": 504.8,
+   "y": 318.2
   },
   {
    "name": "E. Beanato",
    "role": "collaborator",
    "works": 1,
-   "x": 114.3,
-   "y": 357.9
+   "x": 716.0,
+   "y": 388.1
   },
   {
    "name": "E. Morgenroth",
    "role": "collaborator",
    "works": 1,
-   "x": 144.4,
-   "y": 383.8
+   "x": 462.4,
+   "y": 318.1
   },
   {
    "name": "F. Battiston",
    "role": "collaborator",
    "works": 4,
-   "x": 549.2,
-   "y": 371.4
+   "x": 566.5,
+   "y": 218.5
   },
   {
    "name": "F. C. Hummel",
    "role": "collaborator",
    "works": 1,
-   "x": 232.4,
-   "y": 336.4
+   "x": 745.0,
+   "y": 356.3
   },
   {
    "name": "F. Mottes",
    "role": "collaborator",
    "works": 1,
-   "x": 88.0,
-   "y": 222.4
+   "x": 236.9,
+   "y": 46.8
   },
   {
    "name": "F. Petruso",
    "role": "student",
    "works": 2,
-   "x": 162.8,
-   "y": 347.6
+   "x": 579.0,
+   "y": 325.8
   },
   {
    "name": "F. Radicchi",
    "role": "collaborator",
    "works": 1,
-   "x": 761.2,
-   "y": 369.9
+   "x": 792.8,
+   "y": 240.8
   },
   {
    "name": "F. Vaccarino",
    "role": "collaborator",
    "works": 1,
-   "x": 413.6,
-   "y": 476.6
+   "x": 135.1,
+   "y": 307.7
   },
   {
    "name": "F. Windel",
    "role": "collaborator",
    "works": 1,
-   "x": 81.4,
-   "y": 301.5
+   "x": 666.1,
+   "y": 333.7
+  },
+  {
+   "name": "G. Carapezza",
+   "role": "collaborator",
+   "works": 4,
+   "x": 376.5,
+   "y": 572.4
   },
   {
    "name": "G. Lerda",
    "role": "collaborator",
    "works": 1,
-   "x": 112.6,
-   "y": 212.9
+   "x": 262.3,
+   "y": 40.3
   },
   {
    "name": "G. Nicosia",
    "role": "collaborator",
-   "works": 2,
-   "x": 753.9,
-   "y": 335.7
+   "works": 6,
+   "x": 426.2,
+   "y": 498.5
   },
   {
    "name": "G. Petri",
    "role": "mentor",
    "works": 8,
-   "x": 285.3,
-   "y": 416.1
+   "x": 372.3,
+   "y": 225.7
   },
   {
    "name": "G. Rabuffo",
    "role": "collaborator",
    "works": 1,
-   "x": 389.5,
-   "y": 512.2
+   "x": 146.6,
+   "y": 290.4
   },
   {
    "name": "H. H. Behjat",
@@ -247,15 +254,15 @@
    "name": "H. J. Machado Borges",
    "role": "collaborator",
    "works": 1,
-   "x": 121.1,
-   "y": 532.1
+   "x": 205.3,
+   "y": 159.0
   },
   {
    "name": "H. Merritt",
    "role": "collaborator",
    "works": 1,
-   "x": 433.2,
-   "y": 505.6
+   "x": 259.4,
+   "y": 331.7
   },
   {
    "name": "H. Saeedi-Sourck",
@@ -268,29 +275,36 @@
    "name": "I. Iacopini",
    "role": "collaborator",
    "works": 1,
-   "x": 772.5,
-   "y": 413.5
+   "x": 591.5,
+   "y": 98.5
   },
   {
    "name": "I. Ricchi",
    "role": "collaborator",
    "works": 1,
-   "x": 213.1,
-   "y": 45.6
+   "x": 645.9,
+   "y": 106.8
   },
   {
    "name": "J. C. W. Billings",
    "role": "collaborator",
    "works": 1,
-   "x": 70.0,
-   "y": 250.7
+   "x": 218.9,
+   "y": 61.4
+  },
+  {
+   "name": "J. Costanza",
+   "role": "collaborator",
+   "works": 2,
+   "x": 321.0,
+   "y": 540.2
   },
   {
    "name": "J. Doyon",
    "role": "collaborator",
    "works": 1,
-   "x": 263.5,
-   "y": 40.0
+   "x": 734.3,
+   "y": 85.1
   },
   {
    "name": "J. Garcia-Bernardo",
@@ -303,36 +317,36 @@
    "name": "J. Gomez-Gardenes",
    "role": "collaborator",
    "works": 1,
-   "x": 798.3,
-   "y": 319.2
+   "x": 803.7,
+   "y": 207.5
   },
   {
    "name": "L. Chen",
    "role": "collaborator",
    "works": 1,
-   "x": 460.0,
-   "y": 172.0
+   "x": 341.8,
+   "y": 433.2
   },
   {
    "name": "L. Fleury",
    "role": "collaborator",
    "works": 1,
-   "x": 188.5,
-   "y": 370.4
+   "x": 734.4,
+   "y": 374.5
   },
   {
    "name": "L. Zaffina",
    "role": "student",
    "works": 2,
-   "x": 196.0,
-   "y": 439.5
+   "x": 377.6,
+   "y": 240.3
   },
   {
    "name": "L. Zhao",
    "role": "collaborator",
    "works": 1,
-   "x": 444.0,
-   "y": 151.3
+   "x": 359.6,
+   "y": 449.6
   },
   {
    "name": "M. D. Khalili",
@@ -345,29 +359,29 @@
    "name": "M. Diano",
    "role": "collaborator",
    "works": 2,
-   "x": 305.9,
-   "y": 414.6
+   "x": 501.3,
+   "y": 240.7
   },
   {
    "name": "M. Frasca",
    "role": "collaborator",
    "works": 1,
-   "x": 774.1,
-   "y": 300.9
+   "x": 788.8,
+   "y": 192.6
   },
   {
    "name": "M. G. Preti",
    "role": "collaborator",
    "works": 2,
-   "x": 173.3,
-   "y": 331.7
+   "x": 590.3,
+   "y": 311.3
   },
   {
    "name": "M. Gatica",
    "role": "collaborator",
    "works": 1,
-   "x": 455.2,
-   "y": 470.9
+   "x": 538.8,
+   "y": 186.1
   },
   {
    "name": "M. Hardy",
@@ -380,43 +394,50 @@
    "name": "M. Hu",
    "role": "collaborator",
    "works": 1,
-   "x": 96.2,
-   "y": 243.1
+   "x": 239.1,
+   "y": 127.2
   },
   {
    "name": "M. Lucas",
    "role": "collaborator",
    "works": 2,
-   "x": 297.2,
-   "y": 453.3
+   "x": 358.2,
+   "y": 202.2
   },
   {
    "name": "M. Neri",
    "role": "collaborator",
    "works": 1,
-   "x": 414.2,
-   "y": 535.7
+   "x": 549.9,
+   "y": 226.4
   },
   {
    "name": "M. Nurisso",
    "role": "collaborator",
    "works": 1,
-   "x": 242.3,
-   "y": 568.3
+   "x": 510.6,
+   "y": 350.8
   },
   {
    "name": "M. Saggar",
    "role": "collaborator",
    "works": 1,
-   "x": 402.7,
-   "y": 585.6
+   "x": 213.9,
+   "y": 343.2
   },
   {
    "name": "N. Kinany",
    "role": "collaborator",
    "works": 1,
-   "x": 239.1,
-   "y": 50.0
+   "x": 763.1,
+   "y": 94.3
+  },
+  {
+   "name": "P. Conca",
+   "role": "collaborator",
+   "works": 2,
+   "x": 391.2,
+   "y": 575.5
   },
   {
    "name": "P. M. Krafft",
@@ -429,71 +450,71 @@
    "name": "P. Tønnesen",
    "role": "collaborator",
    "works": 1,
-   "x": 200.6,
-   "y": 474.5
+   "x": 198.8,
+   "y": 141.5
   },
   {
    "name": "P. Vuilleumier",
    "role": "collaborator",
    "works": 1,
-   "x": 166.5,
-   "y": 400.1
+   "x": 492.1,
+   "y": 335.8
   },
   {
    "name": "R. Deshpande",
    "role": "collaborator",
    "works": 1,
-   "x": 184.7,
-   "y": 579.2
+   "x": 242.0,
+   "y": 151.3
   },
   {
    "name": "R. L. Barry",
    "role": "collaborator",
    "works": 1,
-   "x": 329.6,
-   "y": 144.6
+   "x": 710.7,
+   "y": 155.3
   },
   {
    "name": "S. Gero",
    "role": "collaborator",
    "works": 1,
-   "x": 151.3,
-   "y": 556.2
+   "x": 171.5,
+   "y": 163.5
   },
   {
    "name": "S. Kulkarni",
    "role": "student",
    "works": 1,
-   "x": 653.0,
-   "y": 369.3
+   "x": 561.4,
+   "y": 96.6
   },
   {
    "name": "S. Poetto",
    "role": "collaborator",
    "works": 3,
-   "x": 298.1,
-   "y": 518.7
+   "x": 324.4,
+   "y": 235.0
   },
   {
    "name": "S. Rognone",
    "role": "collaborator",
    "works": 1,
-   "x": 617.5,
-   "y": 502.7
+   "x": 70.0,
+   "y": 243.8
   },
   {
    "name": "S. Sousa",
    "role": "collaborator",
    "works": 1,
-   "x": 589.3,
-   "y": 474.9
+   "x": 186.4,
+   "y": 239.1
   },
   {
    "name": "S. Vahdat",
    "role": "collaborator",
    "works": 1,
-   "x": 309.0,
-   "y": 164.9
+   "x": 737.9,
+   "y": 159.9
   },
   {
    "name": "T. Griffiths",
@@ -513,29 +534,29 @@
    "name": "V. Latora",
    "role": "collaborator",
    "works": 3,
-   "x": 729.5,
-   "y": 390.3
+   "x": 564.4,
+   "y": 261.1
   },
   {
    "name": "V. Nicosia",
    "role": "mentor",
    "works": 4,
-   "x": 695.5,
-   "y": 491.6
+   "x": 296.2,
+   "y": 309.5
   },
   {
    "name": "V. Romano",
    "role": "collaborator",
-   "works": 1,
-   "x": 663.3,
-   "y": 229.9
+   "works": 3,
+   "x": 476.5,
+   "y": 541.9
   },
   {
    "name": "Y. Yang",
    "role": "collaborator",
    "works": 1,
-   "x": 415.0,
-   "y": 148.7
+   "x": 394.9,
+   "y": 451.1
   },
   {
    "name": "Z. Neu",
@@ -957,6 +978,43 @@
   },
   {
    "titles": [
+    "Multi-objective optimization and analysis for the design space exploration of analog circuits and solar cells"
+   ],
+   "topics": [
+    "optim"
+   ],
+   "topic": "optim",
+   "year": 2017,
+   "size": 6,
+   "members": [
+    "A. La Magna",
+    "A. Patané",
+    "G. Carapezza",
+    "G. Nicosia",
+    "P. Conca",
+    "V. Romano"
+   ],
+   "papers": [
+    {
+     "title": "Multi-objective optimization and analysis for the design space exploration of analog circuits and solar cells",
+     "topic": "optim",
+     "year": 2017,
+     "venue": "Engineering Applications of Artificial Intelligence",
+     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0952197616301415",
+     "authors": [
+      "A. Patané",
+      "A. Santoro",
+      "P. Conca",
+      "G. Carapezza",
+      "A. La Magna",
+      "V. Romano",
+      "G. Nicosia"
+     ]
+    }
+   ]
+  },
+  {
+   "titles": [
     "The networks of ingredient combination in cuisines around the world"
    ],
    "topics": [
@@ -986,6 +1044,76 @@
       "I. Iacopini",
       "A. Santoro",
       "V. Latora"
+     ]
+    }
+   ]
+  },
+  {
+   "titles": [
+    "Metabolic Circuit Design Automation by Multi-objective BioCAD"
+   ],
+   "topics": [
+    "optim"
+   ],
+   "topic": "optim",
+   "year": 2016,
+   "size": 5,
+   "members": [
+    "A. Patané",
+    "G. Carapezza",
+    "G. Nicosia",
+    "J. Costanza",
+    "P. Conca"
+   ],
+   "papers": [
+    {
+     "title": "Metabolic Circuit Design Automation by Multi-objective BioCAD",
+     "topic": "optim",
+     "year": 2016,
+     "venue": "International Workshop on Machine Learning, Optimization and Big Data",
+     "url": "",
+     "authors": [
+      "A. Patané",
+      "P. Conca",
+      "G. Carapezza",
+      "A. Santoro",
+      "J. Costanza",
+      "G. Nicosia"
+     ]
+    }
+   ]
+  },
+  {
+   "titles": [
+    "A multi-objective clonal selection algorithm for analog circuit and solar cell design"
+   ],
+   "topics": [
+    "optim"
+   ],
+   "topic": "optim",
+   "year": 2015,
+   "size": 5,
+   "members": [
+    "A. La Magna",
+    "A. Patané",
+    "G. Carapezza",
+    "G. Nicosia",
+    "V. Romano"
+   ],
+   "papers": [
+    {
+     "title": "A multi-objective clonal selection algorithm for analog circuit and solar cell design",
+     "topic": "optim",
+     "year": 2015,
+     "venue": "International Workshop on Artificial Immune Systems (AIS)",
+     "url": "",
+     "authors": [
+      "A. Patané",
+      "A. Santoro",
+      "G. Carapezza",
+      "A. La Magna",
+      "V. Romano",
+      "G. Nicosia"
      ]
     }
    ]
@@ -1150,6 +1278,39 @@
       "A. Santoro",
       "V. Romano",
       "A. La Magna",
+      "G. Nicosia"
+     ]
+    }
+   ]
+  },
+  {
+   "titles": [
+    "Pareto Optimal Design for Synthetic Biology"
+   ],
+   "topics": [
+    "optim"
+   ],
+   "topic": "optim",
+   "year": 2015,
+   "size": 4,
+   "members": [
+    "A. Patané",
+    "G. Carapezza",
+    "G. Nicosia",
+    "J. Costanza"
+   ],
+   "papers": [
+    {
+     "title": "Pareto Optimal Design for Synthetic Biology",
+     "topic": "optim",
+     "year": 2015,
+     "venue": "IEEE Transactions on Biomedical Circuits and Systems",
+     "url": "https://ieeexplore.ieee.org/document/7265105",
+     "authors": [
+      "A. Patané",
+      "A. Santoro",
+      "J. Costanza",
+      "G. Carapezza",
       "G. Nicosia"
      ]
     }
