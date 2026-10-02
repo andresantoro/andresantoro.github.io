@@ -220,7 +220,7 @@ body.nb {
 .nb-hero { padding: 40px 40px 44px; border-bottom: 1px solid var(--rule); }
 .nb-hero__row { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 40px; }
 .nb-hero__main { flex: 1 1 620px; min-width: 0; container-type: inline-size; }
-.nb-hero .nb-display { font-size: clamp(38px, 10vw, 156px); font-size: min(156px, 14.2cqi); line-height: 0.86; overflow-wrap: normal; }
+.nb-hero .nb-display { font-size: clamp(32px, 8vw, 124px); font-size: min(124px, 11.4cqi); line-height: 0.86; overflow-wrap: normal; }
 .nb-hero__lede { margin: 30px 0 0; max-width: 760px; font-size: clamp(18px, 1.8vw, 22px); line-height: 1.45; color: var(--muted); }
 .nb-hero__lede mark { background: none; color: var(--chalk); box-shadow: inset 0 -0.42em 0 rgba(255, 90, 54, 0.32); }
 .nb-cursor { display: inline-block; width: 0.5em; height: 1em; margin-left: 6px; vertical-align: -0.15em; background: var(--chalk); animation: nb-blink 1.1s steps(1) infinite; }
