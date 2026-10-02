@@ -291,7 +291,7 @@ body.nb {
 .nb-barcode__bar { position: absolute; top: 2px; height: 10px; background: var(--chalk); }
 .nb-barcode__bar--train { background: var(--blue); }
 .nb-barcode__bar--now { background: var(--accent); }
-.nb-barcode__axis { margin-top: 10px; display: grid; grid-template-columns: repeat(16, minmax(0, 1fr)); border-top: 1px solid var(--chalk); font-family: var(--mono); font-size: 11px; color: var(--faint); }
+.nb-barcode__axis { margin-top: 10px; display: grid; grid-template-columns: repeat(11, minmax(0, 1fr)); border-top: 1px solid var(--chalk); font-family: var(--mono); font-size: 11px; color: var(--faint); }
 .nb-barcode__axis span { padding: 6px 0 0 4px; border-left: 1px solid var(--rule-2); }
 .nb-barcode__axis span:last-child { color: var(--accent); }
 .nb-legend { margin-top: 18px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }

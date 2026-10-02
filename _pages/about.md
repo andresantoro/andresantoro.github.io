@@ -141,23 +141,19 @@ redirect_from:
   <div class="nb-barcode">
     <div class="nb-barcode__grid">
       <div class="nb-barcode__label"><b>MSCA Postdoctoral Fellow</b><span> · CENTAI → ISI Foundation</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar nb-barcode__bar--now" style="left: 89.58%; width: 10.42%"></span></div>
+      <div class="nb-barcode__track"><span class="nb-barcode__bar nb-barcode__bar--now" style="left: 84.84%; width: 15.16%"></span></div>
       <div class="nb-barcode__label"><b>Researcher, Project CETI</b><span> · CENTAI, Turin</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar" style="left: 85.42%; width: 8.33%"></span></div>
+      <div class="nb-barcode__track"><span class="nb-barcode__bar" style="left: 78.79%; width: 12.12%"></span></div>
       <div class="nb-barcode__label"><b>Postdoctoral Researcher</b><span> · Neuro-X, EPFL</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar" style="left: 64.06%; width: 20.83%"></span></div>
+      <div class="nb-barcode__track"><span class="nb-barcode__bar" style="left: 47.72%; width: 30.3%"></span></div>
       <div class="nb-barcode__label"><b>Research Assistant</b><span> · QMUL</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar" style="left: 59.38%; width: 4.17%"></span></div>
+      <div class="nb-barcode__track"><span class="nb-barcode__bar" style="left: 40.92%; width: 6.07%"></span></div>
       <div class="nb-barcode__label"><b>Enrichment Student</b><span> · Alan Turing Institute</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar nb-barcode__bar--train" style="left: 48.44%; width: 6.25%"></span></div>
+      <div class="nb-barcode__track"><span class="nb-barcode__bar nb-barcode__bar--train" style="left: 25%; width: 9.09%"></span></div>
       <div class="nb-barcode__label"><b>PhD, Applied Mathematics</b><span> · QMUL</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar nb-barcode__bar--train" style="left: 35.42%; width: 28.13%"></span></div>
-      <div class="nb-barcode__label"><b>Scuola Superiore di Catania</b><span> · fellow</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar nb-barcode__bar--train" style="left: 4.69%; width: 39.58%"></span></div>
-      <div class="nb-barcode__label"><b>BSc &amp; MSc, Mathematics</b><span> · Univ. Catania</span></div>
-      <div class="nb-barcode__track"><span class="nb-barcode__bar nb-barcode__bar--train" style="left: 4.69%; width: 29.69%"></span></div>
+      <div class="nb-barcode__track"><span class="nb-barcode__bar nb-barcode__bar--train" style="left: 6.07%; width: 40.92%"></span></div>
       <div></div>
-      <div class="nb-barcode__axis"><span>’11</span><span>’12</span><span>’13</span><span>’14</span><span>’15</span><span>’16</span><span>’17</span><span>’18</span><span>’19</span><span>’20</span><span>’21</span><span>’22</span><span>’23</span><span>’24</span><span>’25</span><span>’26 →</span></div>
+      <div class="nb-barcode__axis"><span>’16</span><span>’17</span><span>’18</span><span>’19</span><span>’20</span><span>’21</span><span>’22</span><span>’23</span><span>’24</span><span>’25</span><span>’26 →</span></div>
     </div>
     <div class="nb-legend"><span><i class="is-train"></i>Training</span><span><i></i>Positions</span><span><i class="is-now"></i>Now</span><a href="{{ base_path }}/cv/">Full CV →</a></div>
   </div>
