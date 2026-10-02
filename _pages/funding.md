@@ -1,7 +1,7 @@
 ---
 layout: notebook
-title: "Grants"
-permalink: /grants/
+title: "Funding"
+permalink: /funding/
 sheet: "05"
 hero: false
 ---
