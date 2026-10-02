@@ -1,4 +1,4 @@
-<svg class="wb" viewBox="0 0 800 440" role="img" aria-label="Chalk sketch in four steps: multivariate signals; a synergistic triplet found with the O-information (negative O-information means synergy); a simplicial complex K whose unfilled cycle is a hole with beta-one equal to one; and a persistence barcode over the filtration parameter epsilon where the same cycle is a long H-one bar. In a separate corner, field notes of a sperm whale coda.">
+<svg class="wb" viewBox="0 0 800 440" role="group" aria-label="Chalk sketch in four steps: multivariate signals; a synergistic triplet found with the O-information (negative O-information means synergy); a simplicial complex K whose unfilled cycle is a hole with beta-one equal to one; and a persistence barcode over the filtration parameter epsilon where the same cycle is a long H-one bar. In a separate corner, field notes of a sperm whale coda that can be played.">
   <!-- 3: higher-order structure, a simplicial complex K with one hole -->
   <g class="wb-fill">
     <polygon points="140,140 235,100 198,212"/>
@@ -95,23 +95,28 @@
   <text class="wb-text wb-text--lg" x="420" y="398">Ω = TC − DTC</text>
   <text class="wb-text wb-text--xs wb-text--muted" x="422" y="424">O-information</text>
 
-  <!-- field notes, kept apart from the maths -->
-  <rect class="wb-box" x="592" y="364" width="204" height="72" rx="4"/>
-  <text class="wb-text wb-text--xs wb-text--muted" x="594" y="358">field notes</text>
-  <text class="wb-sfx" x="602" y="383" transform="rotate(-6 602 383)">CLICK!</text>
-  <g class="wb-clicks">
-    <path d="M603 388 L603 400"/><path d="M618 388 L618 400"/>
-    <path d="M636 388 L636 400"/><path d="M642 388 L642 400"/><path d="M648 388 L648 400"/>
+  <!-- field notes, kept apart from the maths: a real coda (1+1+3) plays on click, see notebook.js -->
+  <g class="wb-coda" role="button" tabindex="0" aria-label="Play a recorded sperm whale coda: 1+1+3 clicks" data-src="{{ base_path }}/assets/audio/coda-1-1-3.mp3" data-onsets="0.17 0.59 0.99 1.19 1.375">
+    <rect class="wb-hit" x="588" y="342" width="210" height="96"/>
+    <rect class="wb-box" x="592" y="364" width="204" height="72" rx="4"/>
+    <text class="wb-text wb-text--xs wb-text--muted" x="594" y="358">field notes · <tspan class="wb-listen">▶ listen</tspan></text>
+    <g class="wb-sfx-wrap"><text class="wb-sfx" x="602" y="383" transform="rotate(-6 602 383)">CLICK!</text></g>
+    <g class="wb-clicks">
+      <path d="M603 388 L603 400"/><path d="M618.7 388 L618.7 400"/>
+      <path d="M633.6 388 L633.6 400"/><path d="M641.1 388 L641.1 400"/><path d="M648 388 L648 400"/>
+    </g>
+    <text class="wb-text wb-text--sm" x="600" y="420">1+1+3</text>
+    <g class="wb-whale">
+      <path class="wb-fluke" d="M722 406 C706 398 680 392 662 381 C682 374 708 374 724 378 L727 386 L730 378 C746 374 772 374 792 381 C774 392 748 398 732 406 Z" transform="translate(-6 0) scale(1 0.92) translate(0 34)"/>
+      <g class="wb-chalk wb-chalk--thin">
+        <path d="M715 407 C712 415 708 421 704 427"/>
+        <path d="M727 407 C730 415 734 421 738 427"/>
+      </g>
+      <g class="wb-drips">
+        <circle cx="657" cy="394" r="1.6"/><circle cx="658" cy="402" r="1.2"/>
+        <circle cx="785" cy="394" r="1.6"/><circle cx="784" cy="402" r="1.2"/>
+      </g>
+    </g>
+    <path class="wb-water" d="M664 430 q 11 -4 22 0 t 22 0 t 22 0 t 22 0 t 22 0 t 18 0"/>
   </g>
-  <text class="wb-text wb-text--sm" x="600" y="420">1+1+3</text>
-  <path class="wb-fluke" d="M722 406 C706 398 680 392 662 381 C682 374 708 374 724 378 L727 386 L730 378 C746 374 772 374 792 381 C774 392 748 398 732 406 Z" transform="translate(-6 0) scale(1 0.92) translate(0 34)"/>
-  <g class="wb-chalk wb-chalk--thin">
-    <path d="M715 407 C712 415 708 421 704 427"/>
-    <path d="M727 407 C730 415 734 421 738 427"/>
-  </g>
-  <g class="wb-drips">
-    <circle cx="657" cy="394" r="1.6"/><circle cx="658" cy="402" r="1.2"/>
-    <circle cx="785" cy="394" r="1.6"/><circle cx="784" cy="402" r="1.2"/>
-  </g>
-  <path class="wb-water" d="M664 430 q 11 -4 22 0 t 22 0 t 22 0 t 22 0 t 22 0 t 18 0"/>
 </svg>

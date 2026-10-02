@@ -180,6 +180,43 @@
   openTarget();
   window.addEventListener('hashchange', openTarget);
 
+  // ---- Fig. 1 field notes: play the recorded coda and light up each click as it sounds ----
+  document.querySelectorAll('.wb-coda').forEach(function (g) {
+    var marks = Array.prototype.slice.call(g.querySelectorAll('.wb-clicks path'));
+    var onsets = (g.getAttribute('data-onsets') || '').split(' ').map(Number);
+    var audio = null, raf = 0;
+    var reset = function () {
+      cancelAnimationFrame(raf);
+      g.classList.remove('is-playing', 'is-pop');
+      marks.forEach(function (m) { m.classList.remove('is-hit'); });
+    };
+    var tick = function () {
+      var t = audio.currentTime, hit = false;
+      marks.forEach(function (m, i) {
+        var on = t >= onsets[i] && t < onsets[i] + 0.18;
+        m.classList.toggle('is-hit', on);
+        hit = hit || on;
+      });
+      g.classList.toggle('is-pop', hit);
+      if (audio.paused || audio.ended) reset(); else raf = requestAnimationFrame(tick);
+    };
+    var play = function () {
+      if (!audio) {
+        audio = new Audio(g.getAttribute('data-src'));
+        audio.addEventListener('ended', reset);
+      }
+      reset();
+      audio.currentTime = 0;
+      var started = audio.play();
+      var go = function () { g.classList.add('is-playing'); raf = requestAnimationFrame(tick); };
+      if (started && started.then) started.then(go).catch(reset); else go();
+    };
+    g.addEventListener('click', play);
+    g.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); }
+    });
+  });
+
   // ---- retro terminal on Home: type the lines in once it scrolls into view ----
   document.querySelectorAll('.nb-term').forEach(function (t) {
     if (!('IntersectionObserver' in window)) { t.classList.add('is-booted'); return; }

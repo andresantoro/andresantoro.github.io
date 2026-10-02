@@ -608,6 +608,16 @@ a.nb-caption--end:hover { background: var(--pop); }
 .cl-thought__paper circle { fill: var(--paper); }
 .cl-thought text { font-family: var(--hand); font-weight: 700; font-size: 21px; fill: var(--ink); text-anchor: middle; }
 .has-played .cl-thought { opacity: 0; transform: translateY(-8px) scale(0.9); }
+.wb-coda { cursor: pointer; outline: none; }
+.wb-hit { fill: transparent; }
+.wb-listen { fill: var(--accent); }
+.wb-coda:hover .wb-box, .wb-coda:focus-visible .wb-box, .wb-coda.is-playing .wb-box { stroke: var(--pop); stroke-dasharray: none; }
+.wb-clicks path.is-hit { stroke: var(--pop); stroke-width: 4; filter: drop-shadow(0 0 4px var(--pop)); }
+.wb-sfx-wrap { transform-box: fill-box; transform-origin: center; transition: transform 0.08s; }
+.wb-coda.is-pop .wb-sfx-wrap { transform: scale(1.35); }
+.wb-whale { transform-box: fill-box; transform-origin: 50% 100%; }
+.wb-coda.is-playing .wb-whale { animation: wb-bob 0.6s ease-in-out infinite alternate; }
+@keyframes wb-bob { to { transform: translateY(-3px) rotate(-1.5deg); } }
 .wb-sfx { font-family: var(--comic); font-size: 17px; letter-spacing: 0.04em; fill: var(--pop); stroke: var(--ink); stroke-width: 3px; stroke-linejoin: round; paint-order: stroke; }
 
 @media (prefers-reduced-motion: reduce) {
