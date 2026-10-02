@@ -18,6 +18,10 @@
   --sans: "Archivo", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
   --hand: "Architects Daughter", "Comic Neue", cursive;
+  --comic: "Bangers", "Architects Daughter", cursive;
+  --ink: #16181b;
+  --paper: #fffaf0;
+  --pop: #ffcf3a;
   --sheet: 1320px;
   --pad: 24px;
 }
@@ -533,6 +537,27 @@ button.nb-section__toggle[aria-pressed="true"] { background: var(--chalk); color
 /* ---------- motion ---------- */
 @keyframes nb-draw { to { stroke-dashoffset: 0; } }
 @keyframes nb-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+/* ---------- comic touches: speech bubbles, halftone, a starburst and narration captions ---------- */
+.nb-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.nb-bubble { display: inline-block; line-height: 0; }
+.nb-bubble svg { display: block; width: 100%; height: auto; overflow: visible; }
+.nb-bubble__shape { fill: var(--paper); stroke: var(--ink); stroke-width: 2.6; stroke-linejoin: round; }
+.nb-bubble text { font-family: var(--hand); font-weight: 700; font-size: 23px; fill: var(--ink); text-anchor: middle; }
+.nb-bubble--flip .nb-bubble__shape { transform: scaleX(-1); transform-origin: 78px 38px; }
+.nb-bubble--hero { position: absolute; z-index: 3; width: 150px; left: -104px; top: -58px; transform-origin: 85% 95%; animation: nb-pop 0.6s 0.9s cubic-bezier(0.3, 1.6, 0.5, 1) both; }
+@keyframes nb-pop { from { transform: scale(0.4) rotate(-8deg); opacity: 0; } to { transform: none; opacity: 1; } }
+.nb-bubble--footer { width: 92px; margin: -30px 0 -6px 10px; vertical-align: bottom; transform: rotate(-4deg); }
+.nb-bubble--footer text { font-size: 26px; }
+.nb-portrait__frame { isolation: isolate; }
+.nb-halftone { position: absolute; z-index: -1; inset: 30px -46px -46px 30px; background-image: radial-gradient(circle, var(--accent) 0 2px, transparent 2.4px); background-size: 10px 10px; -webkit-mask-image: radial-gradient(closest-side at 65% 65%, #000 25%, transparent 100%); mask-image: radial-gradient(closest-side at 65% 65%, #000 25%, transparent 100%); pointer-events: none; }
+.nb-section__num { background-image: radial-gradient(rgba(22, 24, 27, 0.22) 0.9px, transparent 1.3px); background-size: 5px 5px; }
+.nb-news .nb-row { position: relative; }
+.nb-burst { position: absolute; z-index: 2; left: 92px; top: 40px; display: grid; place-items: center; width: 66px; height: 66px; padding-top: 3px; background: var(--pop); color: var(--ink); clip-path: polygon(50.0% 0.0%, 58.0% 14.9%, 71.7% 5.0%, 72.4% 21.9%, 89.1% 18.8%, 82.4% 34.4%, 98.7% 38.9%, 86.0% 50.0%, 98.7% 61.1%, 82.4% 65.6%, 89.1% 81.2%, 72.4% 78.1%, 71.7% 95.0%, 58.0% 85.1%, 50.0% 100.0%, 42.0% 85.1%, 28.3% 95.0%, 27.6% 78.1%, 10.9% 81.2%, 17.6% 65.6%, 1.3% 61.1%, 14.0% 50.0%, 1.3% 38.9%, 17.6% 34.4%, 10.9% 18.8%, 27.6% 21.9%, 28.3% 5.0%, 42.0% 14.9%); font-family: var(--comic); font-size: 19px; letter-spacing: 0.04em; transform: rotate(-12deg); animation: nb-pop 0.5s 0.4s cubic-bezier(0.3, 1.6, 0.5, 1) both; pointer-events: none; }
+.nb-caption { display: block; width: fit-content; padding: 6px 12px; background: var(--paper); color: var(--ink) !important; border: 2px solid var(--ink); box-shadow: 3px 3px 0 var(--ink); font-family: var(--hand); font-weight: 700; font-size: 15px; letter-spacing: 0.04em; text-transform: uppercase; }
+.nb-caption--end { margin: 22px var(--pad) 24px auto; transform: rotate(-1deg); }
+a.nb-caption--end:hover { background: var(--pop); }
+.nb-caption--over { position: absolute; z-index: 2; left: 14px; top: 54px; transform: rotate(-1.5deg); pointer-events: none; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .wb-draw path, path.wb-draw { stroke-dashoffset: 0; }
@@ -630,6 +655,10 @@ button.cl-author:hover { border-color: var(--accent); color: var(--accent); }
   .nb-body { padding: 24px 16px 40px; }
   .nb-section, .cl { margin-top: 32px; }
   .nb-sub__hint { display: none; }
+  .nb-bubble--hero { left: auto; right: -112px; top: -44px; transform-origin: 15% 95%; }
+  .nb-bubble--hero .nb-bubble__shape { transform: scaleX(-1); transform-origin: 78px 38px; }
+  .nb-burst { left: auto; right: 12px; top: -14px; width: 56px; height: 56px; font-size: 16px; }
+  .nb-halftone { inset: 30px -34px 10px 30px; }
   .nb-plate.nb-sub__fig { flex-basis: 100%; max-width: 260px; }
   .nb-sheet { padding-bottom: 32px; }
   .cl-stage { flex-basis: 100%; height: 62vh; min-height: 360px; border-right: 0; }

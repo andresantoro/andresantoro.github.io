@@ -17,10 +17,12 @@ redirect_from:
   <div class="nb-hero__row">
     <div class="nb-hero__main">
       <h1 class="nb-display">Andrea<br>Santoro<span class="nb-square" aria-hidden="true"></span></h1>
-      <p class="nb-hero__lede">Applied mathematician. I build methods to infer <mark>higher-order, time-varying interactions</mark> from multivariate signals — from the brain to financial markets — and use network science to study systems as diverse as sperm whales and world <span class="nb-nowrap">cuisines.<span class="nb-cursor" aria-hidden="true"></span></span></p>
+      <p class="nb-hero__lede">I’m an applied mathematician interested in using mathematics and data to understand how complex real-world systems work. I develop methods to uncover <mark>higher-order, time-varying interactions</mark> in multivariate signals — from the brain to financial markets — and use network science to explore systems as diverse as sperm whales and world <span class="nb-nowrap">cuisines.<span class="nb-cursor" aria-hidden="true"></span></span></p>
     </div>
     <figure class="nb-portrait">
       <div class="nb-portrait__frame">
+        {% include nb/bubble.html text="Hi there!" class="nb-bubble--hero" %}
+        <span class="nb-halftone" aria-hidden="true"></span>
         <span class="nb-crop nb-crop--tl" aria-hidden="true"></span><span class="nb-crop nb-crop--tr" aria-hidden="true"></span>
         <span class="nb-crop nb-crop--bl" aria-hidden="true"></span><span class="nb-crop nb-crop--br" aria-hidden="true"></span>
         <img src="{{ base_path }}/images/bio-photo-900.jpg" alt="Portrait of Andrea Santoro">
@@ -55,8 +57,9 @@ redirect_from:
   {% for item in site.data.news limit: 4 %}
   <div class="nb-row">
     <div class="nb-row__key{% if forloop.first %} nb-row__key--accent{% endif %}">{{ item.date }}</div>
+    {% if forloop.first %}<span class="nb-burst" aria-hidden="true">New!</span>{% endif %}
     <div class="nb-row__main">
-      <span class="nb-tag{% if forloop.first %} nb-tag--accent{% endif %}">{% if forloop.first %}New {% endif %}{{ item.tag }}</span>
+      <span class="nb-tag{% if forloop.first %} nb-tag--accent{% endif %}">{% if forloop.first %}<span class="nb-sr">New </span>{% endif %}{{ item.tag }}</span>
       <h3 class="nb-row__title">{{ item.title | remove_first: "New preprint: " }}</h3>
     </div>
     {% if item.link %}<a class="nb-row__side" href="{{ item.link }}">Read ↗</a>{% endif %}
@@ -118,6 +121,7 @@ redirect_from:
     </div>
   </div>
   {% endif %}{% endfor %}
+  <a class="nb-caption nb-caption--end" href="{{ base_path }}/publications/">To be continued…</a>
 </section>
 
 <section class="nb-section">
@@ -132,6 +136,7 @@ redirect_from:
   <figure class="nb-about__fig">
     <div class="nb-about__sticky">
       <div class="nb-cellbar"><span>Fig. 4</span><span>Turin</span></div>
+      <div class="nb-caption nb-caption--over" aria-hidden="true">Meanwhile, in Turin…</div>
       <img src="{{ base_path }}/images/turin4-1100.jpg" alt="Low-poly view of Turin with the Mole Antonelliana and the Alps" loading="lazy">
       <figcaption class="nb-label">Turin — the Mole Antonelliana and the Alps, triangulated</figcaption>
     </div>

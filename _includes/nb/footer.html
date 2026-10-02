@@ -1,7 +1,7 @@
 <footer class="nb-footer">
   <div class="nb-footer__inner">
     <div class="nb-footer__contact">
-      <div class="nb-label">Contact</div>
+      <div class="nb-label">Contact {% include nb/bubble.html text="Say hi!" class="nb-bubble--footer" flip=true hidden=true %}</div>
       <a class="nb-footer__mail" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
       <p>{{ site.author.employer }}, {{ site.author.location | split: "," | first }}. Students looking for a thesis or internship: see the <a class="nb-link" href="{{ base_path }}/open-projects/">open projects</a>.</p>
     </div>
