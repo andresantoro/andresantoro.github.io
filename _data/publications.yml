@@ -1,5 +1,14 @@
 papers:
   # 2026
+  - title: "Higher-order topology uncovers the multidimensional dynamics of naturalistic emotion"
+    authors: "L. Zaffina, M. Diano, F. Petruso, M. G. Preti, E. Amico, E. Morgenroth, G. Petri, D. Van De Ville, P. Vuilleumier, A. Santoro"
+    venue: "bioRxiv"
+    year: "2026"
+    type: "preprint"
+    pdf: "https://www.biorxiv.org/content/10.64898/2026.09.26.754452v1.full.pdf"
+    doi: "https://doi.org/10.64898/2026.09.26.754452"
+    abstract: "Emotions are thought to emerge from co-activation among distributed brain systems, yet traditional fMRI analyses typically examine localized responses and pairwise connections, potentially overlooking interactions among groups of regions. Here, we use time-resolved higher-order topology to characterize these group interactions during naturalistic viewing of 14 films totaling over 2.5 h, continuously annotated across 50 affective features. The homological scaffold, representing evolving group-level topology, most closely tracks recurrent emotional states and best predicts fine-grained affective profiles. This sensitivity diminishes when emotion is compressed into dimensions of valence, arousal, and power, where pairwise connectivity captures the dominant arousal signal. Across three independent datasets, arousal predictions transfer most robustly through pairwise connectivity, while the relative geometry of broad affective states remains conserved across film narratives despite poor valence generalization. These findings reveal complementary neural representations of emotion: higher-order topology captures fine-grained affective structure, whereas pairwise connectivity provides a portable readout of broad arousal."
+
   - title: "Sperm whale foraging combines persistent search with flexible prey-capture tactics"
     authors: "L. Zaffina*, C. Monti*, S. Poetto, M. Lucas, H. J. Machado Borges, R. Deshpande, P. Tønnesen, D. F. Gruber, S. Gero, A. Santoro*, G. Petri*"
     venue: "bioRxiv"

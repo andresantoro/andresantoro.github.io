@@ -10,6 +10,16 @@ author_profile: true
 
 
 <div class="news-item">
+  <p class="date">October 2026</p>
+  <h3>New preprint: Higher-order topology uncovers the multidimensional dynamics of naturalistic emotion</h3>
+  <p>
+    Happy to see this work finally out as a preprint on bioRxiv, after a few years of work! Using time-resolved higher-order topology on fMRI data recorded during naturalistic viewing of 14 films, continuously annotated across 50 affective features, we show that higher-order topology captures fine-grained affective structure, while pairwise connectivity provides a portable readout of broad arousal.
+    It has been a pleasure to work with such a great team, and kudos to Lorenzo Zaffina, who led the project and put a great amount of work into its development.
+    <a href="https://www.biorxiv.org/content/10.64898/2026.09.26.754452v1" target="_blank">Read the preprint here</a>.
+  </p>
+</div>
+
+<div class="news-item">
   <p class="date">August 2026</p>
   <h3>New preprint: Sperm whale foraging combines persistent search with flexible prey-capture tactics</h3>
   <p>
