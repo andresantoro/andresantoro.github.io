@@ -172,6 +172,14 @@
     document.querySelectorAll('[data-hg-clear]').forEach(function (b) { b.addEventListener('click', clear); });
   }
 
+  // ---- open a sub-theme (<details>) when the URL points at it, e.g. /projects/#affective-neuroscience ----
+  var openTarget = function () {
+    var el = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (el && el.tagName === 'DETAILS' && !el.open) { el.open = true; el.scrollIntoView(); }
+  };
+  openTarget();
+  window.addEventListener('hashchange', openTarget);
+
   // ---- optional table columns ----
   document.querySelectorAll('[data-toggle-col]').forEach(function (b) {
     var table = document.getElementById(b.getAttribute('data-toggle-col'));

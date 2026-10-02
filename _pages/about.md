@@ -78,22 +78,22 @@ redirect_from:
       <div class="nb-cell__body"><h3 class="nb-cell__title">Computational neuroscience</h3><p class="nb-cell__text">Higher-order and topological approaches to neural systems, from micro- to macro-scale.</p></div>
     </a>
     <a class="nb-cell" href="{{ base_path }}/projects/#affective-neuroscience">
-      <div class="nb-cellbar"><span>2.3</span><span>Fig. 2.3</span></div>
+      <div class="nb-cellbar"><span>2.2.2</span><span>Fig. 2.2.2</span></div>
       <figure class="nb-plate"><img src="{{ base_path }}/images/projects/movies.png" alt="" loading="lazy"></figure>
       <div class="nb-cell__body"><h3 class="nb-cell__title">Affective neuroscience</h3><p class="nb-cell__text">How emotions emerge from groups of interacting brain regions, using higher-order topology and naturalistic film fMRI.</p></div>
     </a>
     <a class="nb-cell" href="{{ base_path }}/projects/#multilayer-networks">
-      <div class="nb-cellbar"><span>2.4</span><span>Fig. 2.4</span></div>
+      <div class="nb-cellbar"><span>2.3</span><span>Fig. 2.3</span></div>
       <figure class="nb-plate"><img src="{{ base_path }}/images/projects/multilayer_net_2.png" alt="" loading="lazy"></figure>
       <div class="nb-cell__body"><h3 class="nb-cell__title">Multilayer networks</h3><p class="nb-cell__text">Structure and dynamics of interconnected systems, through information theory and optimality.</p></div>
     </a>
     <a class="nb-cell" href="{{ base_path }}/projects/#project-ceti">
-      <div class="nb-cellbar"><span>2.5</span><span>Fig. 2.5</span></div>
+      <div class="nb-cellbar"><span>2.4</span><span>Fig. 2.4</span></div>
       <figure class="nb-plate nb-plate--whale"><img src="{{ base_path }}/images/projects/sperm_whales.png" alt="" loading="lazy"></figure>
       <div class="nb-cell__body"><h3 class="nb-cell__title">Project CETI</h3><p class="nb-cell__text">Network science for the communication and behaviour of sperm whales.</p></div>
     </a>
     <a class="nb-cell" href="{{ base_path }}/projects/#computational-gastronomy">
-      <div class="nb-cellbar"><span>2.6</span><span>Fig. 2.6</span></div>
+      <div class="nb-cellbar"><span>2.5</span><span>Fig. 2.5</span></div>
       <figure class="nb-plate"><img src="{{ base_path }}/images/projects/computational_gastonomy.png" alt="" loading="lazy"></figure>
       <div class="nb-cell__body"><h3 class="nb-cell__title">Computational gastronomy</h3><p class="nb-cell__text">How cuisines combine ingredients, through networks and topology.</p></div>
     </a>
