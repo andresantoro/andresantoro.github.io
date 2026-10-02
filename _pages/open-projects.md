@@ -9,6 +9,7 @@ lede: "Thesis and semester projects for students. Illustrative, not exhaustive."
 {% include base_path %}
 
 <div class="nb-intro">
+  <p class="nb-recruit"><span class="nb-flag" aria-hidden="true"></span>The expedition is recruiting: new members are welcome at camp.</p>
   <p>I'm always keen to supervise <strong>Bachelor/Master theses</strong> and <strong>semester projects</strong> at the intersection of applied mathematics, topological data analysis (TDA), computational neuroscience, finance, and food analytics. The projects listed here are just illustrative; if these areas interest you, please <a href="mailto:andrea.santoro@isi.it">contact me</a> to discuss additional or tailored topics that fit your background — including opportunities in finance, clinical neuroscience, and food network.</p>
 </div>
 

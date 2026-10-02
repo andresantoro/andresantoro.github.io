@@ -6,6 +6,8 @@ sheet: "01"
 lede: "A log of papers, preprints, talks and fieldwork."
 ---
 {% include base_path %}
+{% assign latest = site.data.news.first %}
+{% include nb/toast.html head="Journal found" text=latest.title %}
 
 <section class="nb-section nb-news">
   {% for item in site.data.news %}

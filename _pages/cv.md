@@ -14,7 +14,7 @@ lede: "Positions, education and awards. The full PDF is at the bottom."
 <div class="cv-container">
   <div class="cv-section">
     <h1>Work Experience</h1>
-    <div class="cv-entry">
+    <div class="cv-entry is-now">
       <div class="cv-entry-date">Feb 2026 - Present</div>
       <div class="cv-entry-title">MSCA Postdoctoral Fellow</div>
       <div class="cv-entry-content">ISI Foundation, Turin - "Temporal HOI"</div>

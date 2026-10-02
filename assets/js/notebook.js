@@ -180,6 +180,73 @@
   openTarget();
   window.addEventListener('hashchange', openTarget);
 
+  // petals that drift up from the bottom edge of a card (title cards here and on /collaborations/)
+  var petals = function (n, dur) {
+    var box = document.createElement('div');
+    box.className = 'nb-petals';
+    box.setAttribute('aria-hidden', 'true');
+    for (var k = 0; k < n; k++) {
+      var i = document.createElement('i');
+      i.style.cssText = '--x: ' + Math.round(6 + 88 * k / Math.max(n - 1, 1)) + '%; --t: ' + dur + 's; --w: -' + (k * 7 % 12) + 's';
+      box.appendChild(i);
+    }
+    return box;
+  };
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ---- Research themes: arriving at a theme (e.g. from a skill on Home) announces it like a new area ----
+  var areaCard = function () {
+    var el = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!el || reduce || !el.matches('.nb-project, .nb-sub')) return;
+    var sub = el.matches('.nb-sub');
+    var num = el.querySelector(sub ? '.nb-sub__num' : '.nb-label');
+    var title = el.querySelector(sub ? '.nb-sub__title' : 'h2');
+    var line = el.querySelector(sub ? '.nb-sub__hint' : '.nb-project__body > p');
+    if (!num || !title) return;
+    var old = document.querySelector('.nb-area');
+    if (old) old.remove();
+    var card = document.createElement('div');
+    card.className = 'cl-title nb-area';
+    card.setAttribute('aria-hidden', 'true');
+    card.appendChild(petals(7, 11));
+    var add = function (cls, text) { var d = document.createElement('div'); d.className = cls; d.textContent = text; card.appendChild(d); };
+    add('cl-title__over', 'Research theme ' + num.textContent.replace(/^§?/, '§'));
+    add('cl-title__name', title.textContent);
+    if (line) add('cl-title__sub', line.textContent);
+    document.body.appendChild(card);
+    setTimeout(function () { card.classList.add('is-out'); }, 3400);
+    setTimeout(function () { card.remove(); }, 4800);
+  };
+  areaCard();
+  window.addEventListener('hashchange', areaCard);
+
+  // ---- 404: the painted number is erased into petals, one digit at a time ----
+  document.querySelectorAll('[data-erase]').forEach(function (num) {
+    if (reduce) return;
+    var chars = num.textContent.split('');
+    num.textContent = '';
+    var spans = chars.map(function (c) {
+      var s = document.createElement('span');
+      s.textContent = c;
+      num.appendChild(s);
+      return s;
+    });
+    spans.forEach(function (s, k) {
+      setTimeout(function () {
+        var r = s.getBoundingClientRect(), o = num.getBoundingClientRect();
+        for (var p = 0; p < 16; p++) {
+          var i = document.createElement('i');
+          i.className = 'nb-erase-petal';
+          i.style.cssText = 'left: ' + (r.left - o.left + Math.random() * r.width) + 'px; top: ' + (r.top - o.top + r.height * (0.2 + 0.7 * Math.random())) + 'px; ' +
+            '--dx: ' + Math.round(30 + Math.random() * 140) + 'px; --dy: ' + Math.round(-60 - Math.random() * 200) + 'px; --r: ' + Math.round(Math.random() * 540) + 'deg; ' +
+            '--t: ' + (1.6 + Math.random() * 1.4).toFixed(2) + 's; animation-delay: ' + (Math.random() * 0.9).toFixed(2) + 's';
+          num.appendChild(i);
+        }
+        s.classList.add('is-gone');
+      }, 900 + k * 650);
+    });
+  });
+
   // ---- Fig. 1 field notes: play the recorded coda and light up each click as it sounds ----
   document.querySelectorAll('.wb-coda').forEach(function (g) {
     var marks = Array.prototype.slice.call(g.querySelectorAll('.wb-clicks path'));
@@ -303,7 +370,7 @@
   document.querySelectorAll('[data-copy]').forEach(function (b) {
     b.addEventListener('click', function () {
       var text = b.getAttribute('data-copy');
-      var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1400); };
+      var done = function () { b.textContent = 'Equipped ✓'; setTimeout(function () { b.textContent = 'Copy'; }, 1400); };
       if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function () {});
     });
   });

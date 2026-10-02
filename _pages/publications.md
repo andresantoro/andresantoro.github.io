@@ -26,6 +26,19 @@ hero: false
 {% capture lede %}For a summary of my work, you can also have a look at my [Google Scholar profile]({{ site.author.googlescholar }}).{% endcapture %}
 {% include nb/titleband.html title=page.title fit="9.8" lede=lede sheet=page.sheet aside=aside below=below %}
 
+{% comment %}Boss bar (a nod to painterly RPG battles, as in the Home battle scene): every published paper has drained Reviewer 2; preprints are what is left of its health.{% endcomment %}
+{% assign preprints = papers | where: "type", "preprint" %}
+{% assign published = papers.size | minus: preprints.size %}
+{% assign hp = preprints.size | times: 100.0 | divided_by: papers.size | round: 1 %}
+<div class="nb-boss" role="img" aria-label="Reviewer 2's health: {{ preprints.size }} of {{ papers.size }}. {{ published }} papers are published, {{ preprints.size }} preprints are still in battle.">
+  <div class="nb-boss__name"><svg class="nb-boss__lvl" viewBox="0 0 30 34" aria-hidden="true" focusable="false"><path d="M15 1.5 28 7v14.5L15 32.5 2 21.5V7z" /><text x="15" y="21.5">15</text></svg>The Wrath of Reviewer 2</div>
+  <div class="nb-boss__row">
+    <div class="nb-boss__bar" style="--hp: {{ hp }}%"><span class="nb-boss__trail"></span><span class="nb-boss__hp"></span><b class="nb-boss__hit">−{{ published }}</b></div>
+    <div class="nb-boss__num"><b>{{ preprints.size }}</b> / {{ papers.size }}</div>
+  </div>
+  <p class="nb-boss__note">Every published paper lands a hit: <b>{{ published }}</b> past review, <b>{{ preprints.size }}</b> preprints still in battle.</p>
+</div>
+
 <div class="nb-toolbar">
   <div class="nb-toolbar__row">
     <label class="nb-toolbar__label" for="pub-search">Search</label>

@@ -16,6 +16,8 @@ hero: false
   <div><dt>Awards</dt><dd>{{ g.items.size }}</dd></div>
 </dl>
 {% endcapture %}
+{% assign first = major.first %}
+{% include nb/toast.html head="Supplies acquired" text=first.name %}
 {% include nb/titleband.html title=page.title lede="Fellowships, research grants and smaller awards that have funded my work." sheet=page.sheet aside=aside %}
 
 <section class="nb-section">
