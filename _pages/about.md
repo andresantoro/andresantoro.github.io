@@ -52,7 +52,7 @@ redirect_from:
   </div>
 </section>
 
-{% include nb/terminal.html %}
+{% include nb/journal.html %}
 
 <section class="nb-section nb-news">
   {% include nb/section-head.html num="1" title="Log" link="/news/" link_text="All entries" %}

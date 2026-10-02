@@ -327,15 +327,24 @@
     play.textContent = '▶ Play';
   }
   range.addEventListener('input', function () { stop(); setYear(+range.value, true); });
-  var perk = function () {
-    var toast = el('div', 'cl-perk');
-    toast.setAttribute('role', 'status');
-    toast.appendChild(el('div', 'cl-perk__head', '★ Perk unlocked'));
-    toast.appendChild(el('div', 'cl-perk__name', 'Network cartographer'));
-    toast.appendChild(el('div', 'cl-perk__text', 'You watched ' + (years.max - years.min + 1) + ' years of collaborations unfold.'));
-    stage.appendChild(toast);
-    setTimeout(function () { toast.classList.add('is-out'); }, 4200);
-    setTimeout(function () { toast.remove(); }, 5000);
+  // when Play reaches the last year, a location-style title card rises over the map, petals drifting off it
+  var titleCard = function () {
+    var card = el('div', 'cl-title');
+    card.setAttribute('role', 'status');
+    var petals = el('div', 'nb-petals');
+    petals.setAttribute('aria-hidden', 'true');
+    [[8, -3], [22, -9], [37, -1], [55, -6], [68, -12], [84, -4], [93, -8]].forEach(function (p) {
+      var i = document.createElement('i');
+      i.style.cssText = '--x: ' + p[0] + '%; --t: 11s; --w: ' + p[1] + 's';
+      petals.appendChild(i);
+    });
+    card.appendChild(petals);
+    card.appendChild(el('div', 'cl-title__over', years.min + ' — ' + years.max));
+    card.appendChild(el('div', 'cl-title__name', 'Network charted'));
+    card.appendChild(el('div', 'cl-title__sub', shownPeople.length + ' co-authors met along the way'));
+    stage.appendChild(card);
+    setTimeout(function () { card.classList.add('is-out'); }, 5200);
+    setTimeout(function () { card.remove(); }, 6500);
   };
   play.addEventListener('click', function () {
     root.classList.add('has-played');  // the "press play!" thought bubble has done its job
@@ -344,7 +353,7 @@
     play.textContent = '❚❚ Pause';
     if (state.year >= years.max) setYear(years.min, true);
     timer = setInterval(function () {
-      if (state.year >= years.max) { stop(); perk(); return; }
+      if (state.year >= years.max) { stop(); titleCard(); return; }
       setYear(state.year + 1, true);
     }, reduce ? 700 : 1300);
   });

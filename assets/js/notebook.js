@@ -217,13 +217,25 @@
     });
   });
 
-  // ---- retro terminal on Home: type the lines in once it scrolls into view ----
-  document.querySelectorAll('.nb-term').forEach(function (t) {
-    if (!('IntersectionObserver' in window)) { t.classList.add('is-booted'); return; }
+  // ---- expedition journal on Home: ink the page in once it scrolls into view; the brush follows the pointed skill ----
+  document.querySelectorAll('.nb-exp').forEach(function (t) {
+    if (!('IntersectionObserver' in window)) { t.classList.add('is-open'); return; }
     var io = new IntersectionObserver(function (entries) {
-      if (entries[0].isIntersecting) { t.classList.add('is-booted'); io.disconnect(); }
+      if (entries[0].isIntersecting) { t.classList.add('is-open'); io.disconnect(); }
     }, { threshold: 0.35 });
     io.observe(t);
+  });
+  document.querySelectorAll('[data-exp-skills]').forEach(function (list) {
+    var note = list.parentNode.querySelector('[data-exp-note]');
+    var skills = list.querySelectorAll('.nb-exp__skill');
+    var pick = function (s) {
+      skills.forEach(function (o) { o.classList.toggle('is-active', o === s); });
+      if (note) note.textContent = s.querySelector('.nb-exp__desc').textContent;
+    };
+    skills.forEach(function (s) {
+      s.addEventListener('mouseenter', function () { pick(s); });
+      s.addEventListener('focus', function () { pick(s); });
+    });
   });
 
   // ---- optional table columns ----

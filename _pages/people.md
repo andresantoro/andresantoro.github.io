@@ -73,6 +73,7 @@ hero: false
     {% if m.url %}</a>{% else %}</div>{% endif %}
     {% endfor %}
   </div>
+  <p class="nb-epigraph">For those who come after.</p>
 </section>
 
 <section class="nb-section" id="network">
