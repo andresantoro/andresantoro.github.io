@@ -61,10 +61,15 @@ for w in pubs["papers"]:  # posters are not manuscripts, so they are left out
     key = frozenset(n for n in names if n != ME)
     if not key:
         continue
-    e = edges.setdefault(key, {"titles": [], "topics": [], "year": 0})
+    e = edges.setdefault(key, {"titles": [], "topics": [], "papers": [], "year": 0})
     if w["title"].lower() not in (t.lower() for t in e["titles"]):
         e["titles"].append(w["title"])
         e["topics"].append(w["topic"])  # every paper needs a topic from _data/topics.yml
+        url = w.get("doi") or w.get("pdf") or ""
+        if url and not url.startswith("http"):
+            url = "https://doi.org/" + url
+        e["papers"].append({"title": w["title"], "topic": w["topic"], "year": int(str(w["year"])),
+                            "venue": w.get("venue", ""), "url": url, "authors": names})
     e["year"] = max(e["year"], int(str(w["year"])))
 
 edge_list = sorted(edges.items(), key=lambda kv: -len(kv[0]))
@@ -108,7 +113,8 @@ works = []
 for k, e in edge_list:
     # several papers with the same co-authors share one hyperedge: colour it by their most common topic
     main = max(e["topics"], key=lambda t: (e["topics"].count(t), -e["topics"].index(t)))
-    works.append({"members": sorted(k), "titles": e["titles"], "topics": e["topics"], "topic": main, "year": e["year"]})
+    works.append({"members": sorted(k), "titles": e["titles"], "topics": e["topics"], "topic": main, "year": e["year"],
+                  "papers": e["papers"]})
 deg = {n: sum(len(w["titles"]) for w in works if n in w["members"]) for n in nodes}
 role = {n: "student" if n in students else "mentor" if n in mentors else "collaborator" for n in nodes}
 
@@ -192,9 +198,11 @@ def svg(mini):
 (ROOT / "_includes/nb").mkdir(parents=True, exist_ok=True)
 (ROOT / "_includes/nb/hypergraph-people.svg").write_text(svg(False), encoding="utf-8")
 (ROOT / "_includes/nb/hypergraph-mini.svg").write_text(svg(True), encoding="utf-8")
-data = {"since": SINCE, "people": [{"name": n, "role": role[n], "works": deg[n]} for n in nodes],
+# x, y: XGI layout in a W x H box, used as starting positions by assets/js/collab.js
+data = {"since": SINCE, "size": [W, H],
+        "people": [{"name": n, "role": role[n], "works": deg[n], "x": xy[n][0], "y": xy[n][1]} for n in nodes],
         "topics": [t for t in topics if any(t["key"] in w["topics"] for w in works)],
         "works": [{"titles": w["titles"], "topics": w["topics"], "topic": w["topic"], "year": w["year"],
-                   "size": len(w["members"])} for w in works]}
+                   "size": len(w["members"]), "members": w["members"], "papers": w["papers"]} for w in works]}
 (ROOT / "_data/hypergraph.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"{len(nodes)} co-authors, {len(works)} hyperedges since {SINCE}")

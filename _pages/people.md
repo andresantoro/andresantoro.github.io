@@ -76,7 +76,7 @@ hero: false
 </section>
 
 <section class="nb-section" id="network">
-  {% include nb/section-head.html num="4" title="Collaboration hypergraph" note="click a person" %}
+  {% include nb/section-head.html num="4" title="Collaboration hypergraph" link="/collaborations/" link_text="Explore it live" %}
   <div class="nb-hgwrap">
     <figure class="nb-hgfig">
       {% include nb/hypergraph-people.svg %}

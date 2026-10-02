@@ -12,9 +12,11 @@ hero: false
 
 {% capture aside %}
 <figure class="nb-minihg">
-  <a href="{{ base_path }}/people/#network" aria-label="Co-authorship hypergraph on the People page">{% include nb/hypergraph-mini.svg %}</a>
-  <figcaption class="nb-label">Co-authors since {{ site.data.hypergraph.since }}, as a hypergraph</figcaption>
+  <a href="{{ base_path }}/collaborations/" aria-label="Explore the interactive co-authorship hypergraph">{% include nb/hypergraph-mini.svg %}</a>
+  <figcaption class="nb-label"><a href="{{ base_path }}/collaborations/">Co-authors since {{ site.data.hypergraph.since }}, as a hypergraph · explore →</a></figcaption>
 </figure>
+{% endcapture %}
+{% capture below %}
 <dl class="nb-stats">
   <div><dt>Papers</dt><dd>{{ papers.size }}</dd></div>
   <div><dt>Talks</dt><dd>{{ talks.size }}</dd></div>
@@ -22,7 +24,7 @@ hero: false
 </dl>
 {% endcapture %}
 {% capture lede %}For a summary of my work, you can also have a look at my [Google Scholar profile]({{ site.author.googlescholar }}).{% endcapture %}
-{% include nb/titleband.html title=page.title fit=true lede=lede sheet=page.sheet aside=aside %}
+{% include nb/titleband.html title=page.title fit="9.8" lede=lede sheet=page.sheet aside=aside below=below %}
 
 <div class="nb-toolbar">
   <div class="nb-toolbar__row">

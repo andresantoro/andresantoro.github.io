@@ -1,390 +1,548 @@
 {
  "since": 2018,
+ "size": [
+  1200,
+  640
+ ],
  "people": [
   {
    "name": "A. Aloric",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 1023.6,
+   "y": 327.0
   },
   {
    "name": "A. Bassolas",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 568.1,
+   "y": 562.6
   },
   {
    "name": "A. Brovelli",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 372.7,
+   "y": 600.0
   },
   {
    "name": "A. Khatibi",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 286.4,
+   "y": 54.6
   },
   {
    "name": "A. La Magna",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 788.6,
+   "y": 215.8
   },
   {
    "name": "A. Lucatelli",
    "role": "student",
-   "works": 1
+   "works": 1,
+   "x": 83.3,
+   "y": 323.6
   },
   {
    "name": "A. Morgan",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 942.9,
+   "y": 329.6
   },
   {
    "name": "A. N. Medvedev",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 183.9,
+   "y": 214.4
   },
   {
    "name": "A. Onicas",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 139.4,
+   "y": 212.6
   },
   {
    "name": "A. Patané",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 649.7,
+   "y": 273.0
   },
   {
    "name": "B. Lugli",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 104.6,
+   "y": 286.9
   },
   {
    "name": "B. Min",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 806.0,
+   "y": 345.2
   },
   {
    "name": "C. Caprioli",
    "role": "student",
-   "works": 1
+   "works": 1,
+   "x": 759.5,
+   "y": 438.9
   },
   {
    "name": "C. Landelle",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 199.8,
+   "y": 67.6
   },
   {
    "name": "C. Monti",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 155.2,
+   "y": 579.0
   },
   {
    "name": "D. A. Battaglia",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 348.2,
+   "y": 590.1
   },
   {
    "name": "D. F. Gruber",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 124.4,
+   "y": 556.9
   },
   {
    "name": "D. Orsenigo",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 441.5,
+   "y": 520.8
   },
   {
    "name": "D. Van De Ville",
    "role": "collaborator",
-   "works": 3
+   "works": 3,
+   "x": 227.3,
+   "y": 242.4
   },
   {
    "name": "E. Amico",
    "role": "mentor",
-   "works": 5
+   "works": 5,
+   "x": 319.4,
+   "y": 314.4
   },
   {
    "name": "E. Beanato",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 114.3,
+   "y": 357.9
   },
   {
    "name": "E. Morgenroth",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 144.4,
+   "y": 383.8
   },
   {
    "name": "F. Battiston",
    "role": "collaborator",
-   "works": 4
+   "works": 4,
+   "x": 549.2,
+   "y": 371.4
   },
   {
    "name": "F. C. Hummel",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 232.4,
+   "y": 336.4
   },
   {
    "name": "F. Mottes",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 88.0,
+   "y": 222.4
   },
   {
    "name": "F. Petruso",
    "role": "student",
-   "works": 2
+   "works": 2,
+   "x": 162.8,
+   "y": 347.6
   },
   {
    "name": "F. Radicchi",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 761.2,
+   "y": 369.9
   },
   {
    "name": "F. Vaccarino",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 413.6,
+   "y": 476.6
   },
   {
    "name": "F. Windel",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 81.4,
+   "y": 301.5
   },
   {
    "name": "G. Lerda",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 112.6,
+   "y": 212.9
   },
   {
    "name": "G. Nicosia",
    "role": "collaborator",
-   "works": 2
+   "works": 2,
+   "x": 753.9,
+   "y": 335.7
   },
   {
    "name": "G. Petri",
    "role": "mentor",
-   "works": 8
+   "works": 8,
+   "x": 285.3,
+   "y": 416.1
   },
   {
    "name": "G. Rabuffo",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 389.5,
+   "y": 512.2
   },
   {
    "name": "H. H. Behjat",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 939.2,
+   "y": 590.0
   },
   {
    "name": "H. J. Machado Borges",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 121.1,
+   "y": 532.1
   },
   {
    "name": "H. Merritt",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 433.2,
+   "y": 505.6
   },
   {
    "name": "H. Saeedi-Sourck",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 1024.7,
+   "y": 383.6
   },
   {
    "name": "I. Iacopini",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 772.5,
+   "y": 413.5
   },
   {
    "name": "I. Ricchi",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 213.1,
+   "y": 45.6
   },
   {
    "name": "J. C. W. Billings",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 70.0,
+   "y": 250.7
   },
   {
    "name": "J. Doyon",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 263.5,
+   "y": 40.0
   },
   {
    "name": "J. Garcia-Bernardo",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 1072.7,
+   "y": 226.0
   },
   {
    "name": "J. Gomez-Gardenes",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 798.3,
+   "y": 319.2
   },
   {
    "name": "L. Chen",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 460.0,
+   "y": 172.0
   },
   {
    "name": "L. Fleury",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 188.5,
+   "y": 370.4
   },
   {
    "name": "L. Zaffina",
    "role": "student",
-   "works": 2
+   "works": 2,
+   "x": 196.0,
+   "y": 439.5
   },
   {
    "name": "L. Zhao",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 444.0,
+   "y": 151.3
   },
   {
    "name": "M. D. Khalili",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 1072.7,
+   "y": 535.3
   },
   {
    "name": "M. Diano",
    "role": "collaborator",
-   "works": 2
+   "works": 2,
+   "x": 305.9,
+   "y": 414.6
   },
   {
    "name": "M. Frasca",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 774.1,
+   "y": 300.9
   },
   {
    "name": "M. G. Preti",
    "role": "collaborator",
-   "works": 2
+   "works": 2,
+   "x": 173.3,
+   "y": 331.7
   },
   {
    "name": "M. Gatica",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 455.2,
+   "y": 470.9
   },
   {
    "name": "M. Hardy",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 979.5,
+   "y": 50.0
   },
   {
    "name": "M. Hu",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 96.2,
+   "y": 243.1
   },
   {
    "name": "M. Lucas",
    "role": "collaborator",
-   "works": 2
+   "works": 2,
+   "x": 297.2,
+   "y": 453.3
   },
   {
    "name": "M. Neri",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 414.2,
+   "y": 535.7
   },
   {
    "name": "M. Nurisso",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 242.3,
+   "y": 568.3
   },
   {
    "name": "M. Saggar",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 402.7,
+   "y": 585.6
   },
   {
    "name": "N. Kinany",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 239.1,
+   "y": 50.0
   },
   {
    "name": "P. M. Krafft",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 907.4,
+   "y": 107.3
   },
   {
    "name": "P. Tønnesen",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 200.6,
+   "y": 474.5
   },
   {
    "name": "P. Vuilleumier",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 166.5,
+   "y": 400.1
   },
   {
    "name": "R. Deshpande",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 184.7,
+   "y": 579.2
   },
   {
    "name": "R. L. Barry",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 329.6,
+   "y": 144.6
   },
   {
    "name": "S. Gero",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 151.3,
+   "y": 556.2
   },
   {
    "name": "S. Kulkarni",
    "role": "student",
-   "works": 1
+   "works": 1,
+   "x": 653.0,
+   "y": 369.3
   },
   {
    "name": "S. Poetto",
    "role": "collaborator",
-   "works": 3
+   "works": 3,
+   "x": 298.1,
+   "y": 518.7
   },
   {
    "name": "S. Rognone",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 617.5,
+   "y": 502.7
   },
   {
    "name": "S. Sousa",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 589.3,
+   "y": 474.9
   },
   {
    "name": "S. Vahdat",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 309.0,
+   "y": 164.9
   },
   {
    "name": "T. Griffiths",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 891.3,
+   "y": 231.9
   },
   {
    "name": "V. Abootalebi",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 891.3,
+   "y": 438.2
   },
   {
    "name": "V. Latora",
    "role": "collaborator",
-   "works": 3
+   "works": 3,
+   "x": 729.5,
+   "y": 390.3
   },
   {
    "name": "V. Nicosia",
    "role": "mentor",
-   "works": 4
+   "works": 4,
+   "x": 695.5,
+   "y": 491.6
   },
   {
    "name": "V. Romano",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 663.3,
+   "y": 229.9
   },
   {
    "name": "Y. Yang",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 415.0,
+   "y": 148.7
   },
   {
    "name": "Z. Neu",
    "role": "collaborator",
-   "works": 1
+   "works": 1,
+   "x": 1052.9,
+   "y": 102.7
   }
  ],
  "topics": [
@@ -439,7 +597,41 @@
    ],
    "topic": "ceti",
    "year": 2026,
-   "size": 10
+   "size": 10,
+   "members": [
+    "C. Monti",
+    "D. F. Gruber",
+    "G. Petri",
+    "H. J. Machado Borges",
+    "L. Zaffina",
+    "M. Lucas",
+    "P. Tønnesen",
+    "R. Deshpande",
+    "S. Gero",
+    "S. Poetto"
+   ],
+   "papers": [
+    {
+     "title": "Sperm whale foraging combines persistent search with flexible prey-capture tactics",
+     "topic": "ceti",
+     "year": 2026,
+     "venue": "bioRxiv",
+     "url": "https://doi.org/10.64898/2026.07.29.741536",
+     "authors": [
+      "L. Zaffina",
+      "C. Monti",
+      "S. Poetto",
+      "M. Lucas",
+      "H. J. Machado Borges",
+      "R. Deshpande",
+      "P. Tønnesen",
+      "D. F. Gruber",
+      "S. Gero",
+      "A. Santoro",
+      "G. Petri"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -450,7 +642,41 @@
    ],
    "topic": "clinical",
    "year": 2026,
-   "size": 10
+   "size": 10,
+   "members": [
+    "A. Lucatelli",
+    "B. Lugli",
+    "D. Van De Ville",
+    "E. Amico",
+    "E. Beanato",
+    "F. C. Hummel",
+    "F. Petruso",
+    "F. Windel",
+    "L. Fleury",
+    "M. G. Preti"
+   ],
+   "papers": [
+    {
+     "title": "Individual connectome fingerprints reveal early stabilization and long-term circuit remodeling after stroke",
+     "topic": "clinical",
+     "year": 2026,
+     "venue": "bioRxiv",
+     "url": "https://doi.org/10.64898/2026.03.27.714711",
+     "authors": [
+      "A. Santoro",
+      "A. Lucatelli",
+      "F. Windel",
+      "B. Lugli",
+      "M. G. Preti",
+      "L. Fleury",
+      "F. Petruso",
+      "E. Beanato",
+      "D. Van De Ville",
+      "F. C. Hummel",
+      "E. Amico"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -461,7 +687,39 @@
    ],
    "topic": "neuro",
    "year": 2026,
-   "size": 9
+   "size": 9,
+   "members": [
+    "D. Van De Ville",
+    "E. Amico",
+    "E. Morgenroth",
+    "F. Petruso",
+    "G. Petri",
+    "L. Zaffina",
+    "M. Diano",
+    "M. G. Preti",
+    "P. Vuilleumier"
+   ],
+   "papers": [
+    {
+     "title": "Higher-order topology uncovers the multidimensional dynamics of naturalistic emotion",
+     "topic": "neuro",
+     "year": 2026,
+     "venue": "bioRxiv",
+     "url": "https://doi.org/10.64898/2026.09.26.754452",
+     "authors": [
+      "L. Zaffina",
+      "M. Diano",
+      "F. Petruso",
+      "M. G. Preti",
+      "E. Amico",
+      "E. Morgenroth",
+      "G. Petri",
+      "D. Van De Ville",
+      "P. Vuilleumier",
+      "A. Santoro"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -472,7 +730,37 @@
    ],
    "topic": "neuro",
    "year": 2026,
-   "size": 8
+   "size": 8,
+   "members": [
+    "A. Khatibi",
+    "C. Landelle",
+    "D. Van De Ville",
+    "I. Ricchi",
+    "J. Doyon",
+    "N. Kinany",
+    "R. L. Barry",
+    "S. Vahdat"
+   ],
+   "papers": [
+    {
+     "title": "Spine-Prints: Transposing Brain Fingerprints to the Spinal Cord",
+     "topic": "neuro",
+     "year": 2026,
+     "venue": "Imaging Neuroscience",
+     "url": "https://doi.org/10.1162/IMAG.a.1128",
+     "authors": [
+      "I. Ricchi",
+      "A. Santoro",
+      "N. Kinany",
+      "C. Landelle",
+      "A. Khatibi",
+      "S. Vahdat",
+      "J. Doyon",
+      "R. L. Barry",
+      "D. Van De Ville"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -483,7 +771,37 @@
    ],
    "topic": "neuro",
    "year": 2025,
-   "size": 8
+   "size": 8,
+   "members": [
+    "A. Brovelli",
+    "D. A. Battaglia",
+    "F. Vaccarino",
+    "G. Petri",
+    "G. Rabuffo",
+    "H. Merritt",
+    "M. Saggar",
+    "S. Poetto"
+   ],
+   "papers": [
+    {
+     "title": "The Topological Architecture of Brain Identity",
+     "topic": "neuro",
+     "year": 2025,
+     "venue": "bioRxiv",
+     "url": "https://doi.org/10.1101/2025.06.20.660792",
+     "authors": [
+      "S. Poetto",
+      "H. Merritt",
+      "A. Santoro",
+      "G. Rabuffo",
+      "D. A. Battaglia",
+      "F. Vaccarino",
+      "M. Saggar",
+      "A. Brovelli",
+      "G. Petri"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -494,7 +812,35 @@
    ],
    "topic": "social",
    "year": 2025,
-   "size": 7
+   "size": 7,
+   "members": [
+    "A. Aloric",
+    "A. Morgan",
+    "J. Garcia-Bernardo",
+    "M. Hardy",
+    "P. M. Krafft",
+    "T. Griffiths",
+    "Z. Neu"
+   ],
+   "papers": [
+    {
+     "title": "Social Transmission along Multiple Pathways Promotes Information Fidelity and Reduces Divisiveness",
+     "topic": "social",
+     "year": 2025,
+     "venue": "OSF Preprints",
+     "url": "https://doi.org/10.31234/osf.io/dg8zj_v1",
+     "authors": [
+      "Z. Neu",
+      "J. Garcia-Bernardo",
+      "M. Hardy",
+      "A. Santoro",
+      "A. Morgan",
+      "A. Aloric",
+      "T. Griffiths",
+      "P. M. Krafft"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -505,7 +851,35 @@
    ],
    "topic": "hoi",
    "year": 2019,
-   "size": 7
+   "size": 7,
+   "members": [
+    "A. N. Medvedev",
+    "A. Onicas",
+    "F. Mottes",
+    "G. Lerda",
+    "G. Petri",
+    "J. C. W. Billings",
+    "M. Hu"
+   ],
+   "papers": [
+    {
+     "title": "Simplex2Vec embeddings for community detection in simplicial complexes",
+     "topic": "hoi",
+     "year": 2019,
+     "venue": "arXiv preprint",
+     "url": "https://arxiv.org/abs/1906.09068",
+     "authors": [
+      "J. C. W. Billings",
+      "M. Hu",
+      "G. Lerda",
+      "A. N. Medvedev",
+      "F. Mottes",
+      "A. Onicas",
+      "A. Santoro",
+      "G. Petri"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -516,7 +890,33 @@
    ],
    "topic": "neuro",
    "year": 2026,
-   "size": 6
+   "size": 6,
+   "members": [
+    "D. Orsenigo",
+    "G. Petri",
+    "M. Diano",
+    "M. Gatica",
+    "M. Neri",
+    "S. Poetto"
+   ],
+   "papers": [
+    {
+     "title": "Charting higher-order models of brain function beyond pairwise interactions",
+     "topic": "neuro",
+     "year": 2026,
+     "venue": "Nature Communications",
+     "url": "https://doi.org/10.1038/s41467-026-75959-w",
+     "authors": [
+      "A. Santoro",
+      "M. Neri",
+      "S. Poetto",
+      "D. Orsenigo",
+      "M. Diano",
+      "M. Gatica",
+      "G. Petri"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -527,7 +927,33 @@
    ],
    "topic": "multilayer",
    "year": 2026,
-   "size": 6
+   "size": 6,
+   "members": [
+    "B. Min",
+    "F. Battiston",
+    "F. Radicchi",
+    "J. Gomez-Gardenes",
+    "M. Frasca",
+    "V. Latora"
+   ],
+   "papers": [
+    {
+     "title": "Dynamical processes and emergent behaviors in multiplex networks",
+     "topic": "multilayer",
+     "year": 2026,
+     "venue": "arXiv",
+     "url": "https://doi.org/10.48550/arXiv.2605.04199",
+     "authors": [
+      "F. Battiston",
+      "M. Frasca",
+      "J. Gomez-Gardenes",
+      "B. Min",
+      "F. Radicchi",
+      "A. Santoro",
+      "V. Latora"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -538,7 +964,31 @@
    ],
    "topic": "food",
    "year": 2025,
-   "size": 5
+   "size": 5,
+   "members": [
+    "C. Caprioli",
+    "F. Battiston",
+    "I. Iacopini",
+    "S. Kulkarni",
+    "V. Latora"
+   ],
+   "papers": [
+    {
+     "title": "The networks of ingredient combination in cuisines around the world",
+     "topic": "food",
+     "year": 2025,
+     "venue": "npj Science of Food",
+     "url": "https://doi.org/10.1038/s41538-025-00588-4",
+     "authors": [
+      "C. Caprioli",
+      "S. Kulkarni",
+      "F. Battiston",
+      "I. Iacopini",
+      "A. Santoro",
+      "V. Latora"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -549,7 +999,29 @@
    ],
    "topic": "neuro",
    "year": 2026,
-   "size": 4
+   "size": 4,
+   "members": [
+    "H. H. Behjat",
+    "H. Saeedi-Sourck",
+    "M. D. Khalili",
+    "V. Abootalebi"
+   ],
+   "papers": [
+    {
+     "title": "Small-world scale-free brain networks from EEG with application to motor imagery decoding and brain fingerprinting",
+     "topic": "neuro",
+     "year": 2026,
+     "venue": "Computers in Biology and Medicine",
+     "url": "https://doi.org/10.1016/j.compbiomed.2026.109691",
+     "authors": [
+      "M. D. Khalili",
+      "V. Abootalebi",
+      "H. Saeedi-Sourck",
+      "A. Santoro",
+      "H. H. Behjat"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -560,7 +1032,29 @@
    ],
    "topic": "neuro",
    "year": 2024,
-   "size": 4
+   "size": 4,
+   "members": [
+    "E. Amico",
+    "F. Battiston",
+    "G. Petri",
+    "M. Lucas"
+   ],
+   "papers": [
+    {
+     "title": "Higher-order connectomics of human brain function reveals local topological signatures of task decoding, individual identification, and behavior",
+     "topic": "neuro",
+     "year": 2024,
+     "venue": "Nature Communications",
+     "url": "https://www.nature.com/articles/s41467-024-54472-y",
+     "authors": [
+      "A. Santoro",
+      "F. Battiston",
+      "M. Lucas",
+      "G. Petri",
+      "E. Amico"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -571,7 +1065,29 @@
    ],
    "topic": "hoi",
    "year": 2024,
-   "size": 4
+   "size": 4,
+   "members": [
+    "E. Amico",
+    "L. Chen",
+    "L. Zhao",
+    "Y. Yang"
+   ],
+   "papers": [
+    {
+     "title": "Higher-Order Financial Networks",
+     "topic": "hoi",
+     "year": 2024,
+     "venue": "Under review",
+     "url": "https://www.researchgate.net/publication/378168067_Higher-Order_Financial_Networks",
+     "authors": [
+      "L. Zhao",
+      "Y. Yang",
+      "L. Chen",
+      "A. Santoro",
+      "E. Amico"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -582,7 +1098,29 @@
    ],
    "topic": "social",
    "year": 2022,
-   "size": 4
+   "size": 4,
+   "members": [
+    "A. Bassolas",
+    "S. Rognone",
+    "S. Sousa",
+    "V. Nicosia"
+   ],
+   "papers": [
+    {
+     "title": "Optimizing the mitigation of epidemic spreading through targeted adoption of contact tracing apps",
+     "topic": "social",
+     "year": 2022,
+     "venue": "Physical Review Research",
+     "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.023092",
+     "authors": [
+      "A. Bassolas",
+      "A. Santoro",
+      "S. Sousa",
+      "S. Rognone",
+      "V. Nicosia"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -593,7 +1131,29 @@
    ],
    "topic": "optim",
    "year": 2018,
-   "size": 4
+   "size": 4,
+   "members": [
+    "A. La Magna",
+    "A. Patané",
+    "G. Nicosia",
+    "V. Romano"
+   ],
+   "papers": [
+    {
+     "title": "Enhancing quantum efficiency of thin-film silicon solar cells by Pareto optimality",
+     "topic": "optim",
+     "year": 2018,
+     "venue": "Journal of Global Optimization",
+     "url": "https://link.springer.com/article/10.1007/s10898-018-0639-9",
+     "authors": [
+      "A. Patané",
+      "A. Santoro",
+      "V. Romano",
+      "A. La Magna",
+      "G. Nicosia"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -604,7 +1164,27 @@
    ],
    "topic": "hoi",
    "year": 2023,
-   "size": 3
+   "size": 3,
+   "members": [
+    "E. Amico",
+    "F. Battiston",
+    "G. Petri"
+   ],
+   "papers": [
+    {
+     "title": "Higher-order organization of multivariate time series",
+     "topic": "hoi",
+     "year": 2023,
+     "venue": "Nature Physics",
+     "url": "https://www.nature.com/articles/s41567-022-01852-0",
+     "authors": [
+      "A. Santoro",
+      "F. Battiston",
+      "G. Petri",
+      "E. Amico"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -615,7 +1195,27 @@
    ],
    "topic": "multilayer",
    "year": 2018,
-   "size": 3
+   "size": 3,
+   "members": [
+    "G. Nicosia",
+    "V. Latora",
+    "V. Nicosia"
+   ],
+   "papers": [
+    {
+     "title": "Pareto optimality in multilayer network growth",
+     "topic": "multilayer",
+     "year": 2018,
+     "venue": "Physical Review Letters",
+     "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.128302",
+     "authors": [
+      "A. Santoro",
+      "V. Latora",
+      "G. Nicosia",
+      "V. Nicosia"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -626,7 +1226,25 @@
    ],
    "topic": "neuro",
    "year": 2025,
-   "size": 2
+   "size": 2,
+   "members": [
+    "G. Petri",
+    "M. Nurisso"
+   ],
+   "papers": [
+    {
+     "title": "From Nodes to Edges: Edge-Based Laplacians for Brain Signal Processing",
+     "topic": "neuro",
+     "year": 2025,
+     "venue": "European Signal Processing Conference (EUSIPCO)",
+     "url": "https://eusipco2025.org/wp-content/uploads/pdfs/0001084.pdf",
+     "authors": [
+      "A. Santoro",
+      "M. Nurisso",
+      "G. Petri"
+     ]
+    }
+   ]
   },
   {
    "titles": [
@@ -639,7 +1257,34 @@
    ],
    "topic": "multilayer",
    "year": 2020,
-   "size": 1
+   "size": 1,
+   "members": [
+    "V. Nicosia"
+   ],
+   "papers": [
+    {
+     "title": "Optimal percolation in correlated multilayer networks with overlap",
+     "topic": "multilayer",
+     "year": 2020,
+     "venue": "Physical Review Research",
+     "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033122",
+     "authors": [
+      "A. Santoro",
+      "V. Nicosia"
+     ]
+    },
+    {
+     "title": "Algorithmic complexity of multiplex networks",
+     "topic": "multilayer",
+     "year": 2020,
+     "venue": "Physical Review X",
+     "url": "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.021069",
+     "authors": [
+      "A. Santoro",
+      "V. Nicosia"
+     ]
+    }
+   ]
   }
  ]
 }

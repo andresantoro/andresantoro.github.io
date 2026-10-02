@@ -5,8 +5,9 @@
   </div>
   <div class="nb-titleband__row">
     <div class="nb-titleband__main">
-      <h1 class="nb-display{% if include.fit %} nb-display--fit{% endif %}{% if include.small %} nb-display--sm{% endif %}">{{ include.title_html | default: include.title }}<span class="nb-square" aria-hidden="true"></span></h1>
+      <h1 class="nb-display{% if include.fit %} nb-display--fit{% endif %}{% if include.small %} nb-display--sm{% endif %}"{% if include.fit %} style="--fit-em: {{ include.fit }}"{% endif %}>{{ include.title_html | default: include.title }}<span class="nb-square" aria-hidden="true"></span></h1>
       {% if include.lede %}<p class="nb-lede">{{ include.lede | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>{% endif %}
+      {% if include.below %}<div class="nb-titleband__below">{{ include.below }}</div>{% endif %}
     </div>
     {% if include.aside %}<div class="nb-titleband__aside">{{ include.aside }}</div>{% endif %}
   </div>
