@@ -806,4 +806,5 @@ button.cl-author:hover { border-color: var(--accent); color: var(--accent); }
   .nb-exp__chips .nb-exp__ap { width: 24px; height: 24px; }
   .nb-exp__chips .nb-exp__ap::before { width: 15px; height: 15px; }
   .nb-exp__chips .nb-exp__ap b { font-size: 11px; }
+  .nb-exp .nb-exp__chips a.nb-exp__ally { grid-column: 1 / -1; padding-right: 12px; color: var(--e33-gold); }
 }

@@ -217,7 +217,7 @@
     });
   });
 
-  // ---- expedition journal (Home §2): ink the notebook in once it scrolls into view; a skill panel picked in the
+  // ---- expedition journal (Home §2): ink the notebook in once it scrolls into view; a skill panel (or portrait) picked in the
   //      battle scene gets a spotlight, and the readout below names it on a brushstroke ----
   document.querySelectorAll('.nb-exp').forEach(function (t) {
     var book = t.querySelector('.nb-exp__book') || t;
@@ -228,7 +228,7 @@
     io.observe(book);
   });
   document.querySelectorAll('[data-exp-scene]').forEach(function (frame) {
-    var hots = frame.querySelectorAll('[data-skill]');
+    var hots = frame.querySelectorAll('[data-hot]');
     var dim = frame.querySelector('[data-exp-dim]');
     var vb = dim.ownerSVGElement.viewBox.baseVal;
     var out = frame.parentNode.querySelector('[data-exp-readout]');

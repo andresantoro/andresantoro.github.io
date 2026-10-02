@@ -1,4 +1,4 @@
-{% comment %}Expedition journal, the Home §2 Research section (a nod to painterly Belle Époque RPGs): a battle scene whose six skill panels are links (outlines from _data/expedition.yml), a readout line that names the picked skill on a brushstroke (notebook.js also spotlights its panel), and the journal as an open notebook across the panel. Phones get the skills as buttons, since the panels are too small to tap. Ink fades in when the notebook scrolls into view (.is-open; --d staggers it); petals drift up behind (.nb-petals, reused by the title card on /collaborations/).{% endcomment %}
+{% comment %}Expedition journal, the Home §2 Research section (a nod to painterly Belle Époque RPGs): a battle scene whose six skill panels (and the NPLab portrait) are links (outlines from _data/expedition.yml), a readout line that names the picked skill on a brushstroke (notebook.js also spotlights its panel), and the journal as an open notebook across the panel. Phones get the skills as buttons, since the panels are too small to tap. Ink fades in when the notebook scrolls into view (.is-open; --d staggers it); petals drift up behind (.nb-petals, reused by the title card on /collaborations/).{% endcomment %}
 {% assign ex = site.data.expedition %}
 <div class="nb-exp">
   <div class="nb-petals" aria-hidden="true">
@@ -15,7 +15,8 @@
       <img src="{{ base_path }}/images/expedition/battle-1672.jpg" srcset="{{ base_path }}/images/expedition/battle-960.jpg 960w, {{ base_path }}/images/expedition/battle-1672.jpg 1672w" sizes="(max-width: 1320px) 100vw, 1272px" width="{{ ex.size[0] }}" height="{{ ex.size[1] }}" alt="Battle scene in the style of a painterly role-playing game: the author, seen from behind, faces a boss called The Wrath of Reviewer 2 and picks from six research skills." loading="lazy">
       <svg class="nb-exp__hot" viewBox="0 0 {{ ex.size[0] }} {{ ex.size[1] }}" preserveAspectRatio="none" role="group" aria-label="Skills">
         <path class="nb-exp__dim" data-exp-dim d="M0 0H{{ ex.size[0] }}V{{ ex.size[1] }}H0Z" />
-        {% for s in ex.skills %}<a href="{{ base_path }}{{ s.url }}" aria-label="{{ s.name }}: {{ s.dest }}" data-skill="{{ forloop.index0 }}" data-name="{{ s.name }}" data-desc="{{ s.desc }}" data-dest="{{ s.dest }}"><polygon points="{{ s.poly }}" /></a>
+        {% for s in ex.skills %}<a href="{{ base_path }}{{ s.url }}" aria-label="{{ s.name }}: {{ s.dest }}" data-hot data-name="{{ s.name }}" data-desc="{{ s.desc }}" data-dest="{{ s.dest }}"><polygon points="{{ s.poly }}" /></a>
+        {% endfor %}{% for s in ex.allies %}<a href="{{ s.url }}" aria-label="{{ s.name }}: {{ s.dest }}" data-hot data-name="{{ s.name }}" data-desc="{{ s.desc }}" data-dest="{{ s.dest }}"><polygon points="{{ s.poly }}" /></a>
         {% endfor %}
       </svg>
     </div>
@@ -27,6 +28,7 @@
   </figure>
   <nav class="nb-exp__chips" aria-label="Skills">
     {% for s in ex.skills %}<a href="{{ base_path }}{{ s.url }}"><span>{{ s.name }}</span><span class="nb-exp__ap"><b>{{ s.ap }}</b><span class="nb-sr"> AP</span></span></a>
+    {% endfor %}{% for s in ex.allies %}<a class="nb-exp__ally" href="{{ s.url }}"><span>Party · {{ s.name }}</span><span aria-hidden="true">↗</span></a>
     {% endfor %}
   </nav>
   <article class="nb-exp__book">

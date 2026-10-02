@@ -39,3 +39,10 @@ skills:
     ap: 7
     desc: Reveals how the world’s cuisines pair their ingredients. Restores morale.
     poly: "592,770 645,764 990,772 1018,792 1012,850 975,870 645,858 592,815"
+# Party portraits that link out (same fields; dest is shown in the readout).
+allies:
+  - name: NPLab
+    url: https://nplresearch.github.io/
+    dest: "nplresearch.github.io"
+    desc: Joins the party from NPLab, the research group I work in.
+    poly: "1272,790 1292,745 1340,732 1398,734 1442,752 1453,800 1447,860 1450,885 1444,914 1310,922 1292,931 1268,912 1263,850"
