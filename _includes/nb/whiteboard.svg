@@ -89,7 +89,7 @@
     <path d="M440 334 L782 334"/>
     <path d="M774 329 L784 334 L774 339"/>
   </g>
-  <text class="wb-text wb-text--sm wb-text--muted" x="784" y="354" text-anchor="end">filtration ε</text>
+  <text class="wb-text wb-text--sm wb-text--muted" x="770" y="325" text-anchor="end">filtration ε</text>
 
   <!-- the quantity behind step 2 -->
   <text class="wb-text wb-text--lg" x="420" y="398">Ω = TC − DTC</text>
