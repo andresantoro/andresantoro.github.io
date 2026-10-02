@@ -217,24 +217,43 @@
     });
   });
 
-  // ---- expedition journal on Home: ink the page in once it scrolls into view; the brush follows the pointed skill ----
+  // ---- expedition journal on Home: ink the page in once it scrolls into view; a skill picked in the menu
+  //      or in the battle scene gets the brush, its description, and a spotlight on its panel in the scene ----
   document.querySelectorAll('.nb-exp').forEach(function (t) {
+    var body = t.querySelector('.nb-exp__body') || t;
     if (!('IntersectionObserver' in window)) { t.classList.add('is-open'); return; }
     var io = new IntersectionObserver(function (entries) {
       if (entries[0].isIntersecting) { t.classList.add('is-open'); io.disconnect(); }
     }, { threshold: 0.35 });
-    io.observe(t);
+    io.observe(body);
   });
-  document.querySelectorAll('[data-exp-skills]').forEach(function (list) {
-    var note = list.parentNode.querySelector('[data-exp-note]');
-    var skills = list.querySelectorAll('.nb-exp__skill');
-    var pick = function (s) {
-      skills.forEach(function (o) { o.classList.toggle('is-active', o === s); });
-      if (note) note.textContent = s.querySelector('.nb-exp__desc').textContent;
+  document.querySelectorAll('.nb-exp').forEach(function (t) {
+    var items = t.querySelectorAll('[data-exp-skills] [data-skill]');
+    var frame = t.querySelector('[data-exp-scene]');
+    var hots = frame ? frame.querySelectorAll('[data-skill]') : [];
+    var dim = frame && frame.querySelector('[data-exp-dim]');
+    var note = t.querySelector('[data-exp-note]');
+    if (!items.length) return;
+    var vb = dim && dim.ownerSVGElement.viewBox.baseVal;
+    var pick = function (i, aim) {
+      items.forEach(function (o, k) { o.classList.toggle('is-active', k === i); });
+      hots.forEach(function (o, k) { o.classList.toggle('is-active', k === i); });
+      if (note) note.textContent = items[i].querySelector('.nb-exp__desc').textContent;
+      var poly = hots[i] && hots[i].querySelector('polygon');
+      if (!frame || !poly) return;
+      // dim the whole scene except this panel: the frame rectangle with the panel cut out (even-odd)
+      dim.setAttribute('d', 'M0 0H' + vb.width + 'V' + vb.height + 'H0Z M' + poly.getAttribute('points').trim().split(/\s+/).join('L') + 'Z');
+      frame.classList.toggle('is-aiming', aim);
     };
-    skills.forEach(function (s) {
-      s.addEventListener('mouseenter', function () { pick(s); });
-      s.addEventListener('focus', function () { pick(s); });
+    var rest = function () { if (frame) frame.classList.remove('is-aiming'); };
+    [items, hots].forEach(function (group) {
+      group.forEach(function (s) {
+        var i = +s.getAttribute('data-skill');
+        s.addEventListener('mouseenter', function () { pick(i, true); });
+        s.addEventListener('focus', function () { pick(i, true); });
+        s.addEventListener('mouseleave', rest);
+        s.addEventListener('blur', rest);
+      });
     });
   });
 

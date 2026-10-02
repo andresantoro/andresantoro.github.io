@@ -1,4 +1,5 @@
-{% comment %}Expedition journal (a nod to painterly Belle Époque RPGs): a journal page found at camp and a skill menu with a brushstroke on the selected skill. Ink fades in when the panel scrolls into view (notebook.js adds .is-open; --d staggers it); petals drift up behind the page (.nb-petals, reused by the title card on /collaborations/).{% endcomment %}
+{% comment %}Expedition journal (a nod to painterly Belle Époque RPGs): a battle scene whose six skill panels are links (outlines from _data/expedition.yml), a journal page found at camp, and the same skills as a menu with a brushstroke on the picked one. Picking a skill in either place spotlights its panel in the scene (notebook.js). Ink fades in when the page scrolls into view (.is-open; --d staggers it); petals drift up behind (.nb-petals, reused by the title card on /collaborations/).{% endcomment %}
+{% assign ex = site.data.expedition %}
 <section class="nb-exp" aria-labelledby="nb-exp-title">
   <div class="nb-petals" aria-hidden="true">
     <i style="--x: 4%; --t: 19s; --w: -2s"></i><i style="--x: 13%; --t: 23s; --w: -11s"></i><i style="--x: 31%; --t: 21s; --w: -6s"></i>
@@ -9,6 +10,17 @@
     <span id="nb-exp-title">Expedition journal</span>
     <span class="nb-exp__camp"><svg viewBox="0 0 18 22" aria-hidden="true" focusable="false"><path d="M3 1.5v20" /><path class="nb-exp__flag" d="M3.8 2.5h12l-3.2 4.2 3.2 4.3h-12z" /></svg><span class="nb-exp__wide">Camp · </span>Turin</span>
   </div>
+  <figure class="nb-exp__scene">
+    <div class="nb-exp__frame" data-exp-scene>
+      <img src="{{ base_path }}/images/expedition/battle-1672.jpg" srcset="{{ base_path }}/images/expedition/battle-960.jpg 960w, {{ base_path }}/images/expedition/battle-1672.jpg 1672w" sizes="(max-width: 1320px) 100vw, 1272px" width="{{ ex.size[0] }}" height="{{ ex.size[1] }}" alt="Battle scene in the style of a painterly role-playing game: the author, seen from behind, faces a boss called The Wrath of Reviewer 2 and picks from six research skills." loading="lazy">
+      <svg class="nb-exp__hot" viewBox="0 0 {{ ex.size[0] }} {{ ex.size[1] }}" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path class="nb-exp__dim" data-exp-dim d="M0 0H{{ ex.size[0] }}V{{ ex.size[1] }}H0Z" />
+        {% for s in ex.skills %}<a href="{{ base_path }}{{ s.url }}" tabindex="-1" data-skill="{{ forloop.index0 }}"><polygon points="{{ s.poly }}" /></a>
+        {% endfor %}
+      </svg>
+    </div>
+    <figcaption class="nb-exp__cap"><span>Choose a skill: each panel opens its research theme</span><span class="nb-exp__turn">Your turn</span></figcaption>
+  </figure>
   <div class="nb-exp__body">
     <article class="nb-exp__page">
       <p class="nb-exp__entry nb-exp__ink" style="--d: 0">Entry · {{ site.time | date: "%B %Y" }}</p>
@@ -20,13 +32,10 @@
     <div class="nb-exp__menu nb-exp__ink" style="--d: 1">
       <div class="nb-exp__head"><span>Skills</span><span>AP</span></div>
       <ul class="nb-exp__skills" data-exp-skills>
-        <li><a class="nb-exp__skill is-active" href="{{ base_path }}/projects/#time-series"><span class="nb-exp__name">Higher-order inference</span><span class="nb-exp__desc">Targets three or more signals at once. Reveals the synergy that pairs miss, in brains and markets alike.</span><span class="nb-exp__ap" aria-label="3 AP"><i></i><i></i><i></i></span></a></li>
-        <li><a class="nb-exp__skill" href="{{ base_path }}/projects/#fmri-methods"><span class="nb-exp__name">Persistent homology</span><span class="nb-exp__desc">Finds the holes in the data, and how long they last. Applies Barcode.</span><span class="nb-exp__ap" aria-label="2 AP"><i></i><i></i></span></a></li>
-        <li><a class="nb-exp__skill" href="{{ base_path }}/projects/#multilayer-networks"><span class="nb-exp__name">Multilayer networks</span><span class="nb-exp__desc">Hits every layer of an interconnected system at once.</span><span class="nb-exp__ap" aria-label="2 AP"><i></i><i></i></span></a></li>
-        <li><a class="nb-exp__skill" href="{{ base_path }}/projects/#project-ceti"><span class="nb-exp__name">Coda listening</span><span class="nb-exp__desc">Maps who talks to whom among sperm whales. Best used at sea.</span><span class="nb-exp__ap" aria-label="1 AP"><i></i></span></a></li>
-        <li><a class="nb-exp__skill" href="{{ base_path }}/projects/#computational-gastronomy"><span class="nb-exp__name">Cuisine networks</span><span class="nb-exp__desc">Reveals how the world’s cuisines pair their ingredients. Restores morale.</span><span class="nb-exp__ap" aria-label="1 AP"><i></i></span></a></li>
+        {% for s in ex.skills %}<li><a class="nb-exp__skill{% if forloop.first %} is-active{% endif %}" href="{{ base_path }}{{ s.url }}" data-skill="{{ forloop.index0 }}"><span class="nb-exp__name">{{ s.name }}</span><span class="nb-exp__desc">{{ s.desc }}</span><span class="nb-exp__ap"><b>{{ s.ap }}</b><span class="nb-sr"> AP</span></span></a></li>
+        {% endfor %}
       </ul>
-      <p class="nb-exp__note" aria-hidden="true" data-exp-note>Targets three or more signals at once. Reveals the synergy that pairs miss, in brains and markets alike.</p>
+      <p class="nb-exp__note" aria-hidden="true" data-exp-note>{{ ex.skills[0].desc }}</p>
       <div class="nb-exp__passive"><span>Passive · Luck against reviewer 2</span><b>Low</b></div>
     </div>
   </div>

@@ -572,7 +572,17 @@ a.nb-caption--end:hover { background: var(--pop); }
 .nb-exp__camp { display: inline-flex; align-items: center; gap: 9px; }
 .nb-exp__camp svg { width: 15px; height: 19px; fill: none; stroke: var(--e33-gold); stroke-width: 1.4; }
 .nb-exp__camp .nb-exp__flag { fill: var(--e33-red); stroke: none; }
-.nb-exp__body { position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: center; gap: 32px 56px; padding: 30px var(--pad) 34px; }
+.nb-exp__scene { position: relative; z-index: 1; margin: 0; padding: 26px var(--pad) 0; }
+.nb-exp__frame { position: relative; line-height: 0; box-shadow: 0 0 0 1px var(--e33-gold-dim), 0 18px 40px rgba(0, 0, 0, 0.45); }
+.nb-exp__frame img { display: block; width: 100%; height: auto; }
+.nb-exp__hot { position: absolute; inset: 0; width: 100%; height: 100%; }
+.nb-exp__dim { fill: rgba(12, 9, 7, 0.58); fill-rule: evenodd; opacity: 0; pointer-events: none; transition: opacity 0.25s; }
+.nb-exp__frame.is-aiming .nb-exp__dim { opacity: 1; }
+.nb-exp__hot polygon { fill: transparent; stroke: transparent; stroke-width: 2.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke; cursor: pointer; transition: stroke 0.2s, fill 0.2s; }
+.nb-exp__hot a:hover polygon, .nb-exp__frame.is-aiming a.is-active polygon { stroke: var(--e33-gold); fill: rgba(255, 236, 190, 0.07); filter: drop-shadow(0 0 7px rgba(214, 178, 106, 0.85)); }
+.nb-exp__cap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding: 11px 2px 0; color: var(--e33-gold); font-size: 14px; font-weight: 600; letter-spacing: 0.2em; line-height: 1.4; text-transform: uppercase; }
+.nb-exp__turn { color: #e0505a; }
+.nb-exp__body { position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: center; gap: 32px 56px; padding: 28px var(--pad) 34px; }
 .nb-exp__page { flex: 1 1 480px; min-width: 0; padding: 20px 28px 18px; color: var(--e33-ink); font-size: 20px; line-height: 1.42; background: radial-gradient(90% 70% at 30% 15%, rgba(255, 255, 255, 0.5), transparent 70%), linear-gradient(170deg, #f3ead6, #e3d3b2); box-shadow: inset 0 0 0 1px rgba(110, 80, 40, 0.22), inset 0 0 44px rgba(120, 86, 40, 0.2), 0 18px 40px rgba(0, 0, 0, 0.45); }
 .nb-exp__page p { margin: 0 0 10px; }
 .nb-exp__page a { color: #7d1820; text-decoration: underline; text-decoration-color: rgba(125, 24, 32, 0.4); text-underline-offset: 3px; }
@@ -587,9 +597,9 @@ a.nb-caption--end:hover { background: var(--pop); }
 .nb-exp a.nb-exp__skill:hover, .nb-exp a.nb-exp__skill.is-active { color: var(--e33-ink); }
 .nb-exp__skill:hover::before, .nb-exp__skill.is-active::before { opacity: 1; transform: none; }
 .nb-exp__desc { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-.nb-exp__ap { display: flex; flex: none; gap: 6px; }
-.nb-exp__ap i { width: 9px; height: 9px; background: var(--e33-gold); box-shadow: 0 0 6px rgba(214, 178, 106, 0.5); transform: rotate(45deg); }
-.nb-exp__skill:hover .nb-exp__ap i, .nb-exp__skill.is-active .nb-exp__ap i { background: var(--e33-ink); box-shadow: none; }
+.nb-exp__ap { display: grid; flex: none; place-items: center; width: 28px; height: 28px; }
+.nb-exp__ap::before { content: ""; grid-area: 1 / 1; width: 18px; height: 18px; background: linear-gradient(135deg, #4a8dff, #1d4fb8); box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.75), 0 0 8px rgba(74, 141, 255, 0.45); transform: rotate(45deg); }
+.nb-exp__ap b { position: relative; grid-area: 1 / 1; color: #fff; font-family: var(--sans); font-size: 13px; font-weight: 800; }
 .nb-exp__note { min-height: 3.2em; margin: 12px 0 0; padding: 10px 14px 0; border-top: 1px solid var(--e33-gold-dim); color: rgba(239, 230, 208, 0.84); font-size: 19px; font-style: italic; line-height: 1.4; }
 .nb-exp__passive { display: flex; justify-content: space-between; gap: 12px; margin-top: 10px; padding: 7px 14px; border: 1px solid rgba(239, 230, 208, 0.16); color: rgba(239, 230, 208, 0.74); font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
 .nb-exp__passive b { color: #e0505a; }
@@ -746,7 +756,9 @@ button.cl-author:hover { border-color: var(--accent); color: var(--accent); }
   .nb-exp { margin-top: 32px; }
   .nb-exp__bar { font-size: 13px; letter-spacing: 0.2em; }
   .nb-exp__wide { display: none; }
-  .nb-exp__body { gap: 28px; padding-top: 24px; padding-bottom: 28px; }
+  .nb-exp__scene { padding-top: 18px; }
+  .nb-exp__cap { font-size: 12px; letter-spacing: 0.14em; }
+  .nb-exp__body { gap: 28px; padding-top: 22px; padding-bottom: 28px; }
   .nb-exp__page { padding: 16px 18px; font-size: 18px; }
   .nb-exp a.nb-exp__skill { font-size: 20px; }
   .cl-title__sub { font-size: 17px; }
