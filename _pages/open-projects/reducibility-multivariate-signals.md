@@ -33,7 +33,7 @@ author_profile: true
 </div>
 
 <div class="project-contact-box">
-  <p><strong>Please contact</strong> <a href="mailto:andrea.santoro@centai.eu">andrea.santoro@centai.eu</a> with your CV & short statement of interests.</p>
+  <p><strong>Please contact</strong> <a href="mailto:andrea.santoro@isi.it">andrea.santoro@isi.it</a> with your CV & short statement of interests.</p>
 </div>
 
 <a href="/open-projects/" class="back-to-projects">Back to Open Projects</a>
