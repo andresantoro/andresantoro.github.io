@@ -4,6 +4,7 @@ title: "Temporal Higher-Order TDA"
 permalink: /open-projects/temporal-higher-order-tda/
 sheet: "03"
 prose: true
+small_title: true
 ---
 
 <div class="project-detail-header">

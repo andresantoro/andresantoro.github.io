@@ -4,6 +4,7 @@ title: "Chef Network Platform"
 permalink: /projects/chef-network/
 sheet: "02"
 prose: true
+small_title: true
 ---
 
 <div class="project-detail-section">

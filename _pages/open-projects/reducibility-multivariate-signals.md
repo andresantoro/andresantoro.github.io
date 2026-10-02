@@ -4,6 +4,7 @@ title: "Reducibility of Multivariate Signals"
 permalink: /open-projects/reducibility-multivariate-signals/
 sheet: "03"
 prose: true
+small_title: true
 ---
 
 <div class="project-detail-header">

@@ -4,6 +4,7 @@ title: "Topology of emotion using Film fMRI"
 permalink: /open-projects/topology-emotion-film-fmri/
 sheet: "03"
 prose: true
+small_title: true
 ---
 
 <div class="project-detail-header">

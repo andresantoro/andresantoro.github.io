@@ -157,6 +157,8 @@ body.nb {
 .nb-titleband__main { flex: 1 1 560px; min-width: 0; container-type: inline-size; }
 /* single-line title sized to its column; 10.2cqi fits "Publications" (9.64em wide) */
 .nb-display--fit { font-size: min(124px, 10.2cqi); white-space: nowrap; }
+/* subpages (open projects, chef network): long titles at a reading size */
+.nb-display--sm { max-width: 18em; font-size: clamp(28px, 4.2vw, 58px); line-height: 0.98; letter-spacing: -0.02em; }
 .nb-titleband__aside { flex: 0 1 auto; display: flex; flex-direction: column; align-items: flex-end; gap: 20px; }
 .nb-lede { margin: 22px 0 0; max-width: 680px; font-size: 18px; color: var(--muted); }
 .nb-lede a { box-shadow: inset 0 -2px 0 var(--accent); color: var(--chalk); }
