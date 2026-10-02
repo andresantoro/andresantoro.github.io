@@ -22,7 +22,7 @@ hero: false
 </dl>
 {% endcapture %}
 {% capture lede %}For a summary of my work, you can also have a look at my [Google Scholar profile]({{ site.author.googlescholar }}).{% endcapture %}
-{% include nb/titleband.html title=page.title title_html="Publi&shy;cations" lede=lede sheet=page.sheet aside=aside %}
+{% include nb/titleband.html title=page.title fit=true lede=lede sheet=page.sheet aside=aside %}
 
 <div class="nb-toolbar">
   <div class="nb-toolbar__row">

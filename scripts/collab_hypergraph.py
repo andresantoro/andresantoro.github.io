@@ -170,7 +170,7 @@ def svg(mini):
     for n in sorted(nodes, key=lambda n: deg[n]):
         x, y = xy[n]
         r = (3.5 + 1.1 * min(deg[n], 6)) * r_scale
-        fill, stroke = {"student": (ACCENT, ACCENT), "mentor": (MENTOR, MENTOR)}.get(role[n], ("#111211", "#ECE9E1"))
+        fill, stroke = {"student": (ACCENT, ACCENT), "mentor": (MENTOR, MENTOR)}.get(role[n], ("#1F2227", "#ECE9E1"))
         mem = " ".join(str(i) for i, w in enumerate(works) if n in w["members"])
         if mini:
             out.append(f'<circle cx="{x}" cy="{y}" r="{r:.1f}" fill="{fill}" stroke="{stroke}" stroke-width="3"/>')
