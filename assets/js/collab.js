@@ -327,13 +327,24 @@
     play.textContent = '▶ Play';
   }
   range.addEventListener('input', function () { stop(); setYear(+range.value, true); });
+  var perk = function () {
+    var toast = el('div', 'cl-perk');
+    toast.setAttribute('role', 'status');
+    toast.appendChild(el('div', 'cl-perk__head', '★ Perk unlocked'));
+    toast.appendChild(el('div', 'cl-perk__name', 'Network cartographer'));
+    toast.appendChild(el('div', 'cl-perk__text', 'You watched ' + (years.max - years.min + 1) + ' years of collaborations unfold.'));
+    stage.appendChild(toast);
+    setTimeout(function () { toast.classList.add('is-out'); }, 4200);
+    setTimeout(function () { toast.remove(); }, 5000);
+  };
   play.addEventListener('click', function () {
+    root.classList.add('has-played');  // the "press play!" thought bubble has done its job
     if (timer) { stop(); return; }
     play.setAttribute('aria-pressed', 'true');
     play.textContent = '❚❚ Pause';
     if (state.year >= years.max) setYear(years.min, true);
     timer = setInterval(function () {
-      if (state.year >= years.max) { stop(); return; }
+      if (state.year >= years.max) { stop(); perk(); return; }
       setYear(state.year + 1, true);
     }, reduce ? 700 : 1300);
   });

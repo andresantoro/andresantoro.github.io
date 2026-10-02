@@ -3,7 +3,7 @@ layout: notebook
 title: "Code"
 permalink: /code/
 sheet: "07"
-lede: "Open-source implementations of the methods in my papers, so they can be used outside my own group. Everything lives on [GitHub](https://github.com/andresantoro)."
+lede: "Open-source implementations of the methods in my papers, ready for anyone to reuse. Everything lives on [GitHub](https://github.com/andresantoro)."
 ---
 {% include base_path %}
 

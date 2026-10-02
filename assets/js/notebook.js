@@ -180,6 +180,15 @@
   openTarget();
   window.addEventListener('hashchange', openTarget);
 
+  // ---- retro terminal on Home: type the lines in once it scrolls into view ----
+  document.querySelectorAll('.nb-term').forEach(function (t) {
+    if (!('IntersectionObserver' in window)) { t.classList.add('is-booted'); return; }
+    var io = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) { t.classList.add('is-booted'); io.disconnect(); }
+    }, { threshold: 0.35 });
+    io.observe(t);
+  });
+
   // ---- optional table columns ----
   document.querySelectorAll('[data-toggle-col]').forEach(function (b) {
     var table = document.getElementById(b.getAttribute('data-toggle-col'));

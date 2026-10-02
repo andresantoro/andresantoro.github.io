@@ -22,7 +22,14 @@ hero: false
 <section class="cl" data-cl>
   <div class="cl-bar">
     <div class="cl-time">
-      <button class="cl-play" type="button" data-cl-play aria-pressed="false">▶ Play</button>
+      <div class="cl-playwrap">
+        <span class="cl-thought" aria-hidden="true"><svg viewBox="0 0 170 96" focusable="false">
+          <g class="cl-thought__ink"><circle cx="40" cy="40" r="26.5"/><circle cx="72" cy="27" r="26.5"/><circle cx="104" cy="27" r="26.5"/><circle cx="132" cy="41" r="24.5"/><circle cx="104" cy="53" r="24.5"/><circle cx="70" cy="55" r="24.5"/><circle cx="22" cy="78" r="8.5"/><circle cx="9" cy="91" r="5"/></g>
+          <g class="cl-thought__paper"><circle cx="40" cy="40" r="24"/><circle cx="72" cy="27" r="24"/><circle cx="104" cy="27" r="24"/><circle cx="132" cy="41" r="22"/><circle cx="104" cy="53" r="22"/><circle cx="70" cy="55" r="22"/><circle cx="22" cy="78" r="6"/><circle cx="9" cy="91" r="2.5"/></g>
+          <text x="86" y="47">press play!</text>
+        </svg></span>
+        <button class="cl-play" type="button" data-cl-play aria-pressed="false">▶ Play</button>
+      </div>
       <div class="cl-scrub">
         <input class="cl-range" type="range" min="{{ hg.since }}" max="{{ last_year }}" step="1" value="{{ last_year }}" data-cl-range aria-label="Show papers up to year">
         <div class="cl-ticks" aria-hidden="true">{% for y in (hg.since..last_year) %}<span>’{{ y | modulo: 100 | prepend: "0" | slice: -2, 2 }}</span>{% endfor %}</div>

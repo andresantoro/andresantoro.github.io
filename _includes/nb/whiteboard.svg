@@ -98,6 +98,7 @@
   <!-- field notes, kept apart from the maths -->
   <rect class="wb-box" x="592" y="364" width="204" height="72" rx="4"/>
   <text class="wb-text wb-text--xs wb-text--muted" x="594" y="358">field notes</text>
+  <text class="wb-sfx" x="602" y="383" transform="rotate(-6 602 383)">CLICK!</text>
   <g class="wb-clicks">
     <path d="M603 388 L603 400"/><path d="M618 388 L618 400"/>
     <path d="M636 388 L636 400"/><path d="M642 388 L642 400"/><path d="M648 388 L648 400"/>
