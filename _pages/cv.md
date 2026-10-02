@@ -1,10 +1,12 @@
 ---
-layout: archive
+layout: notebook
 title: "CV"
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
+sheet: "08"
+prose: true
+lede: "Positions, education and awards. The full PDF is at the bottom."
 ---
 
 {% include base_path %}

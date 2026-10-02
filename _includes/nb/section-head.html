@@ -1,0 +1,5 @@
+<div class="nb-section__head">
+  <div class="nb-section__num">§{{ include.num }}</div>
+  <h2 class="nb-section__title"{% if include.id %} id="{{ include.id }}"{% endif %}>{{ include.title }}</h2>
+  {% if include.link %}<a class="nb-section__aside" href="{{ include.link }}">{{ include.link_text }} →</a>{% elsif include.note %}<div class="nb-section__aside nb-hand">{{ include.note }}</div>{% endif %}
+</div>

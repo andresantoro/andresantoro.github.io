@@ -1,0 +1,15 @@
+<header class="nb-header">
+  <a class="nb-brand" href="{{ base_path }}/">
+    <span class="nb-badge">AS</span>
+    <span class="nb-brand__name">Andrea Santoro</span>
+  </a>
+  <button class="nb-menu" type="button" aria-expanded="false" aria-controls="nb-nav">Menu</button>
+  <nav id="nb-nav" class="nb-nav" aria-label="Main">
+    {% for link in site.data.navigation.main %}
+      {% assign len = link.url | size %}
+      {% assign prefix = page.url | slice: 0, len %}
+      <a href="{{ base_path }}{{ link.url }}"{% if prefix == link.url %} aria-current="page"{% endif %}><span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>{{ link.title }}</a>
+    {% endfor %}
+  </nav>
+  <div class="nb-coords">45.07°N 7.69°E · Turin</div>
+</header>

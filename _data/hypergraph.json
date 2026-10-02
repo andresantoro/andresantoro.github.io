@@ -1,0 +1,454 @@
+{
+ "since": 2022,
+ "people": [
+  {
+   "name": "A. Aloric",
+   "role": "collaborator",
+   "works": 2
+  },
+  {
+   "name": "A. Bassolas",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "A. Brovelli",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "A. Khatibi",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "A. Lucatelli",
+   "role": "student",
+   "works": 1
+  },
+  {
+   "name": "A. Morgan",
+   "role": "collaborator",
+   "works": 2
+  },
+  {
+   "name": "B. Lugli",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "B. Min",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "C. Caprioli",
+   "role": "student",
+   "works": 1
+  },
+  {
+   "name": "C. Landelle",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "C. Monti",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "D. A. Battaglia",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "D. F. Gruber",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "D. Orsenigo",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "D. Van De Ville",
+   "role": "collaborator",
+   "works": 3
+  },
+  {
+   "name": "E. Amico",
+   "role": "mentor",
+   "works": 5
+  },
+  {
+   "name": "E. Beanato",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "E. Morgenroth",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "F. Battiston",
+   "role": "collaborator",
+   "works": 4
+  },
+  {
+   "name": "F. C. Hummel",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "F. Petruso",
+   "role": "student",
+   "works": 2
+  },
+  {
+   "name": "F. Radicchi",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "F. Vaccarino",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "F. Windel",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "G. Petri",
+   "role": "mentor",
+   "works": 7
+  },
+  {
+   "name": "G. Rabuffo",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "H. H. Behjat",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "H. J. Machado Borges",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "H. Merritt",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "H. Saeedi-Sourck",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "I. Iacopini",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "I. Ricchi",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "J. Doyon",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "J. Garcia-Bernardo",
+   "role": "collaborator",
+   "works": 2
+  },
+  {
+   "name": "J. Gomez-Gardenes",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "L. Chen",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "L. Fleury",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "L. Zaffina",
+   "role": "student",
+   "works": 2
+  },
+  {
+   "name": "L. Zhao",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "M. D. Khalili",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "M. Diano",
+   "role": "collaborator",
+   "works": 2
+  },
+  {
+   "name": "M. Frasca",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "M. G. Preti",
+   "role": "collaborator",
+   "works": 2
+  },
+  {
+   "name": "M. Gatica",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "M. Hardy",
+   "role": "collaborator",
+   "works": 2
+  },
+  {
+   "name": "M. Lucas",
+   "role": "collaborator",
+   "works": 2
+  },
+  {
+   "name": "M. Neri",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "M. Nurisso",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "M. Saggar",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "N. Kinany",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "P. M. Krafft",
+   "role": "collaborator",
+   "works": 2
+  },
+  {
+   "name": "P. Tønnesen",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "P. Vuilleumier",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "R. Deshpande",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "R. L. Barry",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "S. Gero",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "S. Kulkarni",
+   "role": "student",
+   "works": 1
+  },
+  {
+   "name": "S. Poetto",
+   "role": "collaborator",
+   "works": 3
+  },
+  {
+   "name": "S. Rognone",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "S. Sousa",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "S. Vahdat",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "T. Griffiths",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "V. Abootalebi",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "V. Latora",
+   "role": "collaborator",
+   "works": 2
+  },
+  {
+   "name": "V. Nicosia",
+   "role": "mentor",
+   "works": 1
+  },
+  {
+   "name": "Y. Yang",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "Z. Neu",
+   "role": "collaborator",
+   "works": 2
+  }
+ ],
+ "works": [
+  {
+   "titles": [
+    "Sperm whale foraging combines persistent search with flexible prey-capture tactics"
+   ],
+   "year": 2026,
+   "size": 10
+  },
+  {
+   "titles": [
+    "Individual connectome fingerprints reveal early stabilization and long-term circuit remodeling after stroke"
+   ],
+   "year": 2026,
+   "size": 10
+  },
+  {
+   "titles": [
+    "Higher-order topology uncovers the multidimensional dynamics of naturalistic emotion"
+   ],
+   "year": 2026,
+   "size": 9
+  },
+  {
+   "titles": [
+    "Spine-Prints: Transposing Brain Fingerprints to the Spinal Cord"
+   ],
+   "year": 2026,
+   "size": 8
+  },
+  {
+   "titles": [
+    "The Topological Architecture of Brain Identity"
+   ],
+   "year": 2025,
+   "size": 8
+  },
+  {
+   "titles": [
+    "Social transmission along multiple pathways promotes information fidelity and reduces divisiveness"
+   ],
+   "year": 2024,
+   "size": 7
+  },
+  {
+   "titles": [
+    "Charting higher-order models of brain function beyond pairwise interactions"
+   ],
+   "year": 2026,
+   "size": 6
+  },
+  {
+   "titles": [
+    "Dynamical processes and emergent behaviors in multiplex networks"
+   ],
+   "year": 2026,
+   "size": 6
+  },
+  {
+   "titles": [
+    "Social Transmission along Multiple Pathways Promotes Information Fidelity and Reduces Divisiveness"
+   ],
+   "year": 2025,
+   "size": 6
+  },
+  {
+   "titles": [
+    "The networks of ingredient combination in cuisines around the world"
+   ],
+   "year": 2024,
+   "size": 5
+  },
+  {
+   "titles": [
+    "Small-world scale-free brain networks from EEG with application to motor imagery decoding and brain fingerprinting"
+   ],
+   "year": 2026,
+   "size": 4
+  },
+  {
+   "titles": [
+    "Higher-order connectomics of human brain function reveals local topological signatures of task decoding, individual identification, and behavior"
+   ],
+   "year": 2024,
+   "size": 4
+  },
+  {
+   "titles": [
+    "Higher-Order Financial Networks"
+   ],
+   "year": 2024,
+   "size": 4
+  },
+  {
+   "titles": [
+    "Optimizing the mitigation of epidemic spreading through targeted adoption of contact tracing apps"
+   ],
+   "year": 2022,
+   "size": 4
+  },
+  {
+   "titles": [
+    "Higher-order organization of multivariate time series"
+   ],
+   "year": 2023,
+   "size": 3
+  },
+  {
+   "titles": [
+    "From Nodes to Edges: Edge-Based Laplacians for Brain Signal Processing"
+   ],
+   "year": 2025,
+   "size": 2
+  }
+ ]
+}

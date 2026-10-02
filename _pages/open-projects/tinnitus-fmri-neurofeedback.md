@@ -1,8 +1,9 @@
 ---
-layout: single
+layout: notebook
 title: "Tinnitus and fMRI Neurofeedback"
 permalink: /open-projects/tinnitus-fmri-neurofeedback/
-author_profile: true
+sheet: "03"
+prose: true
 ---
 
 <div class="project-detail-header">

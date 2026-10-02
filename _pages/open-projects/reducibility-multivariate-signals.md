@@ -1,8 +1,9 @@
 ---
-layout: single
+layout: notebook
 title: "Reducibility of Multivariate Signals"
 permalink: /open-projects/reducibility-multivariate-signals/
-author_profile: true
+sheet: "03"
+prose: true
 ---
 
 <div class="project-detail-header">

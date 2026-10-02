@@ -1,8 +1,9 @@
 ---
-layout: single
+layout: notebook
 title: "Chef Network Platform"
 permalink: /projects/chef-network/
-author_profile: true
+sheet: "02"
+prose: true
 ---
 
 <div class="project-detail-section">

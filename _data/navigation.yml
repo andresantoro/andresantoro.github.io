@@ -12,6 +12,15 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Grants"
+    url: /grants/
+
+  - title: "People"
+    url: /people/
+
+  - title: "Code"
+    url: /code/
+
   - title: "CV"
     url: /cv/
 

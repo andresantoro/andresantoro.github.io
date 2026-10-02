@@ -1,8 +1,9 @@
 ---
-layout: single
+layout: notebook
 title: "Topology of emotion using Film fMRI"
 permalink: /open-projects/topology-emotion-film-fmri/
-author_profile: true
+sheet: "03"
+prose: true
 ---
 
 <div class="project-detail-header">

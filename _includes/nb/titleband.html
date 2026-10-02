@@ -1,0 +1,13 @@
+<section class="nb-titleband">
+  <div class="nb-sheetline">
+    <span>Sheet {{ include.sheet | default: "00" }} — {{ include.title }}</span>
+    <span>Rev. {{ site.time | date: "%Y.%m" }}</span>
+  </div>
+  <div class="nb-titleband__row">
+    <div class="nb-titleband__main">
+      <h1 class="nb-display">{{ include.title_html | default: include.title }}<span class="nb-square" aria-hidden="true"></span></h1>
+      {% if include.lede %}<p class="nb-lede">{{ include.lede | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>{% endif %}
+    </div>
+    {% if include.aside %}<div class="nb-titleband__aside">{{ include.aside }}</div>{% endif %}
+  </div>
+</section>

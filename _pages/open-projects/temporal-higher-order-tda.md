@@ -1,8 +1,9 @@
 ---
-layout: single
+layout: notebook
 title: "Temporal Higher-Order TDA"
 permalink: /open-projects/temporal-higher-order-tda/
-author_profile: true
+sheet: "03"
+prose: true
 ---
 
 <div class="project-detail-header">

@@ -1,6 +1,7 @@
 papers:
   # 2026
   - title: "Higher-order topology uncovers the multidimensional dynamics of naturalistic emotion"
+    selected: true
     authors: "L. Zaffina, M. Diano, F. Petruso, M. G. Preti, E. Amico, E. Morgenroth, G. Petri, D. Van De Ville, P. Vuilleumier, A. Santoro"
     venue: "bioRxiv"
     year: "2026"
@@ -10,6 +11,7 @@ papers:
     abstract: "Emotions are thought to emerge from co-activation among distributed brain systems, yet traditional fMRI analyses typically examine localized responses and pairwise connections, potentially overlooking interactions among groups of regions. Here, we use time-resolved higher-order topology to characterize these group interactions during naturalistic viewing of 14 films totaling over 2.5 h, continuously annotated across 50 affective features. The homological scaffold, representing evolving group-level topology, most closely tracks recurrent emotional states and best predicts fine-grained affective profiles. This sensitivity diminishes when emotion is compressed into dimensions of valence, arousal, and power, where pairwise connectivity captures the dominant arousal signal. Across three independent datasets, arousal predictions transfer most robustly through pairwise connectivity, while the relative geometry of broad affective states remains conserved across film narratives despite poor valence generalization. These findings reveal complementary neural representations of emotion: higher-order topology captures fine-grained affective structure, whereas pairwise connectivity provides a portable readout of broad arousal."
 
   - title: "Sperm whale foraging combines persistent search with flexible prey-capture tactics"
+    selected: true
     authors: "L. Zaffina*, C. Monti*, S. Poetto, M. Lucas, H. J. Machado Borges, R. Deshpande, P. Tønnesen, D. F. Gruber, S. Gero, A. Santoro*, G. Petri*"
     venue: "bioRxiv"
     year: "2026"
@@ -19,6 +21,7 @@ papers:
     abstract: "Predators searching patchy environments must coordinate movements across scales, yet this behavioural hierarchy is not yet technically possible to observe in the deep ocean. Here we show that sperm-whale foraging is organized across two nested levels: directionally persistent search paths and flexible prey-capture tactics. We combine acoustic recordings with reconstructed three-dimensional trajectories from 34 sensor-tag deployments on 20 individual whales in both the eastern Caribbean and the mid-Atlantic. Complete foraging paths exhibit heavy-tailed step lengths and superdiffusive displacement, consistent with Lévy-like search. Within these paths, echolocation buzzes resolve into two recurrent acoustic–kinematic tactics. Every sampled whale used both tactics and switched between them within dives, revealing a foraging hierarchy in which flexible capture actions unfold within persistent, deliberate large-scale search."
 
   - title: "Charting higher-order models of brain function beyond pairwise interactions"
+    selected: true
     authors: "A. Santoro*, M. Neri*, S. Poetto, D. Orsenigo, M. Diano, M. Gatica, G. Petri"
     venue: "Nature Communications"
     year: "2026"
@@ -142,6 +145,7 @@ papers:
 
   # 2023
   - title: "Higher-order organization of multivariate time series"
+    selected: true
     authors: "A. Santoro, F. Battiston, G. Petri, E. Amico"
     venue: "Nature Physics"
     year: "2023"
