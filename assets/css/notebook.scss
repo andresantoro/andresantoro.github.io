@@ -344,8 +344,8 @@ body.nb {
 .cv-section { border-top: 1px solid var(--rule); }
 .cv-section:first-child { border-top: 0; }
 .cv-section > h1, .cv-section > h2 { margin: 0; padding: 16px 40px; border-bottom: 1px solid var(--rule); font-weight: 800; font-stretch: 125%; font-size: 26px; text-transform: uppercase; }
-.cv-entry, .school-item, .achievement-item { display: grid; grid-template-columns: 200px minmax(0, 1fr); border-bottom: 1px solid var(--rule); }
-.cv-entry-date, .school-date, .achievement-item h4 { grid-row: span 2; margin: 0; padding: 14px 40px; font-family: var(--mono); font-size: 12px; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+.cv-entry, .school-item, .achievement-item { display: grid; grid-template-columns: 236px minmax(0, 1fr); border-bottom: 1px solid var(--rule); }
+.cv-entry-date, .school-date, .achievement-item h4 { grid-row: span 2; margin: 0; padding: 14px 20px 14px 40px; white-space: nowrap; font-family: var(--mono); font-size: 12px; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
 .cv-entry-title { padding: 12px 24px 0; border-left: 1px solid var(--rule); font-weight: 700; }
 .cv-entry-content { padding: 0 24px 12px; border-left: 1px solid var(--rule); color: var(--muted); font-size: 15px; }
 .school-content, .achievement-item p { grid-row: span 2; margin: 0; padding: 12px 24px; border-left: 1px solid var(--rule); color: var(--chalk); font-size: 15px; }

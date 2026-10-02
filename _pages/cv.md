@@ -44,7 +44,7 @@ lede: "Positions, education and awards. The full PDF is at the bottom."
   <div class="cv-section">
     <h1>Education</h1>
     <div class="cv-entry">
-      <div class="cv-entry-date">Sept 2016 - Mar 2021</div>
+      <div class="cv-entry-date">Sep 2016 - Mar 2021</div>
       <div class="cv-entry-title">Ph.D. in Applied Mathematics</div>
       <div class="cv-entry-content">Queen Mary University of London, UK</div>
     </div>
