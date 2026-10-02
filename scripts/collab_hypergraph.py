@@ -130,14 +130,27 @@ def color(w):
     return TOPIC_COLOR[w["topic"]]
 
 
+# A paper with only one co-author (besides me) is a hyperedge of size 1 once I am left out:
+# it is drawn as a ring around that person, one concentric ring per paper.
+solo = {}
+for i, w in enumerate(works):
+    if len(w["members"]) == 1:
+        solo.setdefault(w["members"][0], []).extend((i, TOPIC_COLOR[t]) for t in w["topics"])
+RING_GAP = 5
+
+
+def ring_ext(n):
+    return RING_GAP * len(solo.get(n, []))
+
+
 def place_labels(keys, char_w=9.2):
-    boxes = [(x - 8, y - 8, x + 8, y + 8) for x, y in xy.values()]
+    boxes = [(x - 8 - ring_ext(n), y - 8 - ring_ext(n), x + 8 + ring_ext(n), y + 8 + ring_ext(n)) for n, (x, y) in xy.items()]
     sides = {}
     for n in sorted(keys, key=lambda n: -deg[n]):
         x, y = xy[n]
-        w, h = len(n) * char_w, 16
-        cands = [("r", x + 10, y - h / 2), ("l", x - 10 - w, y - h / 2),
-                 ("t", x - w / 2, y - 12 - h), ("b", x - w / 2, y + 12)]
+        w, h, e = len(n) * char_w, 16, ring_ext(n)
+        cands = [("r", x + 10 + e, y - h / 2), ("l", x - 10 - e - w, y - h / 2),
+                 ("t", x - w / 2, y - 12 - e - h), ("b", x - w / 2, y + 12 + e)]
         best = None
         for side, bx, by in cands:
             b = (bx, by, bx + w, by + h)
@@ -153,8 +166,9 @@ def place_labels(keys, char_w=9.2):
 
 def label_xy(n, side):
     x, y = xy[n]
-    return {"r": (x + 11, y + 5, "start"), "l": (x - 11, y + 5, "end"),
-            "t": (x, y - 13, "middle"), "b": (x, y + 26, "middle")}[side]
+    e = ring_ext(n)
+    return {"r": (x + 11 + e, y + 5, "start"), "l": (x - 11 - e, y + 5, "end"),
+            "t": (x, y - 13 - e, "middle"), "b": (x, y + 26 + e, "middle")}[side]
 
 
 def svg(mini):
@@ -174,6 +188,12 @@ def svg(mini):
             (x1, y1), (x2, y2) = xy[m[0]], xy[m[1]]
             out.append(f'<line class="hg-edge hg-dyad" data-w="{i}" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" '
                        f'stroke="{color(w)}" stroke-opacity="0.95" stroke-width="{5 if mini else 2.8}" stroke-linecap="round"/>')
+    for n, rings in solo.items():
+        x, y = xy[n]
+        r0 = (3.5 + 1.1 * min(deg[n], 6)) * r_scale
+        for k, (i, c) in enumerate(rings):
+            out.append(f'<circle class="hg-edge hg-solo" data-w="{i}" cx="{x}" cy="{y}" r="{r0 + RING_GAP * r_scale * (k + 1):.1f}" '
+                       f'fill="none" stroke="{c}" stroke-opacity="0.95" stroke-width="{3.5 if mini else 2}"/>')
     keys = {n for n in nodes if deg[n] >= 3 or role[n] != "collaborator"}
     sides = place_labels(keys) if not mini else {}
     for n in sorted(nodes, key=lambda n: deg[n]):

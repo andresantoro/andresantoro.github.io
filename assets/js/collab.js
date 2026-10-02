@@ -45,7 +45,7 @@
   var svg = d3.select(stage).insert('svg', ':first-child').attr('class', 'cl-svg').attr('viewBox', [0, 0, W, H])
     .attr('role', 'group').attr('aria-label', 'Interactive co-authorship hypergraph');
   var view = svg.append('g');
-  var gHull = view.append('g'), gDyad = view.append('g'), gNode = view.append('g');
+  var gHull = view.append('g'), gDyad = view.append('g'), gSolo = view.append('g'), gNode = view.append('g');
   var resetBtn = root.querySelector('[data-cl-reset]');
   var userView = false;  // once the visitor pans or zooms, stop re-fitting the view after each change
   var zoom = d3.zoom().scaleExtent([0.35, 5])
@@ -74,7 +74,7 @@
   var sim = d3.forceSimulation()
     .force('link', d3.forceLink().distance(function (l) { return 18 + 5 * Math.sqrt(l.w.members.length); }).strength(0.6))
     .force('charge', d3.forceManyBody().strength(function (d) { return d.hub ? -12 : -80; }).distanceMax(280))
-    .force('collide', d3.forceCollide(function (d) { return d.hub ? 0 : radius(d) + 8; }))
+    .force('collide', d3.forceCollide(function (d) { return d.hub ? 0 : radius(d) + RING_GAP * (d.rings || 0) + 8; }))
     .force('x', d3.forceX(W / 2).strength(0.04))
     .force('y', d3.forceY(H / 2).strength(0.06))
     .alphaDecay(0.035)
@@ -90,7 +90,8 @@
     .on('drag', function (ev, d) { d.fx = ev.x; d.fy = ev.y; })
     .on('end', function (ev, d) { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; });
 
-  var hullSel = gHull.selectAll('path'), dyadSel = gDyad.selectAll('line'), nodeSel = gNode.selectAll('g');
+  var hullSel = gHull.selectAll('path'), dyadSel = gDyad.selectAll('line'), soloSel = gSolo.selectAll('circle'), nodeSel = gNode.selectAll('g');
+  var RING_GAP = 5;  // a paper with a single co-author is a ring around them, one ring per paper
   var shownPeople = [], shownWorks = [];
 
   function update(animate) {
@@ -100,8 +101,14 @@
       return w.on;
     });
     var on = {};
-    people.forEach(function (n) { n.vdeg = 0; });
+    people.forEach(function (n) { n.vdeg = 0; n.rings = 0; });
     shownWorks.forEach(function (w) { w.members.forEach(function (m) { on[m] = true; byId[m].vdeg += w.vis.length; }); });
+    var rings = [];
+    shownWorks.forEach(function (w) {
+      if (w.members.length !== 1) return;
+      var n = byId[w.members[0]];
+      w.vis.forEach(function (p) { rings.push({ w: w, n: n, k: n.rings++, color: (topicOf[p.topic] || {}).color || w.color, key: w.i + ':' + p.title }); });
+    });
     people.forEach(function (n) { if (!on[n.id]) n.shown = false; });
     shownPeople = people.filter(function (n) { return on[n.id]; });
     // newcomers appear next to co-authors already on screen
@@ -139,6 +146,11 @@
         return en.append('line').attr('class', 'cl-dyad').attr('stroke', function (w) { return w.color; })
           .on('click', function (ev, w) { ev.stopPropagation(); select({ work: w }); });
       });
+    soloSel = gSolo.selectAll('circle').data(rings, function (r) { return r.key; })
+      .join(function (en) {
+        return en.append('circle').attr('class', 'cl-solo').attr('stroke', function (r) { return r.color; })
+          .on('click', function (ev, r) { ev.stopPropagation(); select({ work: r.w }); });
+      });
     nodeSel = gNode.selectAll('g.cl-node').data(shownPeople, function (n) { return n.id; })
       .join(function (en) {
         var g = en.append('g').attr('class', function (n) { return 'cl-node is-' + n.role; })
@@ -152,7 +164,7 @@
       });
     nodeSel.classed('is-key', function (n) { return n.vdeg >= 3 || n.role !== 'collaborator'; });
     nodeSel.select('circle').attr('r', radius);
-    nodeSel.select('text').attr('x', function (n) { return radius(n) + 4; });
+    nodeSel.select('text').attr('x', function (n) { return radius(n) + 4 + RING_GAP * n.rings; });
 
     var nPapers = d3.sum(shownWorks, function (w) { return w.vis.length; });
     root.querySelectorAll('[data-cl-people], [data-cl-idle-people]').forEach(function (e) { e.textContent = shownPeople.length; });
@@ -177,6 +189,8 @@
     dyadSel.attr('x1', function (w) { return byId[w.members[0]].x; }).attr('y1', function (w) { return byId[w.members[0]].y; })
       .attr('x2', function (w) { return byId[w.members[1]].x; }).attr('y2', function (w) { return byId[w.members[1]].y; });
     hullSel.attr('d', hullPath);
+    soloSel.attr('cx', function (r) { return r.n.x; }).attr('cy', function (r) { return r.n.y; })
+      .attr('r', function (r) { return radius(r.n) + RING_GAP * (r.k + 1); });
   }
 
   function keySelect(make) {
@@ -206,6 +220,7 @@
     svg.classed('has-sel', !!sel).classed('has-query', !!state.q);
     hullSel.classed('is-on', function (w) { return onW.has(w); });
     dyadSel.classed('is-on', function (w) { return onW.has(w); });
+    soloSel.classed('is-on', function (r) { return onW.has(r.w); });
     nodeSel.classed('is-on', function (n) { return onN.has(n); })
       .classed('is-sel', function (n) { return !!(sel && sel.person === n); })
       .classed('is-match', function (n) { return !!state.q && n.id.toLowerCase().indexOf(state.q) !== -1; });

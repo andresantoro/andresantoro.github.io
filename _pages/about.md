@@ -65,7 +65,7 @@ redirect_from:
 </section>
 
 <section class="nb-section">
-  {% include nb/section-head.html num="2" title="Research" link="/projects/" link_text="All projects" %}
+  {% include nb/section-head.html num="2" title="Research" link="/projects/" link_text="All research themes" %}
   <div class="nb-grid">
     <a class="nb-cell" href="{{ base_path }}/projects/#time-series">
       <div class="nb-cellbar"><span>2.1</span><span>Fig. 2.1</span></div>

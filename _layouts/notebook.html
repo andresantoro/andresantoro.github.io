@@ -24,7 +24,7 @@
 
   <main id="content" class="nb-sheet">
     {% unless page.hero == false %}
-      {% include nb/titleband.html title=page.title lede=page.lede sheet=page.sheet small=page.small_title %}
+      {% include nb/titleband.html title=page.title lede=page.lede sheet=page.sheet small=page.small_title fit=page.title_fit %}
     {% endunless %}
     {% if page.prose %}
       <div class="nb-body nb-prose">{{ content }}</div>

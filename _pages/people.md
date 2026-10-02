@@ -66,11 +66,11 @@ hero: false
   {% include nb/section-head.html num="3" title="Mentors" %}
   <div class="nb-grid">
     {% for m in ppl.mentors %}
-    <a class="nb-mentor" href="{{ m.url }}">
+    {% if m.url %}<a class="nb-mentor" href="{{ m.url }}">{% else %}<div class="nb-mentor">{% endif %}
       <div class="nb-mentor__role">{{ m.role }}</div>
-      <div class="nb-mentor__name">{{ m.name }} ↗</div>
+      <div class="nb-mentor__name">{{ m.name }}{% if m.url %} ↗{% endif %}</div>
       <div class="nb-mentor__where">{{ m.where }}</div>
-    </a>
+    {% if m.url %}</a>{% else %}</div>{% endif %}
     {% endfor %}
   </div>
 </section>
@@ -84,6 +84,7 @@ hero: false
         <span><i style="background: var(--accent)"></i>Student / mentee</span>
         <span><i style="background: var(--blue)"></i>Mentor</span>
         <span><i style="border: 1.5px solid var(--chalk)"></i>Collaborator</span>
+        <span><i class="is-ring"></i>Paper with 1 co-author</span>
         <span><i class="is-line"></i>Paper with 2 co-authors</span>
         <span><i class="is-shape"></i>Paper with 3+ co-authors</span>
         <span class="nb-hgkey__break" aria-hidden="true"></span>

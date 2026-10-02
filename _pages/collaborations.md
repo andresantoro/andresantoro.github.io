@@ -44,7 +44,7 @@ hero: false
       <div class="nb-cellbar"><span>Details</span></div>
       <div class="nb-hgpanel__body" data-cl-idle>
         <div class="nb-hgpanel__name"><span data-cl-idle-people>{{ hg.people.size }}</span> co-authors</div>
-        <p class="nb-row__text">Shapes are papers, coloured by topic; a line is a paper with two co-authors. Bigger dots have more joint papers.</p>
+        <p class="nb-row__text">Shapes are papers, coloured by topic; a line is a paper with two co-authors, a ring one with a single co-author. Bigger dots have more joint papers.</p>
         <p class="nb-hand" style="margin-top: 14px; color: var(--chalk)">← press play to watch it grow</p>
       </div>
       <div class="nb-hgpanel__body" data-cl-sel hidden></div>
@@ -54,6 +54,7 @@ hero: false
     <span><i style="background: var(--accent)"></i>Student / mentee</span>
     <span><i style="background: var(--blue)"></i>Mentor</span>
     <span><i style="border: 1.5px solid var(--chalk)"></i>Collaborator</span>
+    <span><i class="is-ring"></i>Paper with 1 co-author</span>
     <span><i class="is-line"></i>Paper with 2 co-authors</span>
     <span><i class="is-shape"></i>Paper with 3+ co-authors</span>
     <span>Consortium papers with more than 15 authors are omitted. Static version on <a href="{{ base_path }}/people/#network">People</a>.</span>

@@ -1,9 +1,10 @@
 ---
 layout: notebook
-title: "Projects"
+title: "Research themes"
 permalink: /projects/
 sheet: "02"
-lede: "Research lines I am working on, from methods for multivariate signals to sperm whales and food."
+title_fit: "13.3"  # keep the title on one line (it is 13.07em wide)
+lede: "The themes I work on, from methods for multivariate signals to sperm whales and food."
 ---
 {% include base_path %}
 

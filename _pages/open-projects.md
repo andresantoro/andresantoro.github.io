@@ -3,6 +3,7 @@ layout: notebook
 title: "Open Projects"
 permalink: /open-projects/
 sheet: "03"
+title_fit: "11.2"  # keep the title on one line (it is 10.99em wide)
 lede: "Thesis and semester projects for students. Illustrative, not exhaustive."
 ---
 {% include base_path %}
