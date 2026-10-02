@@ -1,42 +1,40 @@
-{% comment %}Expedition journal (a nod to painterly Belle Époque RPGs): a battle scene whose six skill panels are links (outlines from _data/expedition.yml), a journal page found at camp, and the same skills as a menu with a brushstroke on the picked one. Picking a skill in either place spotlights its panel in the scene (notebook.js). Ink fades in when the page scrolls into view (.is-open; --d staggers it); petals drift up behind (.nb-petals, reused by the title card on /collaborations/).{% endcomment %}
+{% comment %}Expedition journal, the Home §2 Research section (a nod to painterly Belle Époque RPGs): a battle scene whose six skill panels are links (outlines from _data/expedition.yml), a readout line that names the picked skill on a brushstroke (notebook.js also spotlights its panel), and the journal as an open notebook across the panel. Phones get the skills as buttons, since the panels are too small to tap. Ink fades in when the notebook scrolls into view (.is-open; --d staggers it); petals drift up behind (.nb-petals, reused by the title card on /collaborations/).{% endcomment %}
 {% assign ex = site.data.expedition %}
-<section class="nb-exp" aria-labelledby="nb-exp-title">
+<div class="nb-exp">
   <div class="nb-petals" aria-hidden="true">
     <i style="--x: 4%; --t: 19s; --w: -2s"></i><i style="--x: 13%; --t: 23s; --w: -11s"></i><i style="--x: 31%; --t: 21s; --w: -6s"></i>
     <i style="--x: 47%; --t: 26s; --w: -15s"></i><i style="--x: 58%; --t: 20s; --w: -1s"></i><i style="--x: 71%; --t: 24s; --w: -9s"></i>
     <i style="--x: 83%; --t: 22s; --w: -17s"></i><i style="--x: 92%; --t: 27s; --w: -4s"></i>
   </div>
   <div class="nb-exp__bar">
-    <span id="nb-exp-title">Expedition journal</span>
+    <span>Expedition journal</span>
     <span class="nb-exp__camp"><svg viewBox="0 0 18 22" aria-hidden="true" focusable="false"><path d="M3 1.5v20" /><path class="nb-exp__flag" d="M3.8 2.5h12l-3.2 4.2 3.2 4.3h-12z" /></svg><span class="nb-exp__wide">Camp · </span>Turin</span>
   </div>
   <figure class="nb-exp__scene">
     <div class="nb-exp__frame" data-exp-scene>
       <img src="{{ base_path }}/images/expedition/battle-1672.jpg" srcset="{{ base_path }}/images/expedition/battle-960.jpg 960w, {{ base_path }}/images/expedition/battle-1672.jpg 1672w" sizes="(max-width: 1320px) 100vw, 1272px" width="{{ ex.size[0] }}" height="{{ ex.size[1] }}" alt="Battle scene in the style of a painterly role-playing game: the author, seen from behind, faces a boss called The Wrath of Reviewer 2 and picks from six research skills." loading="lazy">
-      <svg class="nb-exp__hot" viewBox="0 0 {{ ex.size[0] }} {{ ex.size[1] }}" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <svg class="nb-exp__hot" viewBox="0 0 {{ ex.size[0] }} {{ ex.size[1] }}" preserveAspectRatio="none" role="group" aria-label="Skills">
         <path class="nb-exp__dim" data-exp-dim d="M0 0H{{ ex.size[0] }}V{{ ex.size[1] }}H0Z" />
-        {% for s in ex.skills %}<a href="{{ base_path }}{{ s.url }}" tabindex="-1" data-skill="{{ forloop.index0 }}"><polygon points="{{ s.poly }}" /></a>
+        {% for s in ex.skills %}<a href="{{ base_path }}{{ s.url }}" aria-label="{{ s.name }}: {{ s.dest }}" data-skill="{{ forloop.index0 }}" data-name="{{ s.name }}" data-desc="{{ s.desc }}" data-dest="{{ s.dest }}"><polygon points="{{ s.poly }}" /></a>
         {% endfor %}
       </svg>
     </div>
-    <figcaption class="nb-exp__cap"><span>Choose a skill: each panel opens its research theme</span><span class="nb-exp__turn">Your turn</span></figcaption>
+    <figcaption class="nb-exp__readout" data-exp-readout>
+      <span class="nb-exp__hint">Choose a skill: each panel opens its research theme</span>
+      <span class="nb-exp__pick" aria-hidden="true"><b class="nb-exp__brush" data-exp-name></b> <span data-exp-desc></span> <em data-exp-dest></em></span>
+      <span class="nb-exp__turn">Your turn</span>
+    </figcaption>
   </figure>
-  <div class="nb-exp__body">
-    <article class="nb-exp__page">
-      <p class="nb-exp__entry nb-exp__ink" style="--d: 0">Entry · {{ site.time | date: "%B %Y" }}</p>
-      <p class="nb-exp__ink" style="--d: 1">Camp is at the <a href="https://www.isi.it/">ISI Foundation</a>, in Turin. Pairs never told us the whole story, so we keep listening for the triplets: the synergy hidden in brain and market signals.</p>
-      <p class="nb-exp__ink" style="--d: 2">Part of the expedition sails with <a href="https://www.projectceti.org/">Project CETI</a>, charting the social networks of sperm whales, one coda at a time.</p>
-      <p class="nb-exp__ink" style="--d: 3">Supplies: an MSCA fellowship, temporalHOI. Morale: high. Reviewer 2: still at large.</p>
-      <p class="nb-exp__sign nb-exp__ink" style="--d: 4"><span>To whoever finds this, the trail continues in the <a href="{{ base_path }}/publications/">papers&nbsp;→</a></span><span>— A. S.</span></p>
-    </article>
-    <div class="nb-exp__menu nb-exp__ink" style="--d: 1">
-      <div class="nb-exp__head"><span>Skills</span><span>AP</span></div>
-      <ul class="nb-exp__skills" data-exp-skills>
-        {% for s in ex.skills %}<li><a class="nb-exp__skill{% if forloop.first %} is-active{% endif %}" href="{{ base_path }}{{ s.url }}" data-skill="{{ forloop.index0 }}"><span class="nb-exp__name">{{ s.name }}</span><span class="nb-exp__desc">{{ s.desc }}</span><span class="nb-exp__ap"><b>{{ s.ap }}</b><span class="nb-sr"> AP</span></span></a></li>
-        {% endfor %}
-      </ul>
-      <p class="nb-exp__note" aria-hidden="true" data-exp-note>{{ ex.skills[0].desc }}</p>
-      <div class="nb-exp__passive"><span>Passive · Luck against reviewer 2</span><b>Low</b></div>
-    </div>
-  </div>
-</section>
+  <nav class="nb-exp__chips" aria-label="Skills">
+    {% for s in ex.skills %}<a href="{{ base_path }}{{ s.url }}"><span>{{ s.name }}</span><span class="nb-exp__ap"><b>{{ s.ap }}</b><span class="nb-sr"> AP</span></span></a>
+    {% endfor %}
+  </nav>
+  <article class="nb-exp__book">
+    <p class="nb-exp__entry nb-exp__ink" style="--d: 0">Entry · {{ site.time | date: "%B %Y" }}</p>
+    <p class="nb-exp__ink" style="--d: 1">Camp is at the <a href="https://www.isi.it/">ISI Foundation</a>, in Turin. Pairs never told us the whole story, so we keep listening for the triplets: the synergy hidden in brain and market signals.</p>
+    <p class="nb-exp__ink" style="--d: 2">Part of the expedition sails with <a href="https://www.projectceti.org/">Project CETI</a>, charting the social networks of sperm whales, one coda at a time.</p>
+    <p class="nb-exp__ink" style="--d: 3">Supplies: an MSCA fellowship, temporalHOI. Morale: high. Reviewer 2: still at large, as pictured.</p>
+    <p class="nb-exp__ink" style="--d: 4">New recruits are welcome at camp: thesis and internship projects are posted on the <a href="{{ base_path }}/open-projects/">open projects</a> board.</p>
+    <p class="nb-exp__sign nb-exp__ink" style="--d: 5"><span>To whoever finds this, the trail continues in the <a href="{{ base_path }}/publications/">papers&nbsp;→</a></span><span>— A. S.</span></p>
+  </article>
+</div>

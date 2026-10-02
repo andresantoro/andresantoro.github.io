@@ -1,35 +1,41 @@
 # Skills on the Home "Expedition journal" panel (_includes/nb/journal.html), in the order of the battle scene.
 # poly: outline of the skill's panel (button included) on images/expedition/battle-1672.jpg, in image pixels.
-# ap: the number on the panel's blue diamond. desc: shown under the skill list when the skill is picked.
+# ap: the number on the panel's blue diamond. desc and dest: shown in the readout under the scene when the skill is picked.
 size: [1672, 941]
 skills:
   - name: Higher-order inference
     url: /projects/#time-series
+    dest: "§2.1 Time series analysis"
     ap: 6
     desc: Targets three or more signals at once. Reveals the synergy that pairs miss, in brains and markets alike.
     poly: "508,322 556,297 868,284 900,298 898,366 864,378 563,393 508,368"
   - name: Persistent homology
     url: /projects/#fmri-methods
+    dest: "§2.2.1 Methods for fMRI"
     ap: 3
     desc: Finds the holes in the data, and how long they last. Applies Barcode.
     poly: "522,420 580,402 900,389 922,410 918,462 880,481 572,493 522,468"
   - name: Multilayer networks
     url: /projects/#multilayer-networks
+    dest: "§2.3 Multilayer networks"
     ap: 5
     desc: Hits every layer of an interconnected system at once.
     poly: "536,518 590,503 905,493 928,505 924,562 890,572 585,578 536,566"
   - name: Computational neuroscience
     url: /projects/#computational-neuroscience
+    dest: "§2.2 Computational neuroscience"
     ap: 4
     desc: Reads the brain as groups of interacting regions, from micro- to macro-scale.
     poly: "565,602 612,586 935,577 968,592 962,640 945,658 612,668 565,646"
   - name: Coda listening
     url: /projects/#project-ceti
+    dest: "§2.4 Project CETI"
     ap: 2
     desc: Maps who talks to whom among sperm whales. Best used at sea.
     poly: "582,684 632,670 960,668 998,688 992,742 960,754 632,760 582,732"
   - name: Cuisine networks
     url: /projects/#computational-gastronomy
+    dest: "§2.5 Computational gastronomy"
     ap: 7
     desc: Reveals how the world’s cuisines pair their ingredients. Restores morale.
     poly: "592,770 645,764 990,772 1018,792 1012,850 975,870 645,858 592,815"

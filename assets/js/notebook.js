@@ -217,43 +217,45 @@
     });
   });
 
-  // ---- expedition journal on Home: ink the page in once it scrolls into view; a skill picked in the menu
-  //      or in the battle scene gets the brush, its description, and a spotlight on its panel in the scene ----
+  // ---- expedition journal (Home §2): ink the notebook in once it scrolls into view; a skill panel picked in the
+  //      battle scene gets a spotlight, and the readout below names it on a brushstroke ----
   document.querySelectorAll('.nb-exp').forEach(function (t) {
-    var body = t.querySelector('.nb-exp__body') || t;
+    var book = t.querySelector('.nb-exp__book') || t;
     if (!('IntersectionObserver' in window)) { t.classList.add('is-open'); return; }
     var io = new IntersectionObserver(function (entries) {
       if (entries[0].isIntersecting) { t.classList.add('is-open'); io.disconnect(); }
     }, { threshold: 0.35 });
-    io.observe(body);
+    io.observe(book);
   });
-  document.querySelectorAll('.nb-exp').forEach(function (t) {
-    var items = t.querySelectorAll('[data-exp-skills] [data-skill]');
-    var frame = t.querySelector('[data-exp-scene]');
-    var hots = frame ? frame.querySelectorAll('[data-skill]') : [];
-    var dim = frame && frame.querySelector('[data-exp-dim]');
-    var note = t.querySelector('[data-exp-note]');
-    if (!items.length) return;
-    var vb = dim && dim.ownerSVGElement.viewBox.baseVal;
-    var pick = function (i, aim) {
-      items.forEach(function (o, k) { o.classList.toggle('is-active', k === i); });
-      hots.forEach(function (o, k) { o.classList.toggle('is-active', k === i); });
-      if (note) note.textContent = items[i].querySelector('.nb-exp__desc').textContent;
-      var poly = hots[i] && hots[i].querySelector('polygon');
-      if (!frame || !poly) return;
+  document.querySelectorAll('[data-exp-scene]').forEach(function (frame) {
+    var hots = frame.querySelectorAll('[data-skill]');
+    var dim = frame.querySelector('[data-exp-dim]');
+    var vb = dim.ownerSVGElement.viewBox.baseVal;
+    var out = frame.parentNode.querySelector('[data-exp-readout]');
+    var name = out && out.querySelector('[data-exp-name]');
+    var pick = function (a) {
+      hots.forEach(function (o) { o.classList.toggle('is-active', o === a); });
       // dim the whole scene except this panel: the frame rectangle with the panel cut out (even-odd)
-      dim.setAttribute('d', 'M0 0H' + vb.width + 'V' + vb.height + 'H0Z M' + poly.getAttribute('points').trim().split(/\s+/).join('L') + 'Z');
-      frame.classList.toggle('is-aiming', aim);
+      dim.setAttribute('d', 'M0 0H' + vb.width + 'V' + vb.height + 'H0Z M' + a.querySelector('polygon').getAttribute('points').trim().split(/\s+/).join('L') + 'Z');
+      frame.classList.add('is-aiming');
+      if (!out) return;
+      name.textContent = a.getAttribute('data-name');
+      out.querySelector('[data-exp-desc]').textContent = a.getAttribute('data-desc');
+      out.querySelector('[data-exp-dest]').textContent = a.getAttribute('data-dest');
+      name.classList.remove('is-new');
+      void name.offsetWidth;  // restart the brush animation
+      name.classList.add('is-new');
+      out.classList.add('is-picked');
     };
-    var rest = function () { if (frame) frame.classList.remove('is-aiming'); };
-    [items, hots].forEach(function (group) {
-      group.forEach(function (s) {
-        var i = +s.getAttribute('data-skill');
-        s.addEventListener('mouseenter', function () { pick(i, true); });
-        s.addEventListener('focus', function () { pick(i, true); });
-        s.addEventListener('mouseleave', rest);
-        s.addEventListener('blur', rest);
-      });
+    var rest = function () {
+      frame.classList.remove('is-aiming');
+      if (out) out.classList.remove('is-picked');
+    };
+    hots.forEach(function (a) {
+      a.addEventListener('mouseenter', function () { pick(a); });
+      a.addEventListener('focus', function () { pick(a); });
+      a.addEventListener('mouseleave', rest);
+      a.addEventListener('blur', rest);
     });
   });
 
