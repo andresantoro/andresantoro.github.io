@@ -8,37 +8,37 @@ skills:
     dest: "§2.1 Time series analysis"
     ap: 6
     desc: Targets three or more signals at once. Reveals the synergy that pairs miss, in brains and markets alike.
-    poly: "508,322 556,297 868,284 900,298 898,366 864,378 563,393 508,368"
+    poly: "510,242 562,220 965,212 978,232 968,262 965,322 950,333 565,334 510,292"
   - name: Persistent homology
     url: /projects/#fmri-methods
     dest: "§2.2.1 Methods for fMRI"
     ap: 3
     desc: Finds the holes in the data, and how long they last. Applies Barcode.
-    poly: "522,420 580,402 900,389 922,410 918,462 880,481 572,493 522,468"
+    poly: "507,356 563,342 965,338 978,356 972,380 970,432 950,440 565,441 507,404"
   - name: Multilayer networks
     url: /projects/#multilayer-networks
     dest: "§2.3 Multilayer networks"
     ap: 5
     desc: Hits every layer of an interconnected system at once.
-    poly: "536,518 590,503 905,493 928,505 924,562 890,572 585,578 536,566"
+    poly: "521,463 567,445 985,440 1012,455 1000,480 995,535 975,546 570,547 521,512"
   - name: Computational neuroscience
     url: /projects/#computational-neuroscience
     dest: "§2.2 Computational neuroscience"
     ap: 4
     desc: Reads the brain as groups of interacting regions, from micro- to macro-scale.
-    poly: "565,602 612,586 935,577 968,592 962,640 945,658 612,668 565,646"
+    poly: "545,566 598,552 1010,546 1046,562 1030,590 1022,640 990,661 600,663 545,614"
   - name: Coda listening
     url: /projects/#project-ceti
     dest: "§2.4 Project CETI"
     ap: 2
     desc: Maps who talks to whom among sperm whales. Best used at sea.
-    poly: "582,684 632,670 960,668 998,688 992,742 960,754 632,760 582,732"
+    poly: "570,686 618,668 1040,667 1058,680 1066,700 1062,760 1040,771 630,773 570,728"
   - name: Cuisine networks
     url: /projects/#computational-gastronomy
     dest: "§2.5 Computational gastronomy"
     ap: 7
     desc: Reveals how the world’s cuisines pair their ingredients. Restores morale.
-    poly: "592,770 645,764 990,772 1018,792 1012,850 975,870 645,858 592,815"
+    poly: "583,788 635,775 1035,774 1058,790 1066,815 1062,870 1040,885 640,884 583,830"
 # Party portraits that link out (same fields; dest is shown in the readout).
 allies:
   - name: NPLab
