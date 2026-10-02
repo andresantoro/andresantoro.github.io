@@ -20,7 +20,7 @@ import yaml
 from shapely.geometry import MultiPoint
 
 ROOT = Path(__file__).resolve().parent.parent
-SINCE = 2022
+SINCE = 2018
 MAX_AUTHORS = 15  # consortium papers would swallow everything else
 ME = "A. Santoro"
 W, H = 1200, 640

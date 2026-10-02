@@ -1,5 +1,5 @@
 {
- "since": 2022,
+ "since": 2018,
  "people": [
   {
    "name": "A. Aloric",
@@ -22,12 +22,32 @@
    "works": 1
   },
   {
+   "name": "A. La Magna",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
    "name": "A. Lucatelli",
    "role": "student",
    "works": 1
   },
   {
    "name": "A. Morgan",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "A. N. Medvedev",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "A. Onicas",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "A. Patané",
    "role": "collaborator",
    "works": 1
   },
@@ -102,6 +122,11 @@
    "works": 1
   },
   {
+   "name": "F. Mottes",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
    "name": "F. Petruso",
    "role": "student",
    "works": 2
@@ -122,9 +147,19 @@
    "works": 1
   },
   {
+   "name": "G. Lerda",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "G. Nicosia",
+   "role": "collaborator",
+   "works": 2
+  },
+  {
    "name": "G. Petri",
    "role": "mentor",
-   "works": 7
+   "works": 8
   },
   {
    "name": "G. Rabuffo",
@@ -158,6 +193,11 @@
   },
   {
    "name": "I. Ricchi",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "J. C. W. Billings",
    "role": "collaborator",
    "works": 1
   },
@@ -223,6 +263,11 @@
   },
   {
    "name": "M. Hardy",
+   "role": "collaborator",
+   "works": 1
+  },
+  {
+   "name": "M. Hu",
    "role": "collaborator",
    "works": 1
   },
@@ -319,11 +364,16 @@
   {
    "name": "V. Latora",
    "role": "collaborator",
-   "works": 2
+   "works": 3
   },
   {
    "name": "V. Nicosia",
    "role": "mentor",
+   "works": 4
+  },
+  {
+   "name": "V. Romano",
+   "role": "collaborator",
    "works": 1
   },
   {
@@ -382,6 +432,13 @@
   },
   {
    "titles": [
+    "Simplex2Vec embeddings for community detection in simplicial complexes"
+   ],
+   "year": 2019,
+   "size": 7
+  },
+  {
+   "titles": [
     "Charting higher-order models of brain function beyond pairwise interactions"
    ],
    "year": 2026,
@@ -431,9 +488,23 @@
   },
   {
    "titles": [
+    "Enhancing quantum efficiency of thin-film silicon solar cells by Pareto optimality"
+   ],
+   "year": 2018,
+   "size": 4
+  },
+  {
+   "titles": [
     "Higher-order organization of multivariate time series"
    ],
    "year": 2023,
+   "size": 3
+  },
+  {
+   "titles": [
+    "Pareto optimality in multilayer network growth"
+   ],
+   "year": 2018,
    "size": 3
   },
   {
@@ -442,6 +513,14 @@
    ],
    "year": 2025,
    "size": 2
+  },
+  {
+   "titles": [
+    "Optimal percolation in correlated multilayer networks with overlap",
+    "Algorithmic complexity of multiplex networks"
+   ],
+   "year": 2020,
+   "size": 1
   }
  ]
 }
