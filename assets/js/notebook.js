@@ -180,6 +180,12 @@
   openTarget();
   window.addEventListener('hashchange', openTarget);
 
+  // ---- browser tab: while the page is in the background, the tab calls the visitor back ----
+  var tabTitle = document.title;
+  document.addEventListener('visibilitychange', function () {
+    document.title = document.hidden ? '⚑ The expedition awaits…' : tabTitle;
+  });
+
   // petals that drift up from the bottom edge of a card (title cards here and on /collaborations/)
   var petals = function (n, dur) {
     var box = document.createElement('div');
