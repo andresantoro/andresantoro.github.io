@@ -8,41 +8,41 @@ skills:
     dest: "§2.1 Time series analysis"
     ap: 6
     desc: Targets three or more signals at once. Reveals the synergy that pairs miss, in brains and markets alike.
-    poly: "510,242 562,220 965,212 978,232 968,262 965,322 950,333 565,334 510,292"
+    poly: "508,242 560,221 955,213 982,232 972,262 968,320 950,333 563,334 508,292"
   - name: Persistent homology
     url: /projects/#fmri-methods
     dest: "§2.2.1 Methods for fMRI"
     ap: 3
     desc: Finds the holes in the data, and how long they last. Applies Barcode.
-    poly: "507,356 563,342 965,338 978,356 972,380 970,432 950,440 565,441 507,404"
+    poly: "508,353 562,342 965,338 988,356 980,382 980,428 968,438 565,441 508,402"
   - name: Multilayer networks
     url: /projects/#multilayer-networks
     dest: "§2.3 Multilayer networks"
     ap: 5
     desc: Hits every layer of an interconnected system at once.
-    poly: "521,463 567,445 985,440 1012,455 1000,480 995,535 975,546 570,547 521,512"
+    poly: "519,461 567,444 990,438 1013,457 1006,480 1004,535 990,546 570,548 519,510"
   - name: Computational neuroscience
     url: /projects/#computational-neuroscience
     dest: "§2.2 Computational neuroscience"
     ap: 4
     desc: Reads the brain as groups of interacting regions, from micro- to macro-scale.
-    poly: "545,566 598,552 1010,546 1046,562 1030,590 1022,640 990,661 600,663 545,614"
+    poly: "552,568 605,552 1010,546 1048,564 1042,590 1040,645 1012,660 607,663 552,612"
   - name: Coda listening
     url: /projects/#project-ceti
     dest: "§2.4 Project CETI"
     ap: 2
     desc: Maps who talks to whom among sperm whales. Best used at sea.
-    poly: "570,686 618,668 1040,667 1058,680 1066,700 1062,760 1040,771 630,773 570,728"
+    poly: "574,687 625,667 1035,664 1062,680 1074,705 1072,760 1045,772 636,774 574,730"
   - name: Cuisine networks
     url: /projects/#computational-gastronomy
     dest: "§2.5 Computational gastronomy"
     ap: 7
     desc: Reveals how the world’s cuisines pair their ingredients. Restores morale.
-    poly: "583,788 635,775 1035,774 1058,790 1066,815 1062,870 1040,885 640,884 583,830"
+    poly: "585,785 635,776 1040,774 1062,792 1068,820 1064,872 1040,886 640,884 585,828"
 # Party portraits that link out (same fields; dest is shown in the readout).
 allies:
   - name: NPLab
     url: https://nplresearch.github.io/
     dest: "nplresearch.github.io"
     desc: Joins the party from NPLab, the research group I work in.
-    poly: "1272,790 1292,745 1340,732 1398,734 1442,752 1453,800 1447,860 1450,885 1444,914 1310,922 1292,931 1268,912 1263,850"
+    poly: "1268,800 1290,752 1335,724 1385,728 1440,760 1452,810 1448,870 1446,912 1312,920 1291,933 1270,912 1262,850"
