@@ -56,22 +56,17 @@ lede: "Positions, education and awards. The full PDF is at the bottom."
     <div class="cv-entry">
       <div class="cv-entry-date">Oct 2011 - Feb 2018</div>
       <div class="cv-entry-title">Fellow of the Scuola Superiore di Catania</div>
-      <div class="cv-entry-content">Italy, 70/70 with honors</div>
+      <div class="cv-entry-content">Catania, Italy</div>
     </div>
     <div class="cv-entry">
       <div class="cv-entry-date">Oct 2014 - Jul 2016</div>
       <div class="cv-entry-title">Master in Applied Mathematics</div>
-      <div class="cv-entry-content">University of Catania, Italy, 110/110 with honors</div>
+      <div class="cv-entry-content">University of Catania, Italy</div>
     </div>
     <div class="cv-entry">
       <div class="cv-entry-date">Oct 2011 - Jul 2014</div>
       <div class="cv-entry-title">Bachelor in Mathematics</div>
-      <div class="cv-entry-content">University of Catania, Italy, 110/110 with honors</div>
-    </div>
-    <div class="cv-entry">
-      <div class="cv-entry-date">Jul 2011</div>
-      <div class="cv-entry-title">High School Diploma</div>
-      <div class="cv-entry-content">Liceo Scientifico Statale Archimede, Messina, Italy, 100/100</div>
+      <div class="cv-entry-content">University of Catania, Italy</div>
     </div>
   </div>
 
