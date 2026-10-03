@@ -3,6 +3,7 @@ layout: notebook
 permalink: /
 title: "Andrea Santoro"
 excerpt: "About me"
+description: "Applied mathematician at the ISI Foundation, Turin. I develop methods to uncover higher-order, time-varying interactions in brain and financial signals, and use network science to study sperm whales and world cuisines."
 hero: false
 sheet: "00"
 redirect_from:
