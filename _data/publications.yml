@@ -250,6 +250,11 @@ papers:
 
 # Selected talks at international conferences and workshops
 talks:
+  - title: "Investigating higher-order signatures of emotions in the human brain using film fMRI"
+    venue: "Organization for Human Brain Mapping (OHBM)"
+    location: "Bordeaux, France"
+    date: "June 2026"
+
   - title: "Workshop presentation"
     venue: "King's College"
     location: "London, UK"
@@ -341,6 +346,16 @@ talks:
 
 # Accepted abstracts and posters at international conferences
 posters:
+  - title: "Investigating higher-order signatures of emotions in the human brain using film fMRI"
+    authors: "L. Zaffina, M. Diano, F. Petruso, M. G. Preti, E. Amico, E. Morgenroth, G. Petri, D. Van De Ville, P. Vuilleumier, A. Santoro"
+    venue: "Organization for Human Brain Mapping (OHBM)"
+    year: "2026"
+
+  - title: "Uncovering post-stroke brain reconfiguration through longitudinal connectome fingerprinting"
+    authors: "A. Santoro, A. Lucatelli, F. Windel, B. Lugli, M. G. Preti, L. Fleury, F. Petruso, E. Beanato, D. Van De Ville, F. C. Hummel, E. Amico"
+    venue: "Organization for Human Brain Mapping (OHBM)"
+    year: "2026"
+
   - title: "Investigating higher-order signatures in the human brain using film fMRI"
     authors: "L. Zaffina, F. Petruso, S. Romanato, M. G. Preti, E. Amico, E. Morgenroth, M. Diano, G. Petri, P. Vuilleumier, D. Van De Ville, A. Santoro"
     venue: "Organization for Human Brain Mapping (OHBM)"
