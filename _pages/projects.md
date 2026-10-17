@@ -5,6 +5,7 @@ permalink: /projects/
 sheet: "02"
 title_fit: "13.3"  # keep the title on one line (it is 13.07em wide)
 lede: "The themes I work on, from methods for multivariate signals to sperm whales and food."
+aside_include: nb/skill-bar.html
 ---
 {% include base_path %}
 
@@ -66,10 +67,13 @@ lede: "The themes I work on, from methods for multivariate signals to sperm whal
         <div class="nb-sub__body">
           <figure class="nb-plate nb-sub__fig"><img src="{{ base_path }}/images/projects/movies.png" alt="Film stills and brain activity used to study emotion" loading="lazy"></figure>
           <div class="nb-sub__text nb-prose">
-            <p>Emotions are thought to emerge from co-activation among distributed brain systems, yet traditional fMRI analyses mostly look at localized responses and pairwise connections. Using time-resolved higher-order topology and naturalistic paradigms such as film viewing, I study how groups of brain regions interact as emotions unfold.</p>
+            <p>Emotions are thought to emerge from co-activation among distributed brain systems, yet traditional fMRI analyses mostly look at localized responses and pairwise connections. Using naturalistic paradigms such as film viewing, where emotions unfold continuously rather than in isolated trials, I study how groups of brain regions interact as an emotional experience builds, peaks and fades, and how that experience can be read back from brain activity alone.</p>
             <ul>
-              <li>Higher-order topology of fMRI during naturalistic viewing of 14 films, continuously annotated across 50 affective features (<a href="https://www.biorxiv.org/content/10.64898/2026.09.26.754452v1" target="_blank">bioRxiv 2026</a>)</li>
-              <li>Complementary neural representations of emotion: higher-order topology captures fine-grained affective structure, while pairwise connectivity provides a portable readout of broad arousal</li>
+              <li><b>Higher-order signatures of emotion.</b> Time-resolved higher-order topology of fMRI during naturalistic viewing of 14 films, continuously annotated across 50 affective features (<a href="https://www.biorxiv.org/content/10.64898/2026.09.26.754452v1" target="_blank">bioRxiv 2026</a>; talk at OHBM 2026)</li>
+              <li><b>Complementary representations.</b> Higher-order topology captures fine-grained affective structure, while pairwise connectivity provides a portable readout of broad arousal</li>
+              <li><b>Emotion in large-scale brain dynamics.</b> Ongoing work on how whole-brain activity evolves over time with the emotional content of naturalistic stimuli</li>
+              <li><b>Multi-scale shape of emotional dynamics.</b> Mapper graphs that summarise how brain states recur and transition as the films unfold</li>
+              <li><b>Individuals and behaviour.</b> Functional fingerprinting during emotional short films, and brain–behaviour associations in film fMRI (OHBM 2025 poster)</li>
               <li>Open student project: <a href="{{ base_path }}/open-projects/topology-emotion-film-fmri/">temporal dynamics of emotion using film fMRI</a></li>
             </ul>
           </div>
@@ -89,7 +93,7 @@ lede: "The themes I work on, from methods for multivariate signals to sperm whal
             <p>The same tools, used to follow how the brain reorganises after injury or in chronic conditions, one patient at a time.</p>
             <ul>
               <li>Stroke: over the first year, each patient's functional connectome fingerprint stabilises within three weeks, while system-specific circuits keep remodelling; early functional signatures forecast long-term impairment in language, executive function and attention (<a href="https://www.biorxiv.org/content/10.64898/2026.03.27.714711v1" target="_blank">bioRxiv 2026</a>)</li>
-              <li>Tinnitus: the impact of higher-order brain interactions in tinnitus patients, with an American Tinnitus Association research grant (co-PI) and the PhD of Flavia Petruso</li>
+              <li>Tinnitus: the impact of higher-order brain interactions in tinnitus patients, with an American Tinnitus Association research grant (co-PI), on which Flavia Petruso (PhD student, EPFL) works part-time</li>
               <li>Open student project: <a href="{{ base_path }}/open-projects/tinnitus-fmri-neurofeedback/">tinnitus and fMRI neurofeedback</a></li>
             </ul>
           </div>

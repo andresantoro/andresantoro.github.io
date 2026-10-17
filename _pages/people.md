@@ -8,24 +8,28 @@ hero: false
 {% include base_path %}
 {% assign ppl = site.data.people %}
 
-{% capture aside %}
+{% capture aside %}{% include nb/party.html %}{% endcapture %}
+{% capture below %}
 <dl class="nb-stats">
-  <div><dt>Students</dt><dd>{{ ppl.current.size }}</dd></div>
+  {% if ppl.current.size > 0 %}<div><dt>Students</dt><dd>{{ ppl.current.size }}</dd></div>{% endif %}
   <div><dt>Former</dt><dd>{{ ppl.alumni.size }}</dd></div>
   <div><dt>Co-authors</dt><dd>{{ site.data.hypergraph.people.size }}</dd></div>
 </dl>
 {% endcapture %}
-{% include nb/titleband.html title=page.title lede="Students I supervise or co-supervise, former students, my mentors — and the wider circle of people I write papers with." sheet=page.sheet aside=aside %}
+{% include nb/titleband.html title=page.title lede="The people working with me on my grants or visiting, the students I have supervised, my mentors — and the wider circle of people I write papers with." sheet=page.sheet aside=aside below=below %}
 
 <section class="nb-section">
-  {% include nb/section-head.html num="1" title="Current students" note="supervised & co-supervised" %}
+  {% if ppl.current.size > 0 %}{% assign team_note = "students I supervise · collaborators & visitors" %}{% else %}{% assign team_note = "collaborators & visitors" %}{% endif %}
+  {% include nb/section-head.html num="1" title="Current team" note=team_note %}
   <div class="nb-grid">
-    {% for p in ppl.current %}
+    {% assign team = ppl.current | concat: ppl.team %}
+    {% for p in team %}
     {% assign words = p.name | split: " " %}
+    {% assign on_grant = ppl.team | where: "name", p.name | size %}
     <article class="nb-person">
-      <div class="nb-cellbar"><span>{{ p.role }}{% if p.years %} · {{ p.years }}{% endif %}</span><span style="color: var(--accent)">● Active</span></div>
+      <div class="nb-cellbar"><span>{{ p.role }}{% if p.years %} · {{ p.years }}{% endif %}</span>{% if on_grant > 0 %}<span style="color: var(--blue)">● {{ p.badge }}</span>{% else %}<span style="color: var(--accent)">● Supervised</span>{% endif %}</div>
       <div class="nb-person__head">
-        <div class="nb-monogram{% if p.role contains 'visiting' %} nb-monogram--blue{% endif %}" aria-hidden="true">{{ words.first | slice: 0 }}{{ words.last | slice: 0 }}</div>
+        <div class="nb-monogram{% if p.role contains 'visiting' or on_grant > 0 %} nb-monogram--blue{% endif %}" aria-hidden="true">{{ words.first | slice: 0 }}{{ words.last | slice: 0 }}</div>
         <div>
           <h3>{{ p.name }}</h3>
           <div class="nb-person__where">{{ p.where }}</div>

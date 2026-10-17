@@ -1,9 +1,12 @@
 # Software shown on /code/. repo is "owner/name" on GitHub.
-# stars/forks: GitHub counts as of 2026-10-02 (update by hand).
+# glyph: symbol id (g-<glyph>) in _includes/nb/code-glyphs.svg; item: its name in the inventory, a nod to the Home battle scene.
+# stars/forks: GitHub counts as of 2026-10-16 (update by hand).
 
 - name: "RHOSTS"
   repo: "andresantoro/RHOSTS"
-  stars: 45
+  glyph: "simplex"
+  item: "Tome of Co-fluctuations"
+  stars: 46
   forks: 17
   lang: "Python"
   what: "Higher-order interactions from multivariate time series: reconstructs instantaneous k-order co-fluctuations and the simplicial structure they form."
@@ -14,7 +17,9 @@
 
 - name: "HOI Lenses"
   repo: "nplresearch/HOI_lenses_analysis"
-  stars: 4
+  glyph: "lenses"
+  item: "Prism of Many Lenses"
+  stars: 5
   forks: 2
   lang: "Python"
   what: "Compare information-theoretic and topological higher-order interaction metrics on fMRI: topological scaffolds, task contrasts, stability and information content."
@@ -24,7 +29,9 @@
 
 - name: "Brain_HORS"
   repo: "andresantoro/Brain_HORS"
-  stars: 8
+  glyph: "print"
+  item: "Sigil of the Fingerprint"
+  stars: 9
   forks: 2
   lang: "Python"
   what: "Scripts to replicate the higher-order connectomics analyses: local topological signatures for task decoding, individual identification and behaviour."
@@ -35,6 +42,8 @@
 
 - name: "EasyBrainSurfacePlots"
   repo: "andresantoro/EasyBrainSurfacePlots"
+  glyph: "surface"
+  item: "Cartographer's Brush"
   stars: 12
   forks: 2
   lang: "Python"
@@ -43,7 +52,9 @@
 
 - name: "ALCOREM"
   repo: "andresantoro/ALCOREM"
-  stars: 3
+  glyph: "compress"
+  item: "Crystal of Reducibility"
+  stars: 4
   forks: 0
   lang: "C"
   what: "Algorithmic complexity and reducibility of multiplex networks."
@@ -53,6 +64,8 @@
 
 - name: "Multiplex_optimal_percolation"
   repo: "andresantoro/Multiplex_optimal_percolation"
+  glyph: "percolate"
+  item: "Shears of Percolation"
   stars: 5
   forks: 0
   lang: "C"
@@ -63,6 +76,8 @@
 
 - name: "Tranet_data"
   repo: "andresantoro/Tranet_data"
+  glyph: "transit"
+  item: "Atlas of Many Routes"
   stars: 3
   forks: 2
   lang: "Data"

@@ -1,0 +1,13 @@
+{% comment %}/news/ title band: the Quest log, entries counted by tag (_data/news.yml); each tile filters the log below (notebook.js, data-log-filter), and pressing it again shows everything.{% endcomment %}
+{% assign tags = "paper,preprint,talk,grant,workshop" | split: "," %}
+{% assign names = "Papers,Preprints,Talks,Grants,Workshops" | split: "," %}
+{% include nb/skill-glyphs.svg %}
+<div class="nb-relic nb-qlog" role="group" aria-label="Filter the log by type">
+  <div class="nb-relic__head"><span>Quest log</span><span>{{ site.data.news.size }} entries</span></div>
+  <div class="nb-qlog__grid">
+    {% for t in tags %}{% assign n = site.data.news | where: "tag", t | size %}
+    <button type="button" class="nb-qlog__tile" data-log-filter="{{ t }}" aria-pressed="false" style="--i: {{ forloop.index0 }}"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#g-{{ t }}" /></svg><b>{{ n }}</b><span>{{ names[forloop.index0] }}</span></button>
+    {% endfor %}
+  </div>
+  <p class="nb-qlog__foot" data-log-status>Latest entry: <b>{{ site.data.news.first.date }}</b> · pick a type to filter</p>
+</div>

@@ -12,7 +12,7 @@
   </div>
   <figure class="nb-exp__scene">
     <div class="nb-exp__frame" data-exp-scene>
-      <img src="{{ base_path }}/images/expedition/battle-1672.jpg" srcset="{{ base_path }}/images/expedition/battle-960.jpg 960w, {{ base_path }}/images/expedition/battle-1672.jpg 1672w" sizes="(max-width: 1320px) 100vw, 1272px" width="{{ ex.size[0] }}" height="{{ ex.size[1] }}" alt="Battle scene in the style of a painterly role-playing game: the author, seen from behind, faces a boss called The Wrath of Reviewer 2 and picks from six research skills." loading="lazy">
+      <img src="{{ base_path }}/images/expedition/battle-1660.jpg" srcset="{{ base_path }}/images/expedition/battle-960.jpg 960w, {{ base_path }}/images/expedition/battle-1660.jpg 1660w" sizes="(max-width: 1320px) 100vw, 1272px" width="{{ ex.size[0] }}" height="{{ ex.size[1] }}" alt="Battle scene in the style of a painterly role-playing game: the author, seen from behind, faces a boss called The Wrath of Reviewer 2 and picks from six research skills." loading="lazy">
       <svg class="nb-exp__hot" viewBox="0 0 {{ ex.size[0] }} {{ ex.size[1] }}" preserveAspectRatio="none" role="group" aria-label="Skills">
         <defs><clipPath id="nb-exp-clip"><polygon data-exp-clip points="0,0" /></clipPath></defs>
         <rect class="nb-exp__dim" width="{{ ex.size[0] }}" height="{{ ex.size[1] }}" />
@@ -20,7 +20,7 @@
         {% endfor %}{% for s in ex.allies %}<a href="{{ s.url }}" aria-label="{{ s.name }}: {{ s.dest }}" data-hot data-name="{{ s.name }}" data-desc="{{ s.desc }}" data-dest="{{ s.dest }}"><polygon points="{{ s.poly }}" /></a>
         {% endfor %}
         <g class="nb-exp__lens" data-exp-lens>
-          <g clip-path="url(#nb-exp-clip)"><image data-href="{{ base_path }}/images/expedition/battle-1672.jpg" width="{{ ex.size[0] }}" height="{{ ex.size[1] }}" preserveAspectRatio="none" /></g>
+          <g clip-path="url(#nb-exp-clip)"><image data-href="{{ base_path }}/images/expedition/battle-1660.jpg" width="{{ ex.size[0] }}" height="{{ ex.size[1] }}" preserveAspectRatio="none" /></g>
           <a tabindex="-1" aria-hidden="true" data-exp-lens-link><polygon class="nb-exp__ring" data-exp-ring points="0,0" /></a>
         </g>
       </svg>

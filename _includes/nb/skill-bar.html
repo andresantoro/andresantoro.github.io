@@ -1,0 +1,19 @@
+{% comment %}/projects/ title band: the skill bar, an RPG action bar with the battle scene's six skills (_data/expedition.yml, same buttons and AP) and the two passive ones. Each slot links to its section; notebook.js shows the hovered or focused skill's description in the readout. Glyphs: _includes/nb/skill-glyphs.svg.{% endcomment %}
+{% include base_path %}
+{% assign ex = site.data.expedition %}
+{% assign all = ex.skills | concat: ex.passives %}
+{% assign keys = "△,□,✕,R1,R2,L2" | split: "," %}
+{% include nb/skill-glyphs.svg %}
+<nav class="nb-relic nb-bar" aria-label="Skills" data-wheel>
+  <div class="nb-relic__head"><span>Skills</span><span>{{ ex.skills.size }} active · {{ ex.passives.size }} passive</span></div>
+  <ul class="nb-bar__slots">
+    {% for s in all %}{% if forloop.index > ex.skills.size %}{% assign passive = true %}{% else %}{% assign passive = false %}{% endif %}
+    <li><a class="nb-bar__slot{% if passive %} is-passive{% endif %}" href="{{ base_path }}{{ s.url }}" aria-label="{{ s.name }}: {{ s.dest }}" data-wheel-skill data-name="{{ s.name }}" data-desc="{{ s.desc }}" data-dest="{{ s.dest | split: ' ' | first }}" style="--i: {{ forloop.index0 }}">
+      <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#g-{{ s.glyph }}" /></svg>
+      <span class="nb-bar__ap" aria-hidden="true">{% if passive %}∞{% else %}{{ s.ap }}{% endif %}</span>
+      <span class="nb-bar__key" aria-hidden="true">{% if passive %}auto{% else %}{{ keys[forloop.index0] }}{% endif %}</span>
+    </a></li>
+    {% endfor %}
+  </ul>
+  <p class="nb-bar__read" aria-live="polite" data-wheel-read><b>Choose a skill</b> each slot opens its research theme</p>
+</nav>

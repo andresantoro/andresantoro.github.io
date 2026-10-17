@@ -360,6 +360,99 @@
     });
   });
 
+  // ---- /people/ party: label whoever is hovered, focused or tapped just above them, and dim the rest of the tree ----
+  document.querySelectorAll('[data-party]').forEach(function (fig) {
+    var tip = fig.querySelector('[data-party-tip]');
+    var who = tip.querySelector('[data-party-tip-who]');
+    var what = tip.querySelector('[data-party-tip-what]');
+    var on = null;
+    var clear = function () {
+      if (!on) return;
+      on.classList.remove('is-on');
+      var g = on.closest('.nb-party__group');
+      if (g) g.classList.remove('is-on');
+      fig.classList.remove('is-picking');
+      tip.hidden = true;
+      on = null;
+    };
+    var show = function (el) {
+      if (on === el) return;
+      clear();
+      on = el;
+      el.classList.add('is-on');
+      var g = el.closest('.nb-party__group');
+      if (g) g.classList.add('is-on');
+      fig.classList.add('is-picking');
+      who.textContent = el.getAttribute('data-party-who');
+      what.textContent = el.getAttribute('data-party-what');
+      tip.hidden = false;
+      var f = fig.getBoundingClientRect();
+      var r = (el.querySelector('.nb-party__dot, .nb-party__gem') || el).getBoundingClientRect();
+      var x = r.left + r.width / 2 - f.left;
+      var below = r.top - f.top < tip.offsetHeight + 16;
+      var half = tip.offsetWidth / 2;
+      var cx = Math.min(Math.max(x, half + 6), f.width - half - 6);
+      tip.classList.toggle('is-below', below);
+      tip.style.left = cx + 'px';
+      tip.style.top = (below ? r.bottom - f.top + 10 : r.top - f.top - 10) + 'px';
+      tip.style.setProperty('--arrow', (x - cx + half) + 'px');
+    };
+    fig.querySelectorAll('[data-party-who]').forEach(function (el) {
+      el.addEventListener('pointerenter', function () { show(el); });
+      el.addEventListener('focus', function () { show(el); });
+      el.addEventListener('blur', function () { if (on === el) clear(); });
+    });
+    fig.querySelector('svg').addEventListener('pointerleave', clear);
+    document.addEventListener('pointerdown', function (e) { if (!e.target.closest('[data-party-who]')) clear(); });
+  });
+
+  // ---- /news/ quest log: show only the entries of the picked type; pressing it again shows them all ----
+  var qlog = document.querySelector('.nb-qlog');
+  if (qlog) {
+    var tiles = qlog.querySelectorAll('[data-log-filter]');
+    var status = qlog.querySelector('[data-log-status]');
+    var idle = status.innerHTML;
+    tiles.forEach(function (t) {
+      t.addEventListener('click', function () {
+        var on = t.getAttribute('aria-pressed') !== 'true';
+        tiles.forEach(function (o) { o.setAttribute('aria-pressed', o === t && on ? 'true' : 'false'); });
+        qlog.classList.toggle('is-filtering', on);
+        var tag = t.getAttribute('data-log-filter'), n = 0;
+        document.querySelectorAll('[data-log-tag]').forEach(function (row) {
+          row.hidden = on && row.getAttribute('data-log-tag') !== tag;
+          if (!row.hidden) n++;
+        });
+        if (on) {
+          status.textContent = '';
+          var b = document.createElement('b');
+          b.textContent = n + ' ' + t.querySelector('span').textContent.toLowerCase();
+          status.append('Showing ', b, ' · press again for all');
+        } else status.innerHTML = idle;
+      });
+    });
+  }
+
+  // ---- /projects/ skill bar: describe the hovered or focused skill under the bar ----
+  var wheel = document.querySelector('[data-wheel]');
+  if (wheel) {
+    var wread = wheel.querySelector('[data-wheel-read]');
+    var widle = wread.innerHTML;
+    wheel.querySelectorAll('[data-wheel-skill]').forEach(function (g) {
+      var show = function () {
+        wread.textContent = '';
+        var b = document.createElement('b'), em = document.createElement('em');
+        b.textContent = g.getAttribute('data-name');
+        em.textContent = ' ' + g.getAttribute('data-dest');
+        wread.append(b, g.getAttribute('data-desc'), em);
+      };
+      var hide = function () { wread.innerHTML = widle; };
+      g.addEventListener('pointerenter', show);
+      g.addEventListener('focus', show);
+      g.addEventListener('pointerleave', hide);
+      g.addEventListener('blur', hide);
+    });
+  }
+
   // ---- optional table columns ----
   document.querySelectorAll('[data-toggle-col]').forEach(function (b) {
     var table = document.getElementById(b.getAttribute('data-toggle-col'));

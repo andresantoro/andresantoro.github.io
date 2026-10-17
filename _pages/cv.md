@@ -6,6 +6,7 @@ redirect_from:
   - /resume
 sheet: "08"
 prose: true
+aside_include: nb/cv-route.html
 lede: "Positions, education and awards. The full PDF is at the bottom."
 ---
 

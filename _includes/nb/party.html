@@ -1,0 +1,52 @@
+{% comment %}/people/ title band: the party as a lineage tree, in the Home battle scene's gold-on-night palette, drawn from _data/people.yml. Mentors sit above in one branch per stage of the path (their group:, oldest first), current and former students below; notebook.js labels whoever is hovered, focused or tapped, just above them, and dims the rest of the tree.{% endcomment %}
+{% assign ppl = site.data.people %}
+{% assign groups = ppl.mentors | reverse | group_by: "group" %}
+{% assign cx = 200 %}{% assign cy = 168 %}
+<figure class="nb-party" data-party>
+  <div class="nb-party__head"><span>The party</span><span>{{ ppl.mentors.size | plus: ppl.current.size | plus: ppl.alumni.size | plus: 1 }} members</span></div>
+  <svg class="nb-party__svg" viewBox="0 0 400 344" role="img" aria-labelledby="nb-party-t" focusable="false">
+    <title id="nb-party-t">The party: {{ ppl.mentors.size }} mentors above, grouped by stage ({{ groups | map: "name" | join: ", " }}), and {% if ppl.current.size > 0 %}{{ ppl.current.size }} current and {% endif %}{{ ppl.alumni.size }} former students below.</title>
+    <text class="nb-party__lbl" x="{{ cx }}" y="16">those who came before</text>
+    {%- assign gstep = 376 | divided_by: groups.size -%}
+    {%- for g in groups -%}
+    {%- assign gx = forloop.index0 | times: gstep | plus: 12 -%}{%- assign gx = gstep | divided_by: 2 | plus: gx -%}
+    {%- assign n1 = g.items.size | minus: 1 -%}{%- assign w0 = n1 | times: 17 -%}
+    <g class="nb-party__group is-mentors" style="--i: {{ forloop.index0 }}">
+      <path class="nb-party__tie" d="M{{ gx }} 90C{{ gx }} 124 {{ cx }} 116 {{ cx }} {{ cy | minus: 24 }}" pathLength="1" />
+      {%- if n1 > 0 %}<path class="nb-party__brace" d="M{{ gx | minus: w0 }} 66V72H{{ gx | plus: w0 }}V66" />{% endif %}
+      {%- for p in g.items -%}{%- assign x = forloop.index0 | times: 34 | plus: gx | minus: w0 -%}{%- assign words = p.name | split: " " %}
+      {% if p.url %}<a href="{{ p.url }}" aria-label="{{ p.name }}, {{ p.role }}" data-party-who="{{ p.name }}" data-party-what="{{ p.role }}{% if p.where %} · {{ p.where | remove_first: 'at ' }}{% endif %}">{% else %}<g tabindex="0" role="img" aria-label="{{ p.name }}, {{ p.role }}" data-party-who="{{ p.name }}" data-party-what="{{ p.role }}{% if p.where %} · {{ p.where | remove_first: 'at ' }}{% endif %}">{% endif %}<circle class="nb-party__hit" cx="{{ x }}" cy="48" r="17" /><g class="nb-party__dot"><circle cx="{{ x }}" cy="48" r="14" /><text x="{{ x }}" y="51.6">{{ words.first | slice: 0 }}{{ words.last | slice: 0 }}</text></g>{% if p.url %}</a>{% else %}</g>{% endif %}
+      {%- endfor %}
+      <text class="nb-party__grp" x="{{ gx }}" y="86">{{ g.name }}</text>
+    </g>
+    {%- endfor %}
+
+    {%- comment %} students: current as named nodes, former as a block of dots, seven to a row (centred under me when there are no current students) {% endcomment -%}
+    {%- assign cur = ppl.current -%}
+    {%- if cur.size > 0 -%}{%- assign fx = 290 -%}{%- assign c1 = cur.size | minus: 1 -%}{%- assign cw = c1 | times: 18 -%}
+    <g class="nb-party__group is-current" style="--i: 4">
+      <path class="nb-party__tie" d="M{{ cx }} {{ cy | plus: 24 }}C{{ cx }} 222 96 206 96 230" pathLength="1" />
+      {%- for p in cur -%}{%- assign x = forloop.index0 | times: 36 | plus: 96 | minus: cw -%}{%- assign words = p.name | split: " " %}
+      <g tabindex="0" role="img" aria-label="{{ p.name }}, {{ p.role }}" data-party-who="{{ p.name }}" data-party-what="{{ p.role }} · {{ p.where }}{% if p.topic %} · {{ p.topic | remove: '.' }}{% endif %}"><circle class="nb-party__hit" cx="{{ x }}" cy="256" r="18" /><g class="nb-party__dot"><circle cx="{{ x }}" cy="256" r="14" /><text x="{{ x }}" y="259.6">{{ words.first | slice: 0 }}{{ words.last | slice: 0 }}</text></g></g>
+      {%- endfor %}
+      <text class="nb-party__grp" x="96" y="294">Current · {{ cur.size }}</text>
+    </g>
+    {%- else -%}{%- assign fx = cx -%}{%- endif %}
+    <g class="nb-party__group is-alumni" style="--i: 5">
+      <path class="nb-party__tie" d="M{{ cx }} {{ cy | plus: 24 }}C{{ cx }} 222 {{ fx }} 206 {{ fx }} 230" pathLength="1" />
+      {%- for p in ppl.alumni -%}{%- assign col = forloop.index0 | modulo: 7 -%}{%- assign row = forloop.index0 | divided_by: 7 -%}
+      {%- assign x = col | times: 22 | plus: fx | minus: 66 -%}{%- assign y = row | times: 22 | plus: 244 %}
+      <g tabindex="0" role="img" aria-label="{{ p.name }}, {{ p.role }}" data-party-who="{{ p.name }}" data-party-what="{{ p.role }} · {{ p.where }} · {{ p.years }}"><rect class="nb-party__hit" x="{{ x | minus: 11 }}" y="{{ y | minus: 11 }}" width="22" height="22" /><g class="nb-party__dot"><circle cx="{{ x }}" cy="{{ y }}" r="7" /></g></g>
+      {%- endfor %}
+      {%- assign rows = ppl.alumni.size | plus: 6 | divided_by: 7 -%}
+      <text class="nb-party__grp" x="{{ fx }}" y="{{ rows | times: 22 | plus: 250 }}">Former · {{ ppl.alumni.size }}</text>
+    </g>
+
+    <g class="nb-party__me" tabindex="0" role="img" aria-label="Andrea Santoro" data-party-who="Andrea Santoro" data-party-what="that’s me">
+      <path class="nb-party__gem" d="M{{ cx }} {{ cy | minus: 24 }}l24 24-24 24-24-24z" /><text x="{{ cx }}" y="{{ cy | plus: 4.5 }}">AS</text>
+    </g>
+    <text class="nb-party__lbl" x="{{ cx }}" y="336">those who come after</text>
+  </svg>
+  <div class="nb-party__tip" role="status" data-party-tip hidden><b data-party-tip-who></b><span data-party-tip-what></span></div>
+  <figcaption class="nb-party__hint">Hover or tap anyone to see who they are</figcaption>
+</figure>

@@ -4,6 +4,7 @@ title: "News"
 permalink: /news/
 sheet: "01"
 lede: "A log of papers, preprints, talks and fieldwork."
+aside_include: nb/quest-log.html
 ---
 {% include base_path %}
 {% assign latest = site.data.news.first %}
@@ -11,7 +12,7 @@ lede: "A log of papers, preprints, talks and fieldwork."
 
 <section class="nb-section nb-news">
   {% for item in site.data.news %}
-  <article class="nb-row">
+  <article class="nb-row" data-log-tag="{{ item.tag }}">
     <div class="nb-row__key{% if forloop.first %} nb-row__key--accent{% endif %}">{{ item.date }}</div>
     <div class="nb-row__main">
       <span class="nb-tag{% if forloop.first %} nb-tag--accent{% endif %}">{{ item.tag }}</span>

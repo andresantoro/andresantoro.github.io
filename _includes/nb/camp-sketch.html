@@ -1,0 +1,31 @@
+{% comment %}/open-projects/ title band: a pencil sketch of the camp at night, with a free seat by the fire for whoever joins (same pencil filter as the Turin sketch on Home). The count comes from the pages under _pages/open-projects/.{% endcomment %}
+{% assign quests = site.pages | where_exp: "p", "p.path contains '_pages/open-projects/'" %}
+<figure class="nb-relic nb-camp">
+  <div class="nb-relic__head"><span>The camp</span><span>{{ quests.size }} open quests</span></div>
+  <svg viewBox="0 0 320 196" role="img" aria-label="Pencil sketch of the camp at night: a tent and a flag under the Alps, a fire, and an empty log seat marked for you." focusable="false">
+    <defs><filter id="nb-camp-pencil" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n" /><feDisplacementMap in="SourceGraphic" in2="n" scale="1.6" /></filter></defs>
+    <g class="nb-camp__stars"><circle cx="26" cy="20" r="1.1" /><circle cx="70" cy="34" r="0.9" /><circle cx="118" cy="14" r="1.2" /><circle cx="168" cy="30" r="0.8" /><circle cx="214" cy="12" r="1.1" /><circle cx="252" cy="38" r="0.9" /><circle cx="296" cy="18" r="1.2" /><circle cx="140" cy="44" r="0.7" /></g>
+    <path class="nb-camp__moon" d="M276 40a13 13 0 1 1-12-20 10 10 0 0 0 12 20Z" />
+    <g filter="url(#nb-camp-pencil)">
+      <path class="is-faint" d="M0 112 L30 92 L46 100 L78 66 L96 80 L122 58 L150 88 L170 78 L204 104 L232 84 L262 98 L290 86 L320 100" />
+      <path class="is-faint" d="M70 74 L78 66 L86 74 M116 64 L122 58 L128 66 M226 89 L232 84 L238 90" />
+      <path d="M0 150 C60 142 120 146 170 144 S270 140 320 146" />
+      <!-- tent and flag -->
+      <path d="M40 148 L76 98 L112 148 Z M76 98 L76 148 M64 148 L76 120 L88 148" />
+      <path d="M76 98 V82 M76.5 82.5 h13 l-3.5 4.5 3.5 4.5 h-13" class="nb-camp__flag" />
+      <!-- logs and stones -->
+      <path d="M150 158 L196 150 M152 152 L194 160" />
+      <path class="is-faint" d="M144 160 q4 -5 8 0 M190 162 q4 -5 8 0 M168 164 q4 -4 8 0" />
+      <!-- the seat that is taken (a pack on it) and the free one -->
+      <path d="M214 160 h34 a4 4 0 0 1 0 8 h-34 a4 4 0 0 1 0 -8 Z M226 160 v-10 h12 v10 M228 150 c0 -5 8 -5 8 0" />
+      <path class="nb-camp__free" d="M98 168 h36 a4 4 0 0 1 0 8 h-36 a4 4 0 0 1 0 -8 Z" />
+    </g>
+    <g class="nb-camp__fire">
+      <path class="nb-camp__flame" d="M173 152 c-10 -6 -8 -18 0 -30 c2 8 8 10 7 18 c4 -3 4 -8 3 -11 c8 9 6 20 -3 23 Z" />
+      <path class="nb-camp__flame is-in" d="M175 150 c-5 -4 -4 -10 0 -16 c1 5 5 7 4 11 c3 -1 3 -4 3 -6 c4 6 2 10 -3 11 Z" />
+      <circle class="nb-camp__spark" cx="172" cy="112" r="1.2" /><circle class="nb-camp__spark" cx="180" cy="104" r="1" style="--d: -0.8s" /><circle class="nb-camp__spark" cx="168" cy="98" r="0.9" style="--d: -1.5s" />
+    </g>
+    <text class="nb-camp__you" x="116" y="190">your seat</text>
+  </svg>
+  <figcaption class="nb-relic__foot">A seat by the fire is free: <a href="#open-quests">pick a quest ↓</a></figcaption>
+</figure>

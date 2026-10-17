@@ -1,17 +1,24 @@
 # People shown on /people/ and highlighted in the collaboration hypergraph.
 # After editing names here, regenerate the hypergraph: python3 scripts/collab_hypergraph.py
 
-current:
+# Students I currently supervise or co-supervise (none at the moment; the People page and the party tree handle an empty list).
+current: []
+
+# Not my students: people who work with me on a grant or visit (shown on /people/ next to the current students, left out of the party tree and coloured as collaborators in the hypergraph).
+# badge: the status shown on the card.
+team:
   - name: "Flavia Petruso"
-    role: "PhD"
+    role: "PhD student"
     years: "2025–"
     where: "EPFL"
     topic: "Higher-order interactions in tinnitus."
-    tags: ["co-funded · ATA grant"]
+    tags: ["part-time · ATA grant"]
+    badge: "Grant team"
   - name: "Giorgio Dolci"
-    role: "Summer visiting student"
-    where: "PhD, Univ. Verona"
+    role: "Summer visiting PhD student"
+    where: "Univ. Verona"
     topic: "Higher-order brain dynamics in Alzheimer’s disease."
+    badge: "Visiting"
 
 # project and outcome appear in the collapsible column of the alumni table.
 alumni:
@@ -85,35 +92,44 @@ alumni:
     project: "Brain-behavior association in the human brain using film fMRI"
     outcome: "OHBM 2025 poster"
 
+# group: the stage of the path each mentor belongs to; the party on /people/ draws one branch per group, oldest first.
 mentors:
   - name: "Giovanni Petri"
+    group: "MSCA"
     role: "MSCA mentor"
     where: "NPLab · Northeastern University London"
     url: "https://lordgrilo.github.io/"
   - name: "Fabrizio De Vico Fallani"
+    group: "MSCA"
     role: "MSCA mentor"
     where: "Paris Brain Institute · INRIA"
     url: "https://sites.google.com/site/devicofallanifabrizio/"
   - name: "Enrico Amico"
+    group: "EPFL"
     role: "Postdoc mentor"
     where: "at EPFL, Neuro-X"
     url: "https://amicolab.org/"
   - name: "Dimitri Van De Ville"
+    group: "EPFL"
     role: "Postdoc mentor"
     where: "at EPFL, MIPLab"
     url: "https://miplab.epfl.ch/index.php"
   - name: "Vincenzo Nicosia"
+    group: "QMUL"
     role: "PhD supervisor"
     where: "at Queen Mary University of London"
     url: "https://webspace.maths.qmul.ac.uk/v.nicosia/"
   - name: "Lucas Lacasa"
+    group: "QMUL"
     role: "PhD supervisor"
     where: "at Queen Mary University of London"
     url: "https://sites.google.com/view/lucaslacasa/"
   - name: "Giuseppe Nicosia"
+    group: "Catania"
     role: "BSc & MSc supervisor"
     where: "at University of Catania"
     url: "https://scholar.google.co.uk/citations?user=5FilzyUAAAAJ&hl=en"
   - name: "Vittorio Romano"
+    group: "Catania"
     role: "BSc & MSc supervisor"
     where: "at University of Catania"

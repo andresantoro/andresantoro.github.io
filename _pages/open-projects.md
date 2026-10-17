@@ -5,6 +5,7 @@ permalink: /open-projects/
 sheet: "03"
 title_fit: "11.2"  # keep the title on one line (it is 10.99em wide)
 lede: "Thesis and semester projects for students. Illustrative, not exhaustive."
+aside_include: nb/camp-sketch.html
 ---
 {% include base_path %}
 
@@ -13,7 +14,7 @@ lede: "Thesis and semester projects for students. Illustrative, not exhaustive."
   <p>I'm always keen to supervise <strong>Bachelor/Master theses</strong> and <strong>semester projects</strong> at the intersection of applied mathematics, topological data analysis (TDA), computational neuroscience, finance, and food analytics. The projects listed here are just illustrative; if these areas interest you, please <a href="mailto:andrea.santoro@isi.it">contact me</a> to discuss additional or tailored topics that fit your background — including opportunities in finance, clinical neuroscience, and food network.</p>
 </div>
 
-<section class="nb-section">
+<section class="nb-section" id="open-quests">
   <div class="nb-grid">
     <a class="nb-cell" href="{{ base_path }}/open-projects/temporal-higher-order-tda/">
       <div class="nb-cellbar"><span>3.1</span><span>Theory · code</span></div>

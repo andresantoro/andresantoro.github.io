@@ -26,7 +26,8 @@
 
   <main id="content" class="nb-sheet">
     {% unless page.hero == false %}
-      {% include nb/titleband.html title=page.title lede=page.lede sheet=page.sheet small=page.small_title fit=page.title_fit %}
+      {% if page.aside_include %}{% capture aside %}{% include {{ page.aside_include }} %}{% endcapture %}{% endif %}
+      {% include nb/titleband.html title=page.title lede=page.lede sheet=page.sheet small=page.small_title fit=page.title_fit aside=aside %}
     {% endunless %}
     {% if page.prose %}
       <div class="nb-body nb-prose">{{ content }}</div>
